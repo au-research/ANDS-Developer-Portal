@@ -1,0 +1,34 @@
+/* Producr theme - ORANGE COLOR SCHEME */
+/* #03ceb9 (mint), #35d37d (green), #f5a610 (orange), #68b5e6 (blue), #e37341 (peach), #ea5644 (red), #a564bf (violet), #a9927d (brown) */
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+a, .k-call-out em, .btn-link, 
+#menu-nav .sub-menu li a, #menu-nav .sub-menu li a:link, #menu-nav .sub-menu li a:visited, 
+#navigation-mobile li a, #navigation-mobile li a:link, #navigation-mobile li a:visited, 
+.product-box-hover .product-title a:link, .product-box-hover .product-title a:visited,
+.k_mid_callout_color, .k-work-hours, .k-faq-wrap .panel-title a:hover, .k-faq-wrap .panel-title a:focus, 
+a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { color: #f5a610; }
+/* ----- elements */
+#k-head, #k-footer, .k-fancy-title-tit, .k-widget-title-tit, #k-sidebar-splitter span, 
+.btn-default, .label-default, .k-article-more, .k-article-prev-next, 
+.k-work-prev, .k-work-next, 
+.pagination > li > a:hover, .pagination > li > a:focus, 
+.pagination > .active > a, .pagination > .active > span,
+.product-box-hover .product-box-link .product-box-overlay-icon, .k-team-text .tit, 
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus, 
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .modal-header,
+.k-user-feedback-wrap-inverse .k-user-feedback-box, .audioplayer-bar-played, .k-fancy-icon-wrap:hover .k-fancy-icon { background-color: #f5a610 !important; }
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus { border-color: #f5a610 !important; }
+
+article .carousel, .k-article-featured-img, .notez, .mezage { border-bottom-color: #f5a610 !important; }
+
+.k-user-feedback-wrap-inverse .k-user-feedback-tit { border-top-color: #f5a610 !important; }
+
+.form-control:focus, textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus,
+input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus,
+input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus,
+input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus,
+.uneditable-input:focus { border-color: #f5a610 !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f5a610 !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f5a610 !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f5a610 !important; }
+
+.k-fancy-icon:after { box-shadow: 0 0 0 5px #f5a610; }

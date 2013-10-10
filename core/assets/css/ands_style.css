@@ -1,0 +1,30 @@
+/* ands_style.scss */
+/**
+ * Top Menu fix
+ */
+/* line 7, ../sass/ands_style.scss */
+#menu a {
+  color: white !important;
+}
+/* line 10, ../sass/ands_style.scss */
+#menu .sub-menu li a {
+  color: white;
+}
+/* line 12, ../sass/ands_style.scss */
+#menu .sub-menu li a:hover {
+  color: #a3be99 !important;
+}
+
+/**
+ * Site Logo Fix
+ */
+/* line 22, ../sass/ands_style.scss */
+#site-logo a {
+  color: white !important;
+  font-size: 1.5em !important;
+}
+
+/* line 28, ../sass/ands_style.scss */
+.alert {
+  border-left: 5px solid #a3be99;
+}
