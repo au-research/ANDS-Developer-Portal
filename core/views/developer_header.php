@@ -51,6 +51,7 @@
 							<ul id="menu-nav" class="pull-right k-dropdown-menu">
 								<li><?php echo anchor('/documentation/widgets/','Widgets'); ?>
 									<ul class="sub-menu">
+										<li><?php echo anchor('/documentation/widgets/registry_widget', 'Registry Widget'); ?></li>
 										<li><?php echo anchor('/documentation/widgets/orcid_widget', 'ORCID Widget'); ?></li>
 									</ul>
 								</li>

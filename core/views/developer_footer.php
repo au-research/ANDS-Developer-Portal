@@ -23,11 +23,23 @@
 	<script src="<?php echo asset_url('js/combine.min.js','core');?>"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script><!-- google maps -->
 
+	<script>
+		var base_url = '<?php echo base_url();?>';
+        var portal_url = '<?php echo portal_url();?>';
+        var apps_url = '<?php echo apps_url();?>';
+        var real_base_url = "<?php echo $this->config->item('default_base_url');?>";
+	</script>
+
 	<!-- dynamic include libraries -->
 	<?php if(isset($js_lib)): foreach($js_lib as $lib):?>
+
 	<?php if($lib=='orcid_widget'):?>
 			<link href="<?php echo apps_url('assets/orcid_widget/css/orcid_widget.css');?>" rel="stylesheet" type="text/css">
 			<script src="<?php echo apps_url('assets/orcid_widget/js/orcid_widget.js');?>" type="text/javascript"></script>
+	<?php elseif($lib=='registry_widget'):?>
+            <link href="<?php echo apps_url('assets/registry_widget/css/registry_widget.css');?>" rel="stylesheet" type="text/css">
+            <script src="<?php echo apps_url('assets/registry_widget/js/registry_widget.js');?>" type="text/javascript"></script>
+
 	<?php endif; endforeach; endif;?>
 	<?php if (isset($scripts)): foreach($scripts as $script):?>
 		<script src="<?php echo asset_url('js/' . $script);?>.js" defer></script>

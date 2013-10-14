@@ -22,6 +22,11 @@ class Documentation extends MX_Controller {
 			$data['scripts'] = array('orcid_widget_documentation');
 			$data['js_lib'] = array('orcid_widget');
 			$this->load->view('orcid_widget', $data);
+		}elseif($widget=='registry_widget'){
+			$data['title'] = 'Registry Widget';
+			$data['scripts'] = array('registry_widget_doc');
+			$data['js_lib'] = array('registry_widget');
+			$this->load->view('registry_widget', $data);
 		}
 	}
 }
