@@ -7,12 +7,24 @@ class Documentation extends MX_Controller {
 		$this->load->view('landing', $data);
 	}
 
-	public function services($service){
-		if($service=='grants'){
-			$data['title'] = 'Grants API Documentation - ANDS Developer Toolbox';
-			$this->load->view('grants_api', $data);
-		}else{
-			//TODO:XXX
+	public function services($service=''){
+		switch($service)
+		{
+			case 'getGrants':
+				$data['title'] = 'Grants API Documentation - ANDS Developer Toolbox';
+				$this->load->view('services/grants_api', $data);
+			break;
+
+			case 'oai':
+				$data['title'] = 'OAI-PMH provider API Documentation - ANDS Developer Toolbox';
+				$this->load->view('services/oai_api', $data);
+			break;
+
+			case 'registry_apis':
+			default:
+				$data['title'] = 'ANDS Web Services - ANDS Developer Toolbox';
+				$this->load->view('registry_apis', $data);
+			break;
 		}
 	}
 
