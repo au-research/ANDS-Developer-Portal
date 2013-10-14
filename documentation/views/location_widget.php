@@ -3,13 +3,13 @@
 	<div class="container section-space30"><!-- starts container -->
 		<div class="row"><!-- starts row -->
 			<div class="col-lg-6 col-md-6 col-sm-12">
-				<h2 class="k-page-title">Registry Widget</h2>
+				<h2 class="k-page-title">Location Capture Widget</h2>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				<ol class="breadcrumb pull-right">
 					<li><?php echo anchor('/', 'Home'); ?></li>
 					<li><?php echo anchor('/documentation/widgets/', 'Widgets'); ?></li>
-					<li class="active"><?php echo anchor('/documentation/widgets/registry_widget', 'Registry Widget'); ?></li>
+					<li class="active"><?php echo anchor('/documentation/widgets/vocab_widget', 'Vocab Widget'); ?></li>
 				</ol>
 			</div>
 		</div><!-- ends row -->
@@ -26,56 +26,31 @@
 						<p>Some basic web development knowledge may be needed to implement this widget</p>
 					</div>
 
-					<h2 class="widget-title">Search Result Display Example</h2>
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#orcid-3-result" data-toggle="tab">Result</a></li>
-						<li><a href="#orcid-3-html" data-toggle="tab">HTML</a></li>
-					</ul>
-					<div class="tab-content">
-						<div id="orcid-3-result" class="tab-pane fade active in">
-							<div id="search_display" data-query="q=fulltext:fish&rows=5" data-mode="display_result" class="registry_widget"></div>
-						</div>
-						<div id="orcid-3-html" class="tab-pane fade">
-							<pre class="prettyprint">
-&lt;div id="search_display" data-query="q=fulltext:fish&rows=5" data-mode="display_result" class="registry_widget"&gt;&lt;/div&gt;
-							</pre>
-						</div>
-					</div>
+					<div class="k-fancy-title-wrap"><span class="k-fancy-title-tit"></span><h3 class="k-fancy-title">What is this widget?</h3></div>
+					<p>The ANDS Location Capture Widget allows you to instantly enrich your data capture system, adding geospatial capabilities such as custom drawings and place name resolution (using the Australian Gazetteer Service and Google Maps API).</p>
+		 
+					<div class="k-fancy-title-wrap"><span class="k-fancy-title-tit"></span><h3 class="k-fancy-title">How does it work?</h3></div>
+					<p>Simply drop the following lines of HTML into your web form. You only need to specify the name of the form field and the widget will do the rest!</p>
+			    	 <em>Step 1.</em> Drop this code somewhere in the &lt;head&gt;&lt;/head&gt; of your web page
+			    	 <pre class="prettyprint">
+&lt;script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=drawing&v=3"&gt;&lt;/script&gt;
+&lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://services.ands.org.au/api/resolver/location_capture_widget.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="http://services.ands.org.au/api/resolver/location_capture_widget.css" /&gt;
+					</pre>
 
-					<h2 class="widget-title">Single Display Example</h2>
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#orcid-2-result" data-toggle="tab">Result</a></li>
-						<li><a href="#orcid-2-html" data-toggle="tab">HTML</a></li>
-					</ul>
-					<div class="tab-content">
-						<div id="orcid-2-result" class="tab-pane fade active in">
-							<div id="single_display" data-query="AODN:93f4e867-0bac-45fa-acca-2881680627f7" data-mode="display_single" class="registry_widget"></div>
-						</div>
-						<div id="orcid-2-html" class="tab-pane fade">
-							<pre class="prettyprint">
-&lt;div id="single_display" data-query="AODN:93f4e867-0bac-45fa-acca-2881680627f7" data-mode="display_single" class="registry_widget"&gt;&lt;/div&gt;
-							</pre>
-						</div>
-					</div>
-				
-					<h2 class="widget-title">Simple Search Example</h2>
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#orcid-1-result" data-toggle="tab">Result</a></li>
-						<li><a href="#orcid-1-html" data-toggle="tab">HTML</a></li>
-					</ul>
-					<div class="tab-content">
-						<div id="orcid-1-result" class="tab-pane fade active in">
-							<input type="text" class="registry_widget" value="fish">
-						</div>
-						<div id="orcid-1-html" class="tab-pane fade">
-							<pre class="prettyprint">
-&lt;input type="text" class="registry_widget" value="fish"&gt;
-							</pre>
-						</div>
-					</div>
+					<em>Step 2.</em> Invoke the plugin using this code towards the bottom of the page. This example invokes the plugin on an HTML element with id <code>mapContainer</code>, and stores the final coordinate data in the HTML element with id <code>coordinates</code>:
+					<pre class="prettyprint">
+&lt;script type="text/javascript"&gt;
+  $(document).ready(function() {
+    $("#mapContainer").ands_location_widget({target:'coordinates'});
+  });
+ 					</pre>
 
-	
-					<h2 class="widget-title">License</h2>
+			    	 <p><em>Step 3.</em> Load the web page and see the new widget appear! 
+			    	 <br/>Once submitted, the coordinates of the location selected will be in the form value you chose for <code>target</code></p>
+
+					<div class="k-fancy-title-wrap"><span class="k-fancy-title-tit"></span><h3 class="k-fancy-title">License</h3></div>
 					<p>Apache License, Version 2.0: <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
 				</article><!-- ends article short -->
 			</div><!-- ends main content -->

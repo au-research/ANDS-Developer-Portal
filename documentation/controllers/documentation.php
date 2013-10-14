@@ -16,7 +16,7 @@ class Documentation extends MX_Controller {
 		}
 	}
 
-	public function widgets($widget){
+	public function widgets($widget=''){
 		if($widget=='orcid_widget'){
 			$data['title'] = 'ORCID Widget';
 			$data['scripts'] = array('orcid_widget_documentation');
@@ -27,6 +27,21 @@ class Documentation extends MX_Controller {
 			$data['scripts'] = array('registry_widget_doc');
 			$data['js_lib'] = array('registry_widget');
 			$this->load->view('registry_widget', $data);
+		}elseif($widget=='vocab_widget'){
+			$data['title'] = 'Vocab Widget';
+			$data['scripts'] = array('vocab_widget_doc');
+			$data['js_lib'] = array('vocab_widget');
+			$this->load->view('vocab_widget', $data);
+		}elseif($widget=='location_widget'){
+			$data['title'] = 'location Widget';
+			$data['scripts'] = array('location_widget_doc');
+			$data['js_lib'] = array('location_widget');
+			$this->load->view('location_widget', $data);
+		}else{
+			$data['title'] = 'Widget';
+			// $data['scripts'] = array('vocab_widget_doc');
+			// $data['js_lib'] = array('vocab_widget');
+			$this->load->view('widget_index', $data);
 		}
 	}
 }

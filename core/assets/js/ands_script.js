@@ -7,7 +7,7 @@ $(function(){ // document ready
 		$(window).scroll(function(){ // scroll event
 			var windowTop = $(window).scrollTop(); // returns number 
 			if ((stickyTop < windowTop + 70) && ($(window).width() > 767)){
-				$('.sticky').css({ position: 'fixed', top: 70, width: p });
+				$('.sticky').css({ position: 'fixed', top: 100, width: p });
 			}else {
 				$('.sticky').css('position','static');
 			}

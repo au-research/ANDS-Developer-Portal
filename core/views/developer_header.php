@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="img/favicon.ico">
 	
 	<!-- Google webfonts -->
-	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,300italic,500,700,900' rel='stylesheet' type='text/css' />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,300italic,500,700,900' rel='stylesheet' type='text/css' /> -->
 
 	<!-- Libraries stylesheets -->
 	<link rel="stylesheet" type="text/css" href="<?php echo asset_url('bootstrap/css/bootstrap.min.css', 'core'); ?>" />
@@ -50,6 +50,8 @@
 									<ul class="sub-menu">
 										<li><?php echo anchor('/documentation/widgets/registry_widget', 'Registry Widget'); ?></li>
 										<li><?php echo anchor('/documentation/widgets/orcid_widget', 'ORCID Widget'); ?></li>
+										<li><?php echo anchor('/documentation/widgets/vocab_widget', 'Vocab Widget'); ?></li>
+										<li><?php echo anchor('/documentation/widgets/location_widget', 'Location Capture Widget'); ?></li>
 									</ul>
 								</li>
 								<li><a href="about-us.html">Services</a>
