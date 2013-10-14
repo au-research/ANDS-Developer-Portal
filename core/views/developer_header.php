@@ -38,7 +38,8 @@
 				<div class="row menu-switch"><!-- starts row -->
 				
 					<div id="site-logo" class="col-lg-4 col-md-4 col-sm-12">
-						<?php echo anchor('/', 'ANDS Developer Toolbox', array('title'=>'ANDS Developer Toolbox Home Page')) ?>
+						<img src="<?php echo asset_url('img/ands_logo_white.png','base');?>" alt=""><br/>
+						<?php echo anchor('/', 'Developer Toolbox', array('title'=>'ANDS Developer Toolbox Home Page')) ?>
 					</div>
 					
 					<div id="k-main-navig" class="col-lg-8 col-md-8 col-sm-12"><!-- begins navigation -->

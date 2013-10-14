@@ -26,7 +26,37 @@
 						<p>Some basic web development knowledge may be needed to implement this widget</p>
 					</div>
 
+					<h2 class="widget-title">Search Result Display Example</h2>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#orcid-3-result" data-toggle="tab">Result</a></li>
+						<li><a href="#orcid-3-html" data-toggle="tab">HTML</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="orcid-3-result" class="tab-pane fade active in">
+							<div id="search_display" data-query="q=fulltext:fish&rows=5" data-mode="display_result" class="registry_widget"></div>
+						</div>
+						<div id="orcid-3-html" class="tab-pane fade">
+							<pre class="prettyprint">
+&lt;div id="search_display" data-query="q=fulltext:fish&rows=5" data-mode="display_result" class="registry_widget"&gt;&lt;/div&gt;
+							</pre>
+						</div>
+					</div>
 
+					<h2 class="widget-title">Single Display Example</h2>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#orcid-2-result" data-toggle="tab">Result</a></li>
+						<li><a href="#orcid-2-html" data-toggle="tab">HTML</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="orcid-2-result" class="tab-pane fade active in">
+							<div id="single_display" data-query="AODN:93f4e867-0bac-45fa-acca-2881680627f7" data-mode="display_single" class="registry_widget"></div>
+						</div>
+						<div id="orcid-2-html" class="tab-pane fade">
+							<pre class="prettyprint">
+&lt;div id="single_display" data-query="AODN:93f4e867-0bac-45fa-acca-2881680627f7" data-mode="display_single" class="registry_widget"&gt;&lt;/div&gt;
+							</pre>
+						</div>
+					</div>
 				
 					<h2 class="widget-title">Simple Search Example</h2>
 					<ul class="nav nav-tabs">
@@ -44,37 +74,9 @@
 						</div>
 					</div>
 
-					<h2 class="widget-title">Single Display Example</h2>
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#orcid-2-result" data-toggle="tab">Result</a></li>
-						<li><a href="#orcid-2-html" data-toggle="tab">HTML</a></li>
-					</ul>
-					<div class="tab-content">
-						<div id="orcid-2-result" class="tab-pane fade active in">
-							<div id="single_display" data-query="AODN:93f4e867-0bac-45fa-acca-2881680627f7"></div>
-						</div>
-						<div id="orcid-2-html" class="tab-pane fade">
-							<pre class="prettyprint">
-&lt;div id="single_display" data-query="AODN:93f4e867-0bac-45fa-acca-2881680627f7"&gt;&lt;/div&gt;
-							</pre>
-						</div>
-					</div>
+					
 
-					<h2 class="widget-title">Search Result Display Example</h2>
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#orcid-3-result" data-toggle="tab">Result</a></li>
-						<li><a href="#orcid-3-html" data-toggle="tab">HTML</a></li>
-					</ul>
-					<div class="tab-content">
-						<div id="orcid-3-result" class="tab-pane fade active in">
-							<div id="search_display" data-query="q=fulltext:fish&rows=25"></div>
-						</div>
-						<div id="orcid-3-html" class="tab-pane fade">
-							<pre class="prettyprint">
-&lt;div id="search_display" data-query="q=fulltext:fish&rows=25"&gt;&lt;/div&gt;
-							</pre>
-						</div>
-					</div>
+					
 					
 					<h2>License</h2>
 					<p>Apache License, Version 2.0: <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
@@ -85,7 +87,7 @@
 				<div id="k-sidebar-splitter" class="clearfix section-space60"><span></span></div>
 				<ul id="k-sidebar-list" class="list-unstyled">
 					
-					<li class="widget widget_categories clearfix">
+					<li class="widget widget_categories clearfix sticky">
 						<h2 class="widget-title">Demo and Download<span class="k-widget-title-tit"></span></h2>
 						<ul class="list-unstyled">
 							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/'), '<i class="icon-white icon-download"></i> Demo', array('class'=>'btn btn-large btn-success')) ?></li>

@@ -60,7 +60,8 @@ module.exports = function(grunt){
 				    '<%= yeoman.assets %>/js/owl-carousel/owl.carousel.min.js',
 				    '<%= yeoman.assets %>/js/plugins.js',
 				    '<%= yeoman.assets %>/js/theme.js',
-				    '<%= yeoman.base %>/lib/prettyprint/pretty.js'
+				    '<%= yeoman.assets %>/js/ands_script.js',
+				    '<%= yeoman.base %>/lib/prettyprint/pretty.js',
 				],
 				dest:'<%= yeoman.assets %>/js/combine.js'
 			}
@@ -89,7 +90,7 @@ module.exports = function(grunt){
 
 	//define your tasks
 	grunt.registerTask('default', [
-		//'compass'
+		'compass',
 		'concat',
 		'uglify',
 		'cssmin'

@@ -817,9 +817,10 @@ input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus,
 #site-logo a {
   color: white !important;
   font-size: 1.5em !important;
+  font-weight: 300;
 }
 
-/* line 28, ../sass/ands_style.scss */
-.alert {
-  border-left: 5px solid #a3be99;
+/* line 29, ../sass/ands_style.scss */
+.btn-success {
+  background-color: #a3be99 !important;
 }
