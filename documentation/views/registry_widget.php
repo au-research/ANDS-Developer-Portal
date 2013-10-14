@@ -26,16 +26,55 @@
 						<p>Some basic web development knowledge may be needed to implement this widget</p>
 					</div>
 
-					<h3 class="k-article-title">Simple Search Example</h3>
-					<form class="form-inline">
-						<input type="text" class="registry_widget" value="fish">
-					</form>
 
-					<h3 class="k-article-title">Single Display Example</h3>
-					<div id="single_display" data-query="AODN:93f4e867-0bac-45fa-acca-2881680627f7"></div>
+				
+					<h2 class="widget-title">Simple Search Example</h2>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#orcid-1-result" data-toggle="tab">Result</a></li>
+						<li><a href="#orcid-1-html" data-toggle="tab">HTML</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="orcid-1-result" class="tab-pane fade active in">
+							<input type="text" class="registry_widget" value="fish">
+						</div>
+						<div id="orcid-1-html" class="tab-pane fade">
+							<pre class="prettyprint">
+&lt;input type="text" class="registry_widget" value="fish"&gt;
+							</pre>
+						</div>
+					</div>
 
-					<h3 class="k-article-title">Search Result Display Example</h3>
-					<div id="search_display" data-query="q=fulltext:fish&rows=25"></div>
+					<h2 class="widget-title">Single Display Example</h2>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#orcid-2-result" data-toggle="tab">Result</a></li>
+						<li><a href="#orcid-2-html" data-toggle="tab">HTML</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="orcid-2-result" class="tab-pane fade active in">
+							<div id="single_display" data-query="AODN:93f4e867-0bac-45fa-acca-2881680627f7"></div>
+						</div>
+						<div id="orcid-2-html" class="tab-pane fade">
+							<pre class="prettyprint">
+&lt;div id="single_display" data-query="AODN:93f4e867-0bac-45fa-acca-2881680627f7"&gt;&lt;/div&gt;
+							</pre>
+						</div>
+					</div>
+
+					<h2 class="widget-title">Search Result Display Example</h2>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#orcid-3-result" data-toggle="tab">Result</a></li>
+						<li><a href="#orcid-3-html" data-toggle="tab">HTML</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="orcid-3-result" class="tab-pane fade active in">
+							<div id="search_display" data-query="q=fulltext:fish&rows=25"></div>
+						</div>
+						<div id="orcid-3-html" class="tab-pane fade">
+							<pre class="prettyprint">
+&lt;div id="search_display" data-query="q=fulltext:fish&rows=25"&gt;&lt;/div&gt;
+							</pre>
+						</div>
+					</div>
 					
 					<h2>License</h2>
 					<p>Apache License, Version 2.0: <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>

@@ -38,15 +38,11 @@
 				<div class="row menu-switch"><!-- starts row -->
 				
 					<div id="site-logo" class="col-lg-4 col-md-4 col-sm-12">
-						<a href="index.html" title="Home Page">
-							ANDS Developer Toolbox
-						</a>
+						<?php echo anchor('/', 'ANDS Developer Toolbox', array('title'=>'ANDS Developer Toolbox Home Page')) ?>
 					</div>
 					
 					<div id="k-main-navig" class="col-lg-8 col-md-8 col-sm-12"><!-- begins navigation -->
-					
 						<a id="mobile-nav" class="menu-nav" href="#menu-nav"><span class="alter-menu-icon"></span></a><!-- alternative menu button -->
-						
 						<nav id="menu">
 							<ul id="menu-nav" class="pull-right k-dropdown-menu">
 								<li><?php echo anchor('/documentation/widgets/','Widgets'); ?>
