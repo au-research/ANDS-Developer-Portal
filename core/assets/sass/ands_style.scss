@@ -31,9 +31,15 @@ $ands_green : #a3be99;
 }
 
 
-figure.panel-figure
-{
+figure.panel-figure{
   background-color:white;
   padding:30px;
   margin: 0 10px;
+}
+
+.k-fancy-title-wrap{
+	margin-top:20px;
+	.k-fancy-title{
+		margin:20px 0;
+	}
 }

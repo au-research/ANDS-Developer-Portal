@@ -49,8 +49,8 @@
 								<li><?php echo anchor('/documentation/widgets/','Widgets'); ?>
 									<ul class="sub-menu">
 										<li><?php echo anchor('/documentation/widgets/registry_widget', 'Registry Widget'); ?></li>
-										<li><?php echo anchor('/documentation/widgets/orcid_widget', 'ORCID Widget'); ?></li>
-										<li><?php echo anchor('/documentation/widgets/vocab_widget', 'Vocab Widget'); ?></li>
+										<li><?php echo anchor('/documentation/widgets/orcid_widget', 'ORCID Researcher Lookup Widget'); ?></li>
+										<li><?php echo anchor('/documentation/widgets/vocab_widget', 'Vocabulary Widget'); ?></li>
 										<li><?php echo anchor('/documentation/widgets/location_widget', 'Location Capture Widget'); ?></li>
 									</ul>
 								</li>
@@ -59,9 +59,8 @@
 										<li><?php echo anchor('documentation/services/registry_apis', 'Registry APIs') ?></li>
 									</ul>
 								</li>
-								<li><a href="blog.html">Registry</a></li>
-								<li><a href="work.html">Support</a></li>
-								<li><a href="contact.html">Communities</a></li>
+								<li><a href="">Registry</a></li>
+								<li><a href="<?php echo $this->config->item('developer_community_portal'); ?>">Support Community</a></li>
 							</ul>
 						</nav>
 					</div><!-- ends navigation -->

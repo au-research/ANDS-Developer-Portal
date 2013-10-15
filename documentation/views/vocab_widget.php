@@ -50,7 +50,7 @@
 &lt;script type="text/javascript" src="http://services.ands.org.au/api/resolver/vocab_widget.js"&gt;&lt;/script&gt;
 &lt;link rel="stylesheet" type="text/css" href="http://services.ands.org.au/api/resolver/vocab_widget.css" /&gt;
 					</pre>
-					<p>What happens next very much depends on what you want to achieve:</p>
+					
 
 
 					<div class="k-fancy-title-wrap"><span class="k-fancy-title-tit"></span><h3 class="k-fancy-title">License</h3></div>

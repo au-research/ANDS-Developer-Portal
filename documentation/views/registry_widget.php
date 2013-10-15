@@ -21,7 +21,26 @@
 
 			<div id="k-main" class="clearfix col-lg-8 col-md-8 col-sm-12"><!-- starts main content -->
 				<article><!-- starts article short -->
-					
+
+					<h3 class="k-fancy-title">What is this widget?</h3>
+					<p>The Registry Search Widget provides a quick and easy way of embedding a live Research Data Australia search within your new or existing web pages.  </p>
+					<p>The flexibility of the widget allows you to configure a predefined search, or provide your end users with a text field to specify their own search.  </p>
+					<p>Some use cases for the widget include:</p>
+					<ul class="k-work-features-list"><!-- features -->
+						<li><span class="k-work-feature-value">Predefining a search which promotes the last 5 collections published to Research Data Australia by your institution.</span></li>
+						<li><span class="k-work-feature-value">Supplementing your sites search results with search results from Research Data Australia.</span></li>
+						<li><span class="k-work-feature-value">Providing users with a listing of data collections related to a specific subject.</span></li>
+					</ul>
+
+					<h3 class="k-fancy-title">How to use this widget?</h3>
+					<p>The widget requires jQuery; load this, and the plugin itself (and associated CSS styles) in your document's <code>&lt;head&gt;&lt;/head&gt;</code> segment:</p>
+					<pre class="prettyprint pre-scrollable" style="min-height:5em">
+&lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js'&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src=""&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="" /&gt;
+					</pre>
+
+					<h2 class="k-fancy-title">Demo</h2>
 
 					<h2 class="widget-title">Search Result Display Example</h2>
 					<ul class="nav nav-tabs">
@@ -34,7 +53,7 @@
 						</div>
 						<div id="registry_w-3-html" class="tab-pane fade">
 							<pre class="prettyprint">
-&lt;div id="search_display" data-query="q=fulltext:fish&rows=5" data-mode="display_result" class="registry_widget"&gt;&lt;/div&gt;
+&lt;div data-query="q=fulltext:fish&rows=5" data-mode="display_result" class="registry_widget"&gt;&lt;/div&gt;
 							</pre>
 						</div>
 					</div>
@@ -50,7 +69,7 @@
 						</div>
 						<div id="registry_w-2-html" class="tab-pane fade">
 							<pre class="prettyprint">
-&lt;div id="single_display" data-query="AODN:93f4e867-0bac-45fa-acca-2881680627f7" data-mode="display_single" class="registry_widget"&gt;&lt;/div&gt;
+&lt;div data-query="AODN:93f4e867-0bac-45fa-acca-2881680627f7" data-mode="display_single" class="registry_widget"&gt;&lt;/div&gt;
 							</pre>
 						</div>
 					</div>
@@ -83,7 +102,7 @@
 						</div>
 						<div id="registry_w-4-html" class="tab-pane fade">
 							<pre class="prettyprint">
-&lt;input type="text" class="registry_widget" value="fish"&gt;
+&lt;input type="text" value="fish" id="advanced_search_example"&gt;
 							</pre>
 						</div>
 						<div id="registry_w-4-js" class="tab-pane fade">
@@ -93,7 +112,7 @@ $('#advanced_search_example').registry_widget({
 	lookup:false,
 	auto_search:true,
 	search_btn_text: '&lt;i class="icon icon-search">&lt;/i&gt; Search',
-	result_template: '&lt;div id="accordion" class="panel-group"&gt; {{#docs}} &lt;div class="panel panel-default"&gt; &lt;div class="panel-heading"&gt; &lt;h4 class="panel-title"&gt; &lt;a href="#{{slug}}" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed"&gt; {{list_title}} &lt;/a&gt; &lt;/h4&gt; &lt;/div&gt; &lt;div class="panel-collapse collapse" id="{{slug}}"&gt; &lt;div class="panel-body"&gt; {{description}} &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; {{/docs}} &lt;/div&gt;', 
+	result_template: '&lt;div id="accordion" class="panel-group rowidget_results"&gt; {{#docs}} &lt;div class="panel panel-default"&gt; &lt;div class="panel-heading"&gt; &lt;h4 class="panel-title"&gt; &lt;a href="#{{slug}}" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed"&gt; {{list_title}} &lt;/a&gt; &lt;/h4&gt; &lt;/div&gt; &lt;div class="panel-collapse collapse" id="{{slug}}"&gt; &lt;div class="panel-body"&gt; {{description}} &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; {{/docs}} &lt;/div&gt;', 
 });
 							</pre>
 						</div>

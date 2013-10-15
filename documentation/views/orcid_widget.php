@@ -3,7 +3,7 @@
 	<div class="container section-space30"><!-- starts container -->
 		<div class="row"><!-- starts row -->
 			<div class="col-lg-6 col-md-6 col-sm-12">
-				<h2 class="k-page-title">ORCID Widget</h2>
+				<h2 class="k-page-title">ORCID Researcher Lookup Widget</h2>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				<ol class="breadcrumb pull-right">
@@ -21,24 +21,16 @@
 
 			<div id="k-main" class="clearfix col-lg-8 col-md-8 col-sm-12"><!-- starts main content -->
 				<article><!-- starts article short -->
-					<div class="alert alert-info">
-						<b>Developer Zone</b>
-						<p>Some basic web development knowledge may be needed to implement this widget</p>
-					</div>
-
-					<form action="" class="form-inline well">
-						<h3 class="k-article-title">ORCID Widget</h3>
-						<input type="text" name="name" value="" size="40" class="orcid_widget"/>
-					</form>
-
-					<h2>What is this widget?</h2>
+					
+					<h2 class="k-fancy-title">What is this widget?</h2>
 					<p>
 						The ANDS ORCID Widget allows you to lookup an ORCID ID and search for one using <a href="http://support.orcid.org/knowledgebase/articles/116874-orcid-api-guide" target="_blank">ORCID JSONP API</a>
 					</p>
 					<p>
 						This widget is a jQuery plugin with extensible options over styling and functionality. Hence the widget is dependent on the jQuery plugin to function correctly.
 					</p>
-					<h2>How to use this widget</h2>
+
+					<h2 class="k-fancy-title">How to use this widget</h2>
 					<p>
 						Put the following code snippet into your document's &lt;head&gt; segment
 						<pre class="prettyprint pre-scrollable">
@@ -61,7 +53,12 @@
 $('input').orcid_widget();
 					</pre>
 
-					<h2>Demo</h2>
+					<h2 class="k-fancy-title">Demo</h2>
+
+					<form action="" class="form-inline well">
+						<h3 class="k-article-title">ORCID Widget</h3>
+						<input type="text" name="name" value="" size="40" class="orcid_widget"/>
+					</form>
 					
 					<form action="" class="form-inline">
 						<h4>Default Settings</h4>
@@ -92,7 +89,7 @@ $('#custom_settings_orcid').orcid_widget({
 						<input type="text" name="name" id="custom_settings_orcid" value="0000-0002-6440-7059" size="40" class=""/>
 					</form>
 
-					<h2>Configurations</h2>
+					<h2 class="k-fancy-title">Configurations</h2>
 
 		<?php 
 			$config = array(
@@ -148,7 +145,14 @@ $('#custom_settings_orcid').orcid_widget({
 				<div id="k-sidebar-splitter" class="clearfix section-space60"><span></span></div>
 				<ul id="k-sidebar-list" class="list-unstyled">
 					
-					<li class="widget widget_categories clearfix">
+					<li class="widget clearfix">
+						<div class="alert alert-info">
+							<b>Developer Zone</b>
+							<p>Some basic web development knowledge may be needed to implement this widget</p>
+						</div>
+					</li>
+
+					<li class="widget widget_categories clearfix sticky">
 						<h2 class="widget-title">Demo and Download<span class="k-widget-title-tit"></span></h2>
 						<ul class="list-unstyled">
 							<li class="cat-item"><?php echo anchor(apps_url('assets/orcid_widget/dist/demo.html'), '<i class="icon-white icon-download"></i> Demo', array('class'=>'btn btn-large btn-success')) ?></li>
