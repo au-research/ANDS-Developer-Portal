@@ -22,7 +22,7 @@
 			<div id="k-main" class="clearfix col-lg-8 col-md-8 col-sm-12"><!-- starts main content -->
 				<article><!-- starts article short -->
 
-					<h3 class="k-fancy-title">What is this widget?</h3>
+					<h2 class="k-fancy-title">What is this widget?</h2>
 					<p>The Registry Search Widget provides a quick and easy way of embedding a live Research Data Australia search within your new or existing web pages.  </p>
 					<p>The flexibility of the widget allows you to configure a predefined search, or provide your end users with a text field to specify their own search.  </p>
 					<p>Some use cases for the widget include:</p>
@@ -32,7 +32,7 @@
 						<li><span class="k-work-feature-value">Providing users with a listing of data collections related to a specific subject.</span></li>
 					</ul>
 
-					<h3 class="k-fancy-title">How to use this widget?</h3>
+					<h2 class="k-fancy-title">How to use this widget?</h2>
 					<p>The widget requires jQuery; load this, and the plugin itself (and associated CSS styles) in your document's <code>&lt;head&gt;&lt;/head&gt;</code> segment:</p>
 					<pre class="prettyprint pre-scrollable" style="min-height:5em">
 &lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js'&gt;&lt;/script&gt;
@@ -41,7 +41,7 @@
 					</pre>
 
 					<h2 class="k-fancy-title">Demo</h2>
-
+					
 					<h2 class="widget-title">Search Result Display Example</h2>
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#registry_w-3-result" data-toggle="tab">Result</a></li>
@@ -54,6 +54,23 @@
 						<div id="registry_w-3-html" class="tab-pane fade">
 							<pre class="prettyprint">
 &lt;div data-query="q=fulltext:fish&rows=5" data-mode="display_result" class="registry_widget"&gt;&lt;/div&gt;
+							</pre>
+						</div>
+					</div>
+
+					<h2 class="widget-title">Custom Search Result Display Example</h2>
+					<p>This result example displays the last 5 collections added by Australian Ocean Data Network</p>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#registry_w-4-result" data-toggle="tab">Result</a></li>
+						<li><a href="#registry_w-4-html" data-toggle="tab">HTML</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="registry_w-4-result" class="tab-pane fade active in">
+							<div id="search_display" data-query="q=+group:(%22Australian Ocean Data Network%22)+class:collection&rows=5&sort=update_timestamp desc" data-mode="display_result" class="registry_widget"></div>
+						</div>
+						<div id="registry_w-4-html" class="tab-pane fade">
+							<pre class="prettyprint">
+&lt;div data-query="q=group:(%22Australian Ocean Data Network%22)&rows=5&sort=update_timestamp desc" data-mode="display_result" class="registry_widget"&gt;&lt;/div&gt;
 							</pre>
 						</div>
 					</div>
@@ -136,15 +153,16 @@ $('#advanced_search_example').registry_widget({
 					
 					<div class="sticky">
 					<li class="widget widget_categories clearfix">
-						<h2 class="widget-title">Download<span class="k-widget-title-tit"></span></h2>
+						<h2 class="widget-title">Demo and Download</h2>
 						<ul class="list-unstyled">
-							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
+							<li class="cat-item"><?php echo anchor(apps_url('assets/registry_widget/dist/demo.html'), 'Demo', array('class'=>'btn btn-large btn-success')) ?></li>
+							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/'), '<i class="icon-white icon-download"></i> Download uncompressed', array('class'=>'btn btn-large btn-success')) ?></li>
 						</ul>
 					</li>
 
 					<li class="widget clearfix">
-						<h2 class="widget-title">License<span class="k-widget-title-tit"></span></h2>
+						<h2 class="widget-title">License</h2>
 						<p>Apache License, Version 2.0: <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
 					</li>
 					</div>
