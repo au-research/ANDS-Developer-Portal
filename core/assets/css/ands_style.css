@@ -29,3 +29,10 @@
 .btn-success {
   background-color: #a3be99 !important;
 }
+
+/* line 35, ../sass/ands_style.scss */
+figure.panel-figure {
+  background-color: white;
+  padding: 30px;
+  margin: 0 10px;
+}
