@@ -99,4 +99,9 @@ module.exports = function(grunt){
 	grunt.registerTask('dev',[
 		'watch:compass'
 	]);
+
+	grunt.registerTask('scripts', [
+		'concat:scripts',
+		'uglify:scripts'
+	]);
 }

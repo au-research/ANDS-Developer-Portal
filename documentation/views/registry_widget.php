@@ -36,8 +36,8 @@
 					<p>The widget requires jQuery; load this, and the plugin itself (and associated CSS styles) in your document's <code>&lt;head&gt;&lt;/head&gt;</code> segment:</p>
 					<pre class="prettyprint pre-scrollable" style="min-height:5em">
 &lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js'&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src=""&gt;&lt;/script&gt;
-&lt;link rel="stylesheet" type="text/css" href="" /&gt;
+&lt;script type="text/javascript" src="<?php echo apps_url('assets/registry_widget/js/registry_widget.js');?>"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="<?php echo apps_url('assets/registry_widget/css/registry_widget.css');?>" /&gt;
 					</pre>
 
 					<h2 class="k-fancy-title">Demo</h2>
