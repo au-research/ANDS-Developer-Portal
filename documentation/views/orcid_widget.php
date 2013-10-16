@@ -54,7 +54,6 @@ $('input').orcid_widget();
 					</pre>
 
 					<h2 class="k-fancy-title">Demo</h2>
-
 					<h2 class="widget-title">Default Settings</h2>
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#orcid_w-1-result" data-toggle="tab">Result</a></li>
@@ -109,8 +108,6 @@ $('#custom_settings_orcid').orcid_widget({
 				</article><!-- ends article short -->
 			</div><!-- ends main content -->
 
-
-			
 			<aside id="k-sidebar" class="col-lg-3 col-md-4 col-sm-12 col-lg-offset-1"><!-- starts sidebar -->
 				<div id="k-sidebar-splitter" class="clearfix section-space60"><span></span></div>
 				<ul id="k-sidebar-list" class="list-unstyled">
