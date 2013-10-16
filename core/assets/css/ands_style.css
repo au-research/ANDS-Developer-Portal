@@ -45,3 +45,13 @@ figure.panel-figure {
 .k-fancy-title-wrap .k-fancy-title {
   margin: 20px 0;
 }
+
+/* line 47, ../sass/ands_style.scss */
+.table {
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+/* line 50, ../sass/ands_style.scss */
+.table code {
+  white-space: normal !important;
+}

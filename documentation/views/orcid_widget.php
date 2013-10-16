@@ -20,7 +20,7 @@
 		<div class="row"><!-- starts row -->
 
 			<div id="k-main" class="clearfix col-lg-8 col-md-8 col-sm-12"><!-- starts main content -->
-				<article id="main_content"><!-- starts article short -->
+				<article><!-- starts article short -->
 					
 					<h2 class="k-fancy-title">What is this widget?</h2>
 					<p>
@@ -105,15 +105,45 @@ $('#custom_settings_orcid').orcid_widget({
 							</pre>
 						</div>
 					</div>
-					
 
-
-					<h2>License</h2>
-					<p>
-						Apache License, Version 2.0: <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>
-					</p>
 				</article><!-- ends article short -->
+			</div><!-- ends main content -->
 
+
+			
+			<aside id="k-sidebar" class="col-lg-3 col-md-4 col-sm-12 col-lg-offset-1"><!-- starts sidebar -->
+				<div id="k-sidebar-splitter" class="clearfix section-space60"><span></span></div>
+				<ul id="k-sidebar-list" class="list-unstyled">
+					
+					<li class="widget clearfix">
+						<div class="alert alert-info">
+							<b>Developer Zone</b>
+							<p>Some basic web development knowledge may be needed to implement this widget</p>
+						</div>
+					</li>
+
+					<div class="sticky">
+					<li class="widget widget_categories clearfix">
+						<h2 class="widget-title">Demo and Download<span class="k-widget-title-tit"></span></h2>
+						<ul class="list-unstyled">
+							<li class="cat-item"><?php echo anchor(apps_url('assets/orcid_widget/dist/demo.html'), '<i class="icon-white icon-download"></i> Demo', array('class'=>'btn btn-large btn-success')) ?></li>
+							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
+							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/'), '<i class="icon-white icon-download"></i> Download uncompressed', array('class'=>'btn btn-large btn-success')) ?></li>
+						</ul>
+					</li>
+
+					<li class="widget clearfix">
+						<h2>License</h2>
+						<p> Apache License, Version 2.0: <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a> </p>
+					</li>
+					</div>
+				</ul>
+			</aside><!-- ends sidebar -->
+		
+		</div><!-- ends row -->
+
+		<div class="row">
+		<div id="k-config" class="clearfix col-lg-12 col-md-12 col-sm-12">
 			<article>
 				<h2 class="k-fancy-title">Configurations</h2>
 <?php 
@@ -158,36 +188,8 @@ $('#custom_settings_orcid').orcid_widget({
 					</tbody>
 				</table>
 			</article>
-
-
-			</div><!-- ends main content -->
-
-
-			
-			<aside id="k-sidebar" class="col-lg-3 col-md-4 col-sm-12 col-lg-offset-1"><!-- starts sidebar -->
-				<div id="k-sidebar-splitter" class="clearfix section-space60"><span></span></div>
-				<ul id="k-sidebar-list" class="list-unstyled">
-					
-					<li class="widget clearfix">
-						<div class="alert alert-info">
-							<b>Developer Zone</b>
-							<p>Some basic web development knowledge may be needed to implement this widget</p>
-						</div>
-					</li>
-
-					<li class="widget widget_categories clearfix sticky">
-						<h2 class="widget-title">Demo and Download<span class="k-widget-title-tit"></span></h2>
-						<ul class="list-unstyled">
-							<li class="cat-item"><?php echo anchor(apps_url('assets/orcid_widget/dist/demo.html'), '<i class="icon-white icon-download"></i> Demo', array('class'=>'btn btn-large btn-success')) ?></li>
-							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
-							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/'), '<i class="icon-white icon-download"></i> Download uncompressed', array('class'=>'btn btn-large btn-success')) ?></li>
-						</ul>
-					</li>
-				
-				</ul>
-			</aside><!-- ends sidebar -->
-		
-		</div><!-- ends row -->
+		</div>
+		</div>
 		
 	</div><!-- ends container -->
 

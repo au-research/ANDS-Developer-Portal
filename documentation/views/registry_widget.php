@@ -138,6 +138,8 @@ $('#advanced_search_example').registry_widget({
 	
 					
 				</article><!-- ends article short -->
+
+
 			</div><!-- ends main content -->
 			
 			<aside id="k-sidebar" class="col-lg-3 col-md-4 col-sm-12 col-lg-offset-1"><!-- starts sidebar -->
@@ -169,8 +171,52 @@ $('#advanced_search_example').registry_widget({
 				
 				</ul>
 			</aside><!-- ends sidebar -->
+
 		
 		</div><!-- ends row -->
+
+		<div class="row">
+		<div id="k-config" class="clearfix col-lg-12 col-md-12 col-sm-12">
+			<article>
+				
+					<h2 class="k-fancy-title">Configurations</h2>
+	<?php 
+		$config = array(
+			array('proxy', 'http://researchdata.ands.org.au/apps/registry_widget/proxy/', 'JSONP proxy for the Registry Widget'),
+			array('mode', 'search', 'mode can be <code>search</code>,<code>display_single</code>, <code>display_result]</code>'),
+			array('search','true', 'Enable Search Functionality'),
+			array('auto_search', 'false', 'Auto Search based on the target\'s value'),
+			array('search_btn_text', 'Search', 'Search text displays on the button'),
+			array('search_btn_class', 'rowidget_search btn btn-small btn-default', 'CSS Classes apply on the search button'),
+			array('search_callback', 'false', 'Overwrite function for search result <code>function(data, obj, settings)</code>'),
+			array('lookup','true', 'Enable Resolve/Lookup functionality'),
+			array('auto_lookup','false', 'Enable Auto lookup based on the target\'s value'),
+			array('lookup_btn_text','Resolve', 'Lookup text displays on the button'),
+			array('lookup_btn_class', 'rowidget_lookup btn btn-small btn-default', 'CSS Classes apply on the lookup button'),
+			array('lookup_callback', 'false', 'Overwrite function for lookup result <code>function(data, obj, settings)</code>'),
+			array('result_template', htmlentities('<ul class="rowidget_results">{{#docs}}<li><a href="javascript:;" data-key="{{key}}" data-slug="{{slug}}" data-id="{{id}}">{{list_title}}</a></li>{{/docs}}</ul>'), 'Mustache/Handlebar-like template for the search result list'),
+			array('single_template', htmlentities('<div class="rowidget_single"><h4><a href="{{rda_link}}" target="_blank">{{title}}</a></h4><span class="text-muted">{{group}}</span><div class="description">{{description}}</div></div>'), 'Mustache/Handlebar-like template for the single display of a registry object'),
+			array('return_type','key', 'Return a <code>key</code>, <code>slug</code>, <code>title</code> or <code>id</code> to the target value'),
+	
+		);
+	?>
+					<table class="table table-striped table-bordered table-hover">
+						<thead>
+							<td>Property</td><td>Defaults</td><td>Description</td>
+						</thead>
+						<tbody>
+							<?php foreach($config as $c): ?>
+							<tr>
+								<td><code><?php echo $c[0] ?></code></td>
+								<td><code><?php echo $c[1] ?></code></td>
+								<td><?php echo $c[2] ?></td>
+							</tr>
+							<?php endforeach; ?>
+						</tbody>
+					</table>	
+			</article>
+		</div>
+		</div>
 		
 	</div><!-- ends container -->
 

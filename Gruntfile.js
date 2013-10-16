@@ -104,4 +104,10 @@ module.exports = function(grunt){
 		'concat:scripts',
 		'uglify:scripts'
 	]);
+
+	grunt.registerTask('styles', [
+		'compass',
+		'concat:styles', 
+		'cssmin'
+	]);
 }

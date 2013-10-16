@@ -1424,8 +1424,8 @@ jQuery.fn.eqHeights=function(e){var t={child:false};var e=jQuery.extend(t,e);var
 		var stickyTop = $('.sticky').offset().top;
 		var p = $('.sticky').parent().width();
 		var main_bot = 999999;
-		if($('#main_content').length!=0){
-			main_bot = $('#main_content').offset().top + $('#main_content').height();
+		if($('#k-config').length!=0){
+			main_bot = $('#k-config').offset().top;
 		}
 		$(window).scroll(function(){ // scroll event
 			var windowTop = $(window).scrollTop(); // returns number 

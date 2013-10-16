@@ -43,3 +43,11 @@ figure.panel-figure{
 		margin:20px 0;
 	}
 }
+
+.table{
+	table-layout: fixed;
+    word-wrap: break-word;
+    code{
+    	white-space:normal !important;
+    }
+}
