@@ -42,6 +42,9 @@
 	<?php elseif($lib=='vocab_widget'):?>
             <link rel="stylesheet" type="text/css" href="<?php echo apps_url('assets/vocab_widget/css/vocab_widget.css'); ?>">
             <script src="<?php echo apps_url('assets/vocab_widget/js/vocab_widget.js'); ?>"></script>
+	<?php elseif($lib=='location_capture_widget'):?>
+            <link href="<?php echo apps_url('assets/location_capture_widget/css/location_capture_widget.css');?>" rel="stylesheet" type="text/css">
+            <script src="<?php echo apps_url('assets/location_capture_widget/js/location_capture_widget.js');?>" type="text/javascript"></script>
 
 	<?php endif; endforeach; endif;?>
 	<?php if (isset($scripts)): foreach($scripts as $script):?>

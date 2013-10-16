@@ -59,7 +59,7 @@
 										<li><?php echo anchor('documentation/services/registry_apis', 'Registry APIs') ?></li>
 									</ul>
 								</li>
-								<li><a href="">Registry</a></li>
+								<li><?php echo anchor('documentation/registry', 'Registry Software') ?></li>
 								<li><a href="<?php echo $this->config->item('developer_community_portal'); ?>">Support Community</a></li>
 							</ul>
 						</nav>

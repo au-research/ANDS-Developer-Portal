@@ -3,13 +3,13 @@
 	<div class="container section-space30"><!-- starts container -->
 		<div class="row"><!-- starts row -->
 			<div class="col-lg-6 col-md-6 col-sm-12">
-				<h2 class="k-page-title">Vocab Widget</h2>
+				<h2 class="k-page-title">Vocabulary Widget</h2>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				<ol class="breadcrumb pull-right">
 					<li><?php echo anchor('/', 'Home'); ?></li>
 					<li><?php echo anchor('/documentation/widgets/', 'Widgets'); ?></li>
-					<li class="active"><?php echo anchor('/documentation/widgets/vocab_widget', 'Vocab Widget'); ?></li>
+					<li class="active"><?php echo anchor('/documentation/widgets/vocab_widget', 'Vocabulary Widget'); ?></li>
 				</ol>
 			</div>
 		</div><!-- ends row -->

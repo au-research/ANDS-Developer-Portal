@@ -30,7 +30,7 @@ class Documentation extends MX_Controller {
 
 	public function widgets($widget=''){
 		if($widget=='orcid_widget'){
-			$data['title'] = 'ORCID Widget';
+			$data['title'] = 'ORCID Researcher Lookup Widget';
 			$data['scripts'] = array('orcid_widget_documentation');
 			$data['js_lib'] = array('orcid_widget');
 			$this->load->view('orcid_widget', $data);
@@ -40,14 +40,14 @@ class Documentation extends MX_Controller {
 			$data['js_lib'] = array('registry_widget');
 			$this->load->view('registry_widget', $data);
 		}elseif($widget=='vocab_widget'){
-			$data['title'] = 'Vocab Widget';
+			$data['title'] = 'Vocabulary Widget';
 			$data['scripts'] = array('vocab_widget_doc');
 			$data['js_lib'] = array('vocab_widget');
 			$this->load->view('vocab_widget', $data);
 		}elseif($widget=='location_widget'){
-			$data['title'] = 'location Widget';
+			$data['title'] = 'Location Capture Widget';
 			$data['scripts'] = array('location_widget_doc');
-			$data['js_lib'] = array('location_widget');
+			$data['js_lib'] = array('location_capture_widget');
 			$this->load->view('location_widget', $data);
 		}else{
 			$data['title'] = 'Widget';
