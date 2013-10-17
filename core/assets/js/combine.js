@@ -1417,7 +1417,7 @@ jQuery.fn.eqHeights=function(e){var t={child:false};var e=jQuery.extend(t,e);var
 		else $( '#k-to-top' ).fadeOut();
 	} );
 	
-} )(jQuery);;$(function(){ // document ready
+} )(jQuery);;jQuery(document).ready(function ($) {
 
 	//.sticky element sticks onto place
 	if (!!$('.sticky').offset()){
@@ -1436,6 +1436,31 @@ jQuery.fn.eqHeights=function(e){var t={child:false};var e=jQuery.extend(t,e);var
 			}
 		});
 	}
+
+	//scroll
+	var url = window.location; 
+	var anchor = url.hash;
+	var target = $(anchor);
+	if (target && target.offset()) {
+		$('html,body').animate({
+			scrollTop: target.offset().top-100
+		}, 1200);
+	} else {
+		return false;
+	}
+
+	$('.anchor_links a').on('click', function(e){
+		e.preventDefault();
+		var href = $.attr(this, 'href');
+		if($(href) && $(href).offset()){
+			$('html, body').animate({
+				scrollTop: $(href).offset().top-100
+			}, 500, function () {
+				window.location.hash = href;
+			});
+		}
+		return false;
+	});
 
 });;var q=null;window.PR_SHOULD_USE_CONTINUATION=!0;
 (function(){function L(a){function m(a){var f=a.charCodeAt(0);if(f!==92)return f;var b=a.charAt(1);return(f=r[b])?f:"0"<=b&&b<="7"?parseInt(a.substring(1),8):b==="u"||b==="x"?parseInt(a.substring(2),16):a.charCodeAt(1)}function e(a){if(a<32)return(a<16?"\\x0":"\\x")+a.toString(16);a=String.fromCharCode(a);if(a==="\\"||a==="-"||a==="["||a==="]")a="\\"+a;return a}function h(a){for(var f=a.substring(1,a.length-1).match(/\\u[\dA-Fa-f]{4}|\\x[\dA-Fa-f]{2}|\\[0-3][0-7]{0,2}|\\[0-7]{1,2}|\\[\S\s]|[^\\]/g),a=

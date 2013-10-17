@@ -9,7 +9,7 @@
 				<ol class="breadcrumb pull-right">
 					<li><?php echo anchor('/', 'Home'); ?></li>
 					<li><?php echo anchor('/documentation/widgets/', 'Widgets'); ?></li>
-					<li class="active"><?php echo anchor('/documentation/widgets/vocab_widget', 'Vocab Widget'); ?></li>
+					<li class="active">Vocab Widget</li>
 				</ol>
 			</div>
 		</div><!-- ends row -->

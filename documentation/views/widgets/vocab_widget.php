@@ -9,7 +9,7 @@
 				<ol class="breadcrumb pull-right">
 					<li><?php echo anchor('/', 'Home'); ?></li>
 					<li><?php echo anchor('/documentation/widgets/', 'Widgets'); ?></li>
-					<li class="active"><?php echo anchor('/documentation/widgets/vocab_widget', 'Vocabulary Widget'); ?></li>
+					<li class="active">Vocabulary Widget</li>
 				</ol>
 			</div>
 		</div><!-- ends row -->
@@ -42,8 +42,8 @@
 					<p>The widget requires jQuery; load this, and the plugin itself (and associated CSS styles) in your document's &lt;head&gt;&lt;/head&gt; segment:</p>
 					<pre class="prettyprint pre-scrollable" style="min-height:5em">
 &lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js'&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://services.ands.org.au/api/resolver/vocab_widget.js"&gt;&lt;/script&gt;
-&lt;link rel="stylesheet" type="text/css" href="http://services.ands.org.au/api/resolver/vocab_widget.css" /&gt;
+&lt;script type="text/javascript" src="<?php echo apps_url('assets/vocab_widget/js/vocab_widget.js'); ?>"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="<?php echo apps_url('assets/vocab_widget/css/vocab_widget.css'); ?>" /&gt;
 					</pre>
 
 					<h2 class="k-fancy-title">Demo</h2>

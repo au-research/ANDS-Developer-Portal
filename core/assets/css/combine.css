@@ -850,3 +850,8 @@ figure.panel-figure {
 .table code {
   white-space: normal !important;
 }
+
+/* line 55, ../sass/ands_style.scss */
+.mq-box > a {
+  color: #444;
+}

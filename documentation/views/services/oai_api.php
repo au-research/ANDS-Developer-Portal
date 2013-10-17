@@ -2309,7 +2309,7 @@
 
 					<li class="widget widget_categories clearfix">
 						<h2 class="widget-title">Select from the menu...<span class="k-widget-title-tit"></span></h2>
-						<ul>
+						<ul class="anchor_links">
 							<li class="cat-item"><a href="#title" title="OAI API Documentation">OAI API Documentation</a></li>
 							<li class="cat-item"><a href="#access" title="Accessing the Service">Accessing the Service</a></li>
 							<li class="cat-item"><a href="#service" title="OAI Service URL">OAI Service URL</a></li>

@@ -38,7 +38,9 @@
 				<div class="row menu-switch"><!-- starts row -->
 				
 					<div id="site-logo" class="col-lg-4 col-md-4 col-sm-12">
-						<img src="<?php echo asset_url('img/ands_logo_white.png','base');?>" alt=""><br/>
+						<a href="<?php echo base_url('/') ?>">
+							<img src="<?php echo asset_url('img/ands_logo_white.png','base');?>" alt=""><br/>
+						</a>
 						<?php echo anchor('/', 'Developer Toolbox', array('title'=>'ANDS Developer Toolbox Home Page')) ?>
 					</div>
 					

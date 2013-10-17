@@ -9,7 +9,7 @@
 				<ol class="breadcrumb pull-right">
 					<li><?php echo anchor('/', 'Home'); ?></li>
 					<li><?php echo anchor('/documentation/widgets/', 'Widgets'); ?></li>
-					<li class="active"><?php echo anchor('/documentation/widgets/registry_widget', 'Registry Widget'); ?></li>
+					<li class="active">Registry Widget</li>
 				</ol>
 			</div>
 		</div><!-- ends row -->
@@ -109,20 +109,20 @@
 
 					<h2 class="widget-title">Advanced Search Example</h2>
 					<ul class="nav nav-tabs">
-						<li class="active"><a href="#registry_w-4-result" data-toggle="tab">Result</a></li>
-						<li><a href="#registry_w-4-html" data-toggle="tab">HTML</a></li>
-						<li><a href="#registry_w-4-js" data-toggle="tab">JS</a></li>
+						<li class="active"><a href="#registry_w-5-result" data-toggle="tab">Result</a></li>
+						<li><a href="#registry_w-5-html" data-toggle="tab">HTML</a></li>
+						<li><a href="#registry_w-5-js" data-toggle="tab">JS</a></li>
 					</ul>
 					<div class="tab-content">
-						<div id="registry_w-4-result" class="tab-pane fade active in">
+						<div id="registry_w-5-result" class="tab-pane fade active in">
 							<input type="text" value="fish" id="advanced_search_example">
 						</div>
-						<div id="registry_w-4-html" class="tab-pane fade">
+						<div id="registry_w-5-html" class="tab-pane fade">
 							<pre class="prettyprint">
 &lt;input type="text" value="fish" id="advanced_search_example"&gt;
 							</pre>
 						</div>
-						<div id="registry_w-4-js" class="tab-pane fade">
+						<div id="registry_w-5-js" class="tab-pane fade">
 							<pre class="prettyprint">
 $('#advanced_search_example').registry_widget({
 	mode: 'search',

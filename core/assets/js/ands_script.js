@@ -1,4 +1,4 @@
-$(function(){ // document ready
+jQuery(document).ready(function ($) {
 
 	//.sticky element sticks onto place
 	if (!!$('.sticky').offset()){
@@ -17,5 +17,30 @@ $(function(){ // document ready
 			}
 		});
 	}
+
+	//scroll
+	var url = window.location; 
+	var anchor = url.hash;
+	var target = $(anchor);
+	if (target && target.offset()) {
+		$('html,body').animate({
+			scrollTop: target.offset().top-100
+		}, 1200);
+	} else {
+		return false;
+	}
+
+	$('.anchor_links a').on('click', function(e){
+		e.preventDefault();
+		var href = $.attr(this, 'href');
+		if($(href) && $(href).offset()){
+			$('html, body').animate({
+				scrollTop: $(href).offset().top-100
+			}, 500, function () {
+				window.location.hash = href;
+			});
+		}
+		return false;
+	});
 
 });
