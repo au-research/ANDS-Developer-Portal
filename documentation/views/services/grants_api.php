@@ -9,7 +9,7 @@
 				<ol class="breadcrumb pull-right">
 					<li><?php echo anchor('/', 'Home'); ?></li>
 					<li><?php echo anchor('/documentation/services/', 'Services'); ?></li>
-					<li class="active"><?php echo anchor('/documentation/services/grants', 'Services'); ?></li>
+					<li class="active"><?php echo anchor('/documentation/services/grants', 'Grants'); ?></li>
 				</ol>
 			</div>
 		</div><!-- ends row -->

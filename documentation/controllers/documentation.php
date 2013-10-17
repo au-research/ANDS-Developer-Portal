@@ -9,6 +9,18 @@ class Documentation extends MX_Controller {
 
 	public function services($service=''){
 		switch($service){
+			case 'getRIFCS':
+			default:
+				$data['title'] = 'getRIFCS API Documentation - ANDS Developer Toolbox';
+				$this->load->view('services/getrifcs_api', $data);
+			break;			
+
+			case 'getExtRif':
+			default:
+				$data['title'] = 'getExtRif API Documentation - ANDS Developer Toolbox';
+				$this->load->view('services/getextrif_api', $data);
+			break;
+
 			case 'getGrants':
 				$data['title'] = 'Grants API Documentation - ANDS Developer Toolbox';
 				$this->load->view('services/grants_api', $data);
