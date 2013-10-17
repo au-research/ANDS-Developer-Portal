@@ -60,6 +60,10 @@
 			<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
 			<link href="<?php echo apps_url('assets/location_capture_widget/css/location_capture_widget.css');?>" rel="stylesheet" type="text/css">
 			<script src="<?php echo apps_url('assets/location_capture_widget/js/location_capture_widget.js');?>" type="text/javascript"></script>
+    <?php elseif($lib=='colorbox'):?>
+	    <link href="<?php echo asset_url('lib/colorbox/colorbox.css', 'base');?>" rel="stylesheet" type="text/css">
+	    <script src="<?php echo asset_url('lib/colorbox/jquery.colorbox-min.js', 'base');?>" type="text/javascript"></script>
+
 
 	<?php endif; endforeach; endif;?>
 	<?php if (isset($scripts)): foreach($scripts as $script):?>

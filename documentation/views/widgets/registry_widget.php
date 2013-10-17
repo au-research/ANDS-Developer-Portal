@@ -3,7 +3,7 @@
 	<div class="container section-space30"><!-- starts container -->
 		<div class="row"><!-- starts row -->
 			<div class="col-lg-6 col-md-6 col-sm-12">
-				<h2 class="k-page-title">Registry Widget</h2>
+				<h2 class="k-page-title">Registry Search Widget</h2>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				<ol class="breadcrumb pull-right">
@@ -23,13 +23,14 @@
 				<article><!-- starts article short -->
 
 					<h2 class="k-fancy-title">What is this widget?</h2>
-					<p>The Registry Search Widget provides a quick and easy way of embedding a live Research Data Australia search within your new or existing web pages.  </p>
+					<p>The Registry Search Widget provides a quick and easy way of embedding a live Research Data Australia search or record display within your new or existing web pages.  </p>
 					<p>The flexibility of the widget allows you to configure a predefined search, or provide your end users with a text field to specify their own search.  </p>
-					<p>Some use cases for the widget include:</p>
+					<p>Some use cases for the Registry Object Search Widget include:</p>
 					<ul class="k-work-features-list"><!-- features -->
-						<li><span class="k-work-feature-value">Predefining a search which promotes the last 5 collections published to Research Data Australia by your institution.</span></li>
-						<li><span class="k-work-feature-value">Supplementing your sites search results with search results from Research Data Australia.</span></li>
-						<li><span class="k-work-feature-value">Providing users with a listing of data collections related to a specific subject.</span></li>
+						<li><span class="k-work-feature-value">Showcase the most recent collections contributed to Research Data Australia by institution or researcher name</span></li>
+						<li><span class="k-work-feature-value">Implement a lookup function in your data capture forms/processes to search for keys or global identifiers</span></li>
+						<li><span class="k-work-feature-value">Supplement your site's search results with search results from Research Data Australia</span></li>
+						<li><span class="k-work-feature-value">Provide your users with a listing of data collections related to a specific subject</span></li>
 					</ul>
 
 					<h2 class="k-fancy-title">How to use this widget?</h2>

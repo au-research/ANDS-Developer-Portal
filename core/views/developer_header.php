@@ -56,8 +56,9 @@
 										<li><?php echo anchor('/documentation/widgets/location_widget', 'Location Capture Widget'); ?></li>
 									</ul>
 								</li>
-								<li><?php echo anchor('documentation/services/', 'Services') ?>
+								<li><?php echo anchor('documentation/services/', 'Web Services') ?>
 									<ul class="sub-menu">
+										<li><?php echo anchor('documentation/services/getGrants', 'Research Grants API') ?></li>
 										<li><?php echo anchor('documentation/services/registry_apis', 'Registry APIs') ?></li>
 									</ul>
 								</li>

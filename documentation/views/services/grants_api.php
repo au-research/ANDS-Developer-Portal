@@ -3,89 +3,241 @@
 	<div class="container section-space30"><!-- starts container -->
 		<div class="row"><!-- starts row -->
 			<div class="col-lg-6 col-md-6 col-sm-12">
-				<h2 class="k-page-title">Grants API Documentation</h2>
+				<h2 class="k-page-title">Research Grants API</h2>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				<ol class="breadcrumb pull-right">
 					<li><?php echo anchor('/', 'Home'); ?></li>
-					<li><?php echo anchor('/documentation/services/', 'Services'); ?></li>
-					<li class="active"><?php echo anchor('/documentation/services/grants', 'Grants'); ?></li>
+					<li><?php echo anchor('/documentation/services/', 'Web Services'); ?></li>
+					<li class="active"><?php echo anchor('/documentation/services/grants', 'Research Grants API'); ?></li>
 				</ol>
 			</div>
 		</div><!-- ends row -->
 	</div><!-- ends container -->
 </section>
 <section id="k-content"><!-- starts content -->
-	<div class="container section-space60"><!-- starts container -->
+	<div class="container"><!-- starts container -->
 		<div class="row"><!-- starts row -->
 
 			<div id="k-main" class="clearfix col-lg-8 col-md-8 col-sm-12"><!-- starts main content -->
 				<article><!-- starts article short -->
 					<div><a id="title"></a><!-- starts summary -->
-						<h3 class="k-article-title"><!-- title -->
-							<a href="#" title="Grants API Documentation">Grants API Documentation</a>
+						<h3 class="k-fancy-title"><!-- title -->
+							<a href="#" title="Grants API Documentation">Research Grants API Documentation</a><a id="about"></a>
 						</h3>
+						<div style="float:right; width:200px; margin-left:40px;">
+							<a href="<?=asset_url('img/grants_api_diagram.png','core');?>" class="colorbox" title="Illustrative Architecture Diagram - Research Grants API">
+								<img src="<?=asset_url('img/grants_api_diagram.png','core');?>" style="width:90%;" alt="Architecture Diagram" />
+								<br/><small>View Service Architecture Diagram</small>
+							</a>
+						</div>
 						<p><!-- text -->
-						Grants API is a services provided by ANDS to organisations who signed up to an API key.
-						The service provides a searchable index for all NHMRC grants stored in the ANDS Registry.
+							The Research Grants API provides access to data relating to Australian Research Grants and Researchers.
 						</p>
-						<h4><a id="access"></a>Accessing the Service</h4>
-						<p>Institutions and individuals who would like to have access to this services must get an API key by contacting our services manager by email: <a href="mailto:services@ands.oprg.au">services@ands.oprg.au</a></p>
-						<h4><a id="service"></a>Grants Service URL</h4>
-						<p>The Grants api is accessible through our service point through our services portal: <br/><code><?=registry_url('services/');?>{your API KEY}/getGrant?{params}</code></p>
-						<ul><a id="parameters"></a><h5>Parameters:</h5><br/>
-							there must be 1 or more parameter defined in the query <br>to reduce the size of the response and to get a more accurate list, it is recommended that API calls contain more than 1 parameters
-							<li><b>title</b> (the title or part of the title of the grant)</li>
-							<li><b>institution</b> (the organisation related to the record with relationship 'isManagedBy')</li>
-							<li><b>principalInvestigator</b> (a party related to the record with relationship 'isPrincipalInvestigatorOf')</li>
-							<li><b>person</b> (any party related to the grant)</li>
-						</ul>
-						<h4><a id="examples"></a>API call Examples</h4>
+
 						<p>
-							<a href="../../../registry/services/API/getGrant?institution=Queensland%20University%20of%20Technology&amp;principalInvestigator=Patrick">?institution=Queensland%20University%20of%20Technology&amp;principalInvestigator=Patrick</a>
-							<pre class="prettyprint pre-scrollable">
-{
-  status: "success",
-  message: {
-  numFound: 2,
-  recordData: [
-    {
-      key: "http://purl.org/au-research/grants/nhmrc/1031221",
-      slug: "to-study-how-prostate-tumor-metastasizes-to-bone",
-      title: "To study how prostate tumor metastasizes to bone",
-      description: "Bone metastasis occurs in more than 80% of cases of advanced prostate cancer (PCa), and is the major cause of morbidity and mortality in PCa patients. Understanding why PCa cells preferentially metastasize to bone may lead to the the development of novel therapy for inhibiting PCa metastasis. This project will study how the bone cell-secreted protein angiopoietin-1 promotes the metastasis of PCa cells to bone and whether inactivation of this protein can inhibit PCa bone metastasis.<br /> <br /> Lead Investigator: Dr Ming Tat (Patrick) Ling<br /> <br /> Co-Investigator(s): Prof Judith Clements; Prof Colleen Nelson<br /> <br /> Total Grant Budget: $AUD 555,400<br /> <br /> Application Year: 2011<br /> Start Year: 2012<br /> End Year: 2014<br /> <br /> Main Funding Group: Research Support<br /> Grant Type (Funding Scheme): NHMRC Project Grants<br /> Grant Sub Type: Standard Project Grant",
-      relations: {
-	isManagedBy: "Queensland University of Technology",
-	isParticipantIn: [
-	  "Prof Judith Clements",
-	  "Prof Colleen Nelson"
-	],
-	isPrincipalInvestigatorOf: "Dr Ming Tat (Patrick) Ling"
-      }
-    },
-    {
-      key: "http://purl.org/au-research/grants/nhmrc/1031228",
-      slug: "to-identify-a-new-therapeutic-target-for-the-treatment-of-prostate-cancer",
-      title: "To identify a new therapeutic target for the treatment of prostate cancer",
-      description: "Advanced prostate cancer (PCa) remains the major therapeutic challenge since neither surgery nor systemic therapies are effective at this stage. Recently, we identified a protein called PACE-1 that is essential for PCa cell survival. We plan to investigate the roles of PACE-1 in the development and progression of prostate cancer. We will then test if PACE-1 inactivation alone or in combination with systemic cancer therapies will inhibit prostate tumor growth and disease progression.<br /> <br /> Lead Investigator: Dr Ming Tat (Patrick) Ling<br /> <br /> Co-Investigator(s): Prof Ronald Quinn; Prof Pamela Russell<br /> <br /> Total Grant Budget: $AUD 602,253<br /> <br /> Application Year: 2011<br /> Start Year: 2012<br /> End Year: 2014<br /> <br /> Main Funding Group: Research Support<br /> Grant Type (Funding Scheme): NHMRC Project Grants<br /> Grant Sub Type: Standard Project Grant",
-      relations: {
-	 isManagedBy: "Queensland University of Technology",
-	 isParticipantIn: [
-	    "Prof Pamela Russell",
-	    "Prof Ronald Quinn"
-	 ],
-	 isPrincipalInvestigatorOf: "Dr Ming Tat (Patrick) Ling"
-     }
-    }
-  ]
- }
+							This service allows users to discover published research grants based on their title, or relationship to specific individuals or institutions.
+						</p>
+
+						<p>
+							Example use cases for the service include:
+
+							<ul>
+								<li><strong>Populating a lookup form</strong> input to search for grant numbers</li>
+								<li>Enabling <strong>richer RIF-CS</strong> relationship mappings</li>
+								<li>Determining grants have been <strong>allocated to a particular researcher</strong></li>
+							</ul>
+						</p>
+
+						<p>
+						The service currently provides a searchable index for all NHMRC grants deposited into the ANDS Registry as part of the <a href="http://ands.org.au/guides/ardc-activity-infrastructure.html" target="_blank">ARDC Activity Infrastructure project</a>.
+						</p>
+
+						<p><br/></p>
+
+						<h3 class="k-fancy-title"><a id="access"></a>Service Usage</h3>
+						<div class="alert alert-success">
+						  <b>Before you start!</b> To use this service, institutions or individuals must <a href="<?=registry_url('services/register/');?>" target="_blank">register a free API key</a>.
+						</div>
+						<h4><a id="service"></a>Resource URL</h4>
+						<blockquote><code><?=registry_url('services/');?><blue>{YOUR API KEY}</blue>/<green>getGrant</green>?<blue>{params}</blue></code></blockquote>
+						<p>
+							<ul>
+								<li>
+									<small>This API is a <a href="http://net.tutsplus.com/tutorials/other/a-beginners-introduction-to-http-and-rest/" target="_blank">RESTful Web Service</a>. Simply replace the <blue>blue</blue> parameters with the appropriate values and issue a HTTP GET request.</small>
+								</li>
+								<li>
+									<small>Replace <code><blue>{YOUR API KEY}</blue></code> with the key your organisation registered (<a href="<?=registry_url('services/register/');?>" target="_blank">no API key? register for free</a>)</small>
+								</li>
+								<li>
+									<small>Replace <code><blue>{params}</blue></code> with some combination of the parameters below. <em>Note: all parameter values <u>must be</u> <a href="http://www.w3schools.com/tags/ref_urlencode.asp" target="_blank">URL-encoded</a>.</em></small>
+								</li>
+								<li>
+									<small>Results are limited to 999 rows. Use the <code>start</code> and <code>rows</code> parameters to step through results if you require more.</em></small>
+								</li>
+							</ul>
+						</p>
+
+						<p><br/></p>
+
+						<h4>Service Parameters:</h4><a id="params"></a>
+						<?php
+							$config = array(
+								array('title',
+									'<p>the title of the grant (or part thereof)</p>',
+									'getGrant?title=cancer'),
+
+								array('institution',
+									'<p>filter results to those grants which are managed by this institution</p>',
+									'getGrant?institution=University%20of%20Sydney'),
+
+
+								array('principalInvestigator',
+									'<p>filter results to those grants which have this principal/lead investigator</p>',
+									'getGrant?principalInvestigator=Prof%20Jacob%20George'),
+
+								array('person',
+									'<p>filter results to those grants which have this person listed as a lead OR co-investigator</p>',
+									'getGrant?principalInvestigator=Prof%20Jacob%20George'),
+
+								array('rows',
+									'limit the number of grants returned to this number (default: 999)',
+									'getGrant?title=fish&rows=5'),
+
+								array('start',
+									'offset the grants returned by this number (used to "cursor" through large result sets)',
+									'getGrant?title=fish&rows=15&start=75'),
+							);
+						?>
+
+						<table class="table table-striped table-bordered table-hover" style="font-size:0.8em;">
+							<thead>
+								<td width="22%">Parameter</td><td width="30%">Description</td><td>Example Usage</td>
+							</thead>
+							<tbody>
+								<?php foreach($config as $c): ?>
+								<tr>
+									<td width="15%"><code><?php echo $c[0] ?></code></td>
+									<td><?php echo $c[1] ?></td>
+									<td><code><?php echo $c[2] ?></code></td>
+								</tr>
+								<?php endforeach; ?>
+							</tbody>
+						</table>
+
+						<p><br/></p>
+						<h4>Response Format</h4>
+						<small>
+						<ul>
+							<li>Responses from this service are returned in <a href="http://www.json.org" target="_blank">JSON format</a>. See example below for response schema. </li>
+							<li>Results are wrapped inside a <code>messages</code> object, which is returned when the status is <code>success</code></li>
+							<li>If no grants matched your result, the <code>messages</code> object will be an empty array</li>
+						</ul>
+						</small>
+
+						<p><br/></p>
+						<h4>Common Questions</h4><a id="questions"></a>
+						<small>
+						<ul>
+							<li><u>How do I get or extract the grant number?</u>
+								<p>The grant number is unique to the funding organisation. At this stage, the best way to determine both of these pieces of information is to extract them from the <code>key</code> field in the response.</li>
+
+							<li><u>What is the <code>slug</code> field?</u>
+								<p>This is a URL-friendly name we allocate to each record in Research Data Australia. Prepend this value with <code>http://researchdata.ands.org.au/<blue>{slug}</blue></code> to link to this grant in RDA.</li>
+
+							<li><u>Why do get an error about API keys or an XML fragment about registryObjects?</u>
+								<p>You haven't correctly specified your API key in the request URL. Check the Service Usage section above.<br/>
+						</ul>
+						</small>
+
+						<p><br/></p>
+						<p><br/></p>
+
+						<h3 class="k-fancy-title"><a id="example1"></a>Example Usage</h3>
+
+						<h4>1. Grants for a particular organisation and researcher</h4>
+						<p>
+							Return all grants whose chief investigator was "<blue>Dr Ming Tat (Patrick) Ling</blue>" and were managed by <blue>Queensland University of Technology</blue>:
+
+							<small><ul>
+								<li>HTTP GET Request: <br/>
+									<code>&gt;
+										<a target="_blank" href="<?=registry_url("services/api/getGrant?" .
+										"institution=".
+											rawurlencode("Queensland University of Technology").
+										"&principalInvestigator=" .
+											rawurlencode("Dr Ming Tat (Patrick) Ling"));?>">
+
+										getGrant?institution=<blue><?=rawurlencode("Queensland University of Technology") . "</blue>" .
+										 "&principalInvestigator=<blue>" . rawurlencode("Dr Ming Tat (Patrick) Ling");?></blue>
+
+									</code><br/></a>
+									<br/>
+								</li>
+
+								<li>Service Response (in JSON format):
+							<pre class="prettyprint pre-scrollable pre-small">{
+"status" : "success",
+"message" : {
+	"numFound" : 2,
+	"recordData" :
+	[
+		{
+			"title" : "To study how prostate tumor metastasizes to bone",
+			"key" : "http://purl.org/au-research/grants/nhmrc/1031221",
+			"relations" :
+			{
+				"isManagedBy" : "Queensland University of Technology",
+				"isParticipantIn" : [ "Prof Judith Clements", "Prof Colleen Nelson" ],
+				"isPrincipalInvestigatorOf" : "Dr Ming Tat (Patrick) Ling"
+			},
+			"slug" : "to-study-how-prostate-tumor-metastasizes-to-bone",
+			"description" : "Bone metastasis occurs in more than 80% of cases of advanced prostate cancer (PCa), and is the major cause of morbidity and mortality in PCa patients. Understanding why PCa cells preferentially metastasize to bone may lead to the the development of novel therapy for inhibiting PCa metastasis. This project will study how the bone cell-secreted protein angiopoietin-1 promotes the metastasis of PCa cells to bone and whether inactivation of this protein can inhibit PCa bone metastasis.<br /><br />                           Lead Investigator: Dr Ming Tat (Patrick) Ling<br />                           <br />                           Co-Investigator(s): Prof Judith Clements; Prof Colleen Nelson<br />                           <br />                           Total Grant Budget: $AUD 555,400<br /><br />                           Application Year: 2011<br />                           Start Year: 2012<br />                           End Year: 2014<br /><br />                           Main Funding Group: Research Support<br />                           Grant Type (Funding Scheme): NHMRC Project Grants<br />                           Grant Sub Type: Standard Project Grant"
+		},
+
+		{
+			"title" : "To identify a new therapeutic target for the treatment of prostate cancer",
+			"key" : "http://purl.org/au-research/grants/nhmrc/1031228",
+			"relations" :
+			{
+				"isManagedBy" : "Queensland University of Technology",
+				"isParticipantIn" : [ "Prof Pamela Russell", "Prof Ronald Quinn" ],
+				"isPrincipalInvestigatorOf" : "Dr Ming Tat (Patrick) Ling"
+			},
+			"slug" : "to-identify-a-new-therapeutic-target-for-the-treatment-of-prostate-cancer",
+			"description" : "Advanced prostate cancer (PCa) remains the major therapeutic challenge since neither surgery nor systemic therapies are effective at this stage. Recently, we identified a protein called PACE-1 that is essential for PCa cell survival. We plan to investigate the roles of PACE-1 in the development and progression of prostate cancer. We will then test if PACE-1 inactivation alone or in combination with systemic cancer therapies will inhibit prostate tumor growth and disease progression.<br /><br />                           Lead Investigator: Dr Ming Tat (Patrick) Ling<br />                           <br />                           Co-Investigator(s): Prof Ronald Quinn; Prof Pamela Russell<br />                           <br />                           Total Grant Budget: $AUD 602,253<br /><br />                           Application Year: 2011<br />                           Start Year: 2012<br />                           End Year: 2014<br /><br />                           Main Funding Group: Research Support<br />                           Grant Type (Funding Scheme): NHMRC Project Grants<br />                           Grant Sub Type: Standard Project Grant"
+		}
+	]
+}
 }
 							</pre>
+							</li>
+							</ul></small>
+							<p><br/></p>
+							<hr/>
 							<br/>
-							<a href="../../../registry/services/API/getGrant?title=sodium%20channels&amp;person=david%20cook">?title=sodium%20channels&amp;person=david%20cook</a>
-							<pre class="prettyprint pre-scrollable">
-{
+						<h4>2. Grants matching a certain title by a particular researcher</h4><a id="example2"></a>
+						<p>
+							Return all grants involving "<blue>Prof David Cook</blue>" which contain <blue>sodium channels</blue> in the title:
 
+							<small><ul>
+								<li>HTTP GET Request: <br/>
+									<code>&gt;
+										<a target="_blank" href="<?=registry_url("services/api/getGrant?" .
+										"person=".
+											rawurlencode("David Cook").
+										"&title=" .
+											rawurlencode("sodium channels"));?>">
+
+										getGrant?person=<blue><?=rawurlencode("David Cook") . "</blue>" .
+										 "&title=<blue>" . rawurlencode("sodium channels");?></blue>
+
+									</code><br/></a>
+									<br/>
+								</li>
+
+								<li>Service Response (in JSON format):
+							<pre class="prettyprint pre-scrollable pre-small">{
     "status": "success",
     "message": {
 	"numFound": 7,
@@ -176,6 +328,8 @@
 }
 							</pre>
 						</p>
+						<p><br/></p>
+						<p><br/></p>
 						<!-- <div class="k-article-meta">
 							<span class="k-article-date">May 21, 2014</span>
 							<span class="k-article-spacer">/</span>
@@ -190,29 +344,44 @@
 
 			<aside id="k-sidebar" class="col-lg-3 col-md-4 col-sm-12 col-lg-offset-1"><!-- starts sidebar -->
 				<div id="k-sidebar-splitter" class="clearfix section-space60"><span></span></div>
-				<ul id="k-sidebar-list" class="list-unstyled">
+				<div class="sticky" style="position: fixed; top: 200px; width: 262px;">
 
-					<li class="widget widget_search clearfix">
-						<form action="" id="searchform" method="get" role="search">
-							<div class="input-group">
-								<input type="text" name="s" id="s" class="form-control" autocomplete="off" placeholder="Search...">
-								<span class="input-group-btn"><button class="btn btn-default" type="button">SEARCH</button></span>
-							</div>
-						</form>
-					</li>
+					<ul id="k-sidebar-list" class="list-unstyled">
 
-					<li class="widget widget_categories clearfix">
-						<h2 class="widget-title">Select from the menu...<span class="k-widget-title-tit"></span></h2>
-						<ul>
-							<li class="cat-item"><a href="#title" title="Grants API Documentation">Grants API Documentation</a></li>
-							<li class="cat-item"><a href="#access" title="Accessing the Service">Accessing the Service</a></li>
-							<li class="cat-item"><a href="#service" title="Grants Service URL">Grants Service URL</a></li>
-							<li class="cat-item"><a href="#parameters" title="Parameters">Parameters</a></li>
-							<li class="cat-item"><a href="#examples" title="API call Examples">API call Examples</a></li>
-						</ul>
-					</li>
+						<!--li class="widget widget_search clearfix">
+							<form action="" id="searchform" method="get" role="search">
+								<div class="input-group">
+									<input type="text" name="s" id="s" class="form-control" autocomplete="off" placeholder="Search...">
+									<span class="input-group-btn"><button class="btn btn-default" type="button">SEARCH</button></span>
+								</div>
+							</form>
+						</li-->
 
-				</ul>
+						<li class="section-space30 widget widget_categories clearfix">
+							<h2 class="widget-title">Select from the menu...<span class="k-widget-title-tit"></span></h2>
+							<ul>
+								<li class="cat-item"><a href="#about">About the Research Grants API</a></li>
+								<li class="cat-item"><a href="#usage">Service Usage</a></li>
+								<li class="cat-item"><a href="#params">Parameters</a></li>
+								<li class="cat-item"><a href="#questions">Common Questions</a></li>
+
+								<li class="cat-item"><a href="#example1">Example Usage #1</a></li>
+								<li class="cat-item"><a href="#example2">Example Usage #2</a></li>
+
+								<li class="cat-item"><a href="http://researchdata.ands.org.au/home/disclaimer" target="_blank">Usage Disclaimer</a></li>
+							</ul>
+						</li>
+
+						<div class="clearfix">
+							<div class="alert alert-warning">
+						  <b>Need help?</b> <br/>
+						  Visit the <?=anchor($this->config->item('developer_community_portal'),'Community Support Forum');?>
+						</div>
+
+						</div>
+
+					</ul>
+				</div>
 			</aside><!-- ends sidebar -->
 
 		</div><!-- ends row -->

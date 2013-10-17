@@ -8,7 +8,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				<ol class="breadcrumb pull-right">
 					<li><?php echo anchor('/', 'Home'); ?></li>
-					<li><?php echo anchor('/documentation/services/', 'Services'); ?></li>
+					<li><?php echo anchor('/documentation/services/', 'Web Services'); ?></li>
 				</ol>
 			</div>
 		</div><!-- ends row -->
@@ -71,7 +71,7 @@
 
 		<figure class="panel-figure product-box-hover col-lg-3 col-md-4 col-sm-6 col-xs-12 f--web-design"><!-- ITEM 9 -->
 		    <a href="<?=base_url('documentation/services/getGrants');?>" class="product-box-link">
-		      <h3>getGrants API</h3>
+		      <h3>Research Grants API</h3>
 		      <span class="tit"></span>
 		      <p>A special purpose API for retrieving structured information about Australian Research Grants.</p>
 		      <p><small>Use this API if your system is only interested in metadata relating to ARC or NH&amp;MRC Research Grants.</small></p>
