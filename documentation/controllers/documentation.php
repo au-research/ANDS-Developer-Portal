@@ -34,6 +34,11 @@ class Documentation extends MX_Controller {
 				$this->load->view('services/oai_api', $data);
 			break;
 
+			case 'vocabulary_api':
+				$data['title'] = 'Watch this space...Coming Soon! - ANDS Developer Toolbox';
+				$this->load->view('coming_soon', $data);
+			break;
+
 			case 'registry_apis':
 			default:
 				$data['title'] = 'ANDS Web Services - ANDS Developer Toolbox';
@@ -79,5 +84,10 @@ class Documentation extends MX_Controller {
 			break;
 
 		}
+	}
+
+	public function registry($service=''){
+			$data['title'] = 'Watch this space...Coming Soon! - ANDS Developer Toolbox';
+			$this->load->view('coming_soon', $data);
 	}
 }

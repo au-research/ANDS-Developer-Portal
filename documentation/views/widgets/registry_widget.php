@@ -3,20 +3,20 @@
 	<div class="container section-space30"><!-- starts container -->
 		<div class="row"><!-- starts row -->
 			<div class="col-lg-6 col-md-6 col-sm-12">
-				<h2 class="k-page-title">Registry Search Widget</h2>
+				<h2 class="k-page-title">Collections Registry Search Widget</h2>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				<ol class="breadcrumb pull-right">
 					<li><?php echo anchor('/', 'Home'); ?></li>
 					<li><?php echo anchor('/documentation/widgets/', 'Widgets'); ?></li>
-					<li class="active">Registry Widget</li>
+					<li class="active">Collections Registry Search Widget</li>
 				</ol>
 			</div>
 		</div><!-- ends row -->
 	</div><!-- ends container -->
 </section>
 <section id="k-content"><!-- starts content -->
-	<div class="container section-space60"><!-- starts container -->
+	<div class="container section-space30"><!-- starts container -->
 		<div class="row"><!-- starts row -->
 
 			<div id="k-main" class="clearfix col-lg-8 col-md-8 col-sm-12"><!-- starts main content -->

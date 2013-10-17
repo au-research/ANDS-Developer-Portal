@@ -396,7 +396,7 @@ ul.k-socials li a { display: block; }
 */
 
 /* main navigation */
-.k-dropdown-menu a, .k-dropdown-menu a:link, .k-dropdown-menu a:visited { display: block; background: transparent; color: #333333; font-weight: 500; padding: 10px 20px 0; font-size: 13.5px !important; text-transform: uppercase; }
+.k-dropdown-menu a, .k-dropdown-menu a:link, .k-dropdown-menu a:visited { display: block; background: transparent; color: #333333; font-weight: 500; padding: 10px 20px 0; font-size: 13.5px !important; }
 .k-dropdown-menu a:hover, .k-dropdown-menu li.k-dropdown-menu-hover > a { background: transparent; color: #FFFFFF !important; }
 .k-dropdown-menu li:hover, .k-dropdown-menu li.k-dropdown-menu-hover { background: transparent; }
 .k-dropdown-menu .sub-menu li:hover, .k-dropdown-menu .sub-menu li.k-dropdown-menu-hover { background: transparent; }
@@ -769,7 +769,7 @@ a, .k-call-out em, .btn-link,
 #navigation-mobile li a, #navigation-mobile li a:link, #navigation-mobile li a:visited, 
 .product-box-hover .product-title a:link, .product-box-hover .product-title a:visited,
 .k_mid_callout_color, .k-work-hours, .k-faq-wrap .panel-title a:hover, .k-faq-wrap .panel-title a:focus, 
-a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { color: #a3be99; }
+a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { color: #7B9B6F; }
 /* ----- elements */
 #k-head, #k-footer, .k-fancy-title-tit, .k-widget-title-tit, #k-sidebar-splitter span, 
 .btn-default, .label-default, .k-article-more, .k-article-prev-next, 
@@ -779,79 +779,106 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { color: #a
 .product-box-hover .product-box-link .product-box-overlay-icon, .k-team-text .tit, 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus, 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .modal-header,
-.k-user-feedback-wrap-inverse .k-user-feedback-box, .audioplayer-bar-played, .k-fancy-icon-wrap:hover .k-fancy-icon { background-color: #a3be99 !important; }
+.k-user-feedback-wrap-inverse .k-user-feedback-box, .audioplayer-bar-played, .k-fancy-icon-wrap:hover .k-fancy-icon { background-color: #7B9B6F !important; }
 
-.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus { border-color: #a3be99 !important; }
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus { border-color: #7B9B6F !important; }
 
-article .carousel, .k-article-featured-img, .notez, .mezage { border-bottom-color: #a3be99 !important; }
+article .carousel, .k-article-featured-img, .notez, .mezage { border-bottom-color: #7B9B6F !important; }
 
-.k-user-feedback-wrap-inverse .k-user-feedback-tit { border-top-color: #a3be99 !important; }
+.k-user-feedback-wrap-inverse .k-user-feedback-tit { border-top-color: #7B9B6F !important; }
 
 .form-control:focus, textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus,
 input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus,
 input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus,
 input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus,
-.uneditable-input:focus { border-color: #a3be99 !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #a3be99 !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #a3be99 !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #a3be99 !important; }
+.uneditable-input:focus { border-color: #7B9B6F !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #7B9B6F !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #a3be99 !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #a3be99 !important; }
 
-.k-fancy-icon:after { box-shadow: 0 0 0 5px #a3be99; };/* ands_style.scss */
+.k-fancy-icon:after { box-shadow: 0 0 0 5px #7B9B6F; };/* ands_style.scss */
+/*#a3be99;*/
 /**
  * Top Menu fix
  */
-/* line 7, ../sass/ands_style.scss */
+/* line 9, ../sass/ands_style.scss */
 #menu a {
   color: white !important;
 }
-/* line 10, ../sass/ands_style.scss */
+/* line 12, ../sass/ands_style.scss */
 #menu .sub-menu li a {
   color: white;
 }
-/* line 12, ../sass/ands_style.scss */
+/* line 14, ../sass/ands_style.scss */
 #menu .sub-menu li a:hover {
-  color: #a3be99 !important;
+  color: #7b9b6f !important;
+}
+
+/* line 20, ../sass/ands_style.scss */
+blue {
+  color: blue;
+}
+
+/* line 23, ../sass/ands_style.scss */
+green {
+  color: green;
+}
+
+/* line 26, ../sass/ands_style.scss */
+.pre-small {
+  font-size: 0.8em;
 }
 
 /**
  * Site Logo Fix
  */
-/* line 22, ../sass/ands_style.scss */
+/* line 32, ../sass/ands_style.scss */
 #site-logo a {
-  color: white !important;
+  color: #C1D0BC !important;
   font-size: 1.5em !important;
   font-weight: 300;
 }
 
-/* line 29, ../sass/ands_style.scss */
+/* line 39, ../sass/ands_style.scss */
 .btn-success {
-  background-color: #a3be99 !important;
+  background-color: #7b9b6f !important;
 }
 
-/* line 34, ../sass/ands_style.scss */
+/* line 44, ../sass/ands_style.scss */
 figure.panel-figure {
   background-color: white;
   padding: 30px;
   margin: 0 10px;
 }
 
-/* line 40, ../sass/ands_style.scss */
+/* line 50, ../sass/ands_style.scss */
 .k-fancy-title-wrap {
   margin-top: 20px;
 }
-/* line 42, ../sass/ands_style.scss */
+/* line 52, ../sass/ands_style.scss */
 .k-fancy-title-wrap .k-fancy-title {
   margin: 20px 0;
 }
 
-/* line 47, ../sass/ands_style.scss */
+/* line 57, ../sass/ands_style.scss */
 .table {
   table-layout: fixed;
   word-wrap: break-word;
 }
-/* line 50, ../sass/ands_style.scss */
+/* line 60, ../sass/ands_style.scss */
 .table code {
   white-space: normal !important;
 }
 
-/* line 55, ../sass/ands_style.scss */
+/* line 65, ../sass/ands_style.scss */
 .mq-box > a {
   color: #444;
+}
+
+/* Footer color changes */
+/* line 72, ../sass/ands_style.scss */
+#k-footer .widget-title, #k-footer .widget p, #k-footer .widget a {
+  color: #c1d0bc !important;
+}
+/* line 75, ../sass/ands_style.scss */
+#k-footer .widget_categories ul li {
+  font-size: 12px;
+  line-height: 13px;
 }

@@ -16,7 +16,7 @@
 	</div><!-- ends container -->
 </section>
 <section id="k-content"><!-- starts content -->
-	<div class="container section-space60"><!-- starts container -->
+	<div class="container section-space30"><!-- starts container -->
 		<div class="row"><!-- starts row -->
 
 			<div id="k-main" class="clearfix col-lg-8 col-md-8 col-sm-12"><!-- starts main content -->

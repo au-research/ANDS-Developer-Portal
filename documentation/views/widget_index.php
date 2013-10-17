@@ -26,9 +26,9 @@
 						<i class="icon-code awesome32"></i>
 					</dt>
 					<dd class="k-dd60">
-						<h3 class="first-item">Registry Widget</h3>
+						<h3 class="first-item"><a href="<?=base_url('documentation/widgets/registry_widget/');?>">Collections Registry Search Widget</a></h3>
 						<p>
-						The Registry Search Widget provides a quick and easy way of embedding a live Research Data Australia search within your new or existing web pages.
+						The Collections Registry Search Widget provides a quick and easy way of embedding a live Research Data Australia search within your new or existing web pages.
 
 The flexibility of the widget allows you to configure a predefined search, or provide your end users with a text field to specify their own search.
 						</p>
@@ -38,7 +38,7 @@ The flexibility of the widget allows you to configure a predefined search, or pr
 						<i class="icon-code awesome32"></i>
 					</dt>
 					<dd class="k-dd60">
-						<h3 class="first-item">ORCID Researcher Lookup Widget</h3>
+						<h3 class="first-item"><a href="<?=base_url('documentation/widgets/orcid_widget/');?>">ORCID Researcher Lookup Widget</a></h3>
 						<p>
 						The ANDS ORCID Widget allows you to lookup an ORCID ID and search for one using ORCID JSONP API
 
@@ -54,7 +54,7 @@ This widget is a jQuery plugin with extensible options over styling and function
 							<i class="icon-code awesome32"></i>
 						</dt>
 						<dd class="k-dd60">
-							<h3 class="first-item">Vocabulary Widget</h3>
+							<h3 class="first-item"><a href="<?=base_url('documentation/widgets/vocab_widget/');?>">Vocabulary Widget</a></h3>
 							<p>
 							The ANDS Vocabulary Widget allows you to instantly add Data Classification capabilities to your data capture tools through the ANDS Vocabulary Service.
 							</p>
@@ -64,7 +64,7 @@ This widget is a jQuery plugin with extensible options over styling and function
 							<i class="icon-code awesome32"></i>
 						</dt>
 						<dd class="k-dd60">
-							<h3 class="first-item">Location Capture Widget</h3>
+							<h3 class="first-item"><a href="<?=base_url('documentation/widgets/location_widget/');?>">Location Capture Widget</a></h3>
 							<p>
 							The ANDS Location Capture Widget allows you to instantly enrich your data capture system, adding geospatial capabilities such as custom drawings and place name resolution (using the Australian Gazetteer Service and Google Maps API).
 							</p>

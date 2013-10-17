@@ -1,8 +1,10 @@
 /* ands_style.scss */
-$ands_green : #a3be99;
+$ands_green : #7B9B6F; /*#a3be99;*/
+$ands_text_light : #C1D0BC;
 /**
  * Top Menu fix
  */
+
 #menu{
 	a{
 		color: white !important;
@@ -28,7 +30,7 @@ green {
  */
 #site-logo{
 	a{
-		color:white !important;
+		color:#C1D0BC !important;
 		font-size:1.5em !important;
 		font-weight:300;
 	}
@@ -63,3 +65,15 @@ figure.panel-figure{
 .mq-box > a{
 	color:#444;
 }
+
+/* Footer color changes */
+#k-footer {
+	.widget-title, .widget p , .widget a 
+	{ 
+		color: $ands_text_light !important; 
+	}	
+	.widget_categories ul li {
+		font-size: 12px;
+		line-height: 13px;
+	}
+} 

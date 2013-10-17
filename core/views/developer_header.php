@@ -50,20 +50,21 @@
 							<ul id="menu-nav" class="pull-right k-dropdown-menu">
 								<li><?php echo anchor('/documentation/widgets/','Widgets'); ?>
 									<ul class="sub-menu">
-										<li><?php echo anchor('/documentation/widgets/registry_widget', 'Registry Widget'); ?></li>
-										<li><?php echo anchor('/documentation/widgets/orcid_widget', 'ORCID Researcher Lookup Widget'); ?></li>
-										<li><?php echo anchor('/documentation/widgets/vocab_widget', 'Vocabulary Widget'); ?></li>
+										<li><?php echo anchor('/documentation/widgets/registry_widget', 'Collections Registry Search Widget'); ?></li>
+										<li><?php echo anchor('/documentation/widgets/vocab_widget', 'Controlled Vocabulary Widget'); ?></li>
 										<li><?php echo anchor('/documentation/widgets/location_widget', 'Location Capture Widget'); ?></li>
+										<li><?php echo anchor('/documentation/widgets/orcid_widget', 'ORCID Researcher Lookup Widget'); ?></li>
 									</ul>
 								</li>
 								<li><?php echo anchor('documentation/services/', 'Web Services') ?>
 									<ul class="sub-menu">
+										<li><?php echo anchor('documentation/services/registry_apis', 'Collections Registry API') ?></li>
 										<li><?php echo anchor('documentation/services/getGrants', 'Research Grants API') ?></li>
-										<li><?php echo anchor('documentation/services/registry_apis', 'Registry APIs') ?></li>
+										<li><?php echo anchor('documentation/services/vocabulary_api', 'Controlled Vocabularies API') ?></li>
 									</ul>
 								</li>
 								<li><?php echo anchor('documentation/registry', 'Registry Software') ?></li>
-								<li><a href="<?php echo $this->config->item('developer_community_portal'); ?>">Support Community</a></li>
+								<li><a href="<?php echo $this->config->item('developer_community_portal'); ?>">Developer Community</a></li>
 							</ul>
 						</nav>
 					</div><!-- ends navigation -->

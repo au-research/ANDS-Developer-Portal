@@ -16,11 +16,11 @@
 						 data-easing="easeOutExpo" data-endspeed="400" data-endeasing="easeInSine" ><img src="<?php echo asset_url('img/screens/registry_widget.png', 'core'); ?>" alt=""></div>
 
 					<div class="caption k_mid_callout sft stb"
-						 data-x="900"
+						 data-x="630"
 						 data-y="130"
 						 data-speed="600"
 						 data-start="1200"
-						 data-easing="easeOutExpo" data-endspeed="200" data-endeasing="easeOutSine">Registry Widget</div>
+						 data-easing="easeOutExpo" data-endspeed="200" data-endeasing="easeOutSine">Collections Registry Widget</div>
 
 					<div class="caption k_sm_callout lfr stl"
 						 data-x="630"
@@ -46,7 +46,7 @@
 						 data-y="130"
 						 data-speed="600"
 						 data-start="1200"
-						 data-easing="easeOutExpo" data-endspeed="200" data-endeasing="easeOutSine">Vocabulary Widget</div>
+						 data-easing="easeOutExpo" data-endspeed="200" data-endeasing="easeOutSine">Controlled Vocabulary Widget</div>
 
 					<div class="caption k_sm_callout lfr stl"
 						 data-x="150"
@@ -110,14 +110,25 @@
 				<?php echo anchor('documentation/widgets', '<i class="k-fancy-icon icon-code awesome32"></i>'); ?>
 				<div class="gap10"></div>
 				<h4>Widgets</h4>
-				<p>Explore the developer library of reusable and customisable widgets.<br/>&nbsp;</p>
+				<p>Enhance your existing web pages and data capture systems with <u>easy to use</u> widgets.</p>
+				 <p>Explore the developer library of reusable and customisable widgets for 
+				 	<a href="<?=base_url('documentation/widgets/vocab_widget');?>">vocabularies</a>, 
+				 	<a href="<?=base_url('documentation/widgets/orcid_widget');?>">ORCID lookups</a>, 
+				 	<a href="<?=base_url('documentation/widgets/location_widget');?>">spatial search</a> and 
+				 	<a href="<?=base_url('documentation/widgets/');?>">more</a>!
+				 </p><br/>&nbsp;</p>
 			</div>
 			
 			<div class="col-lg-3 col-md-3 col-sm-6 text-center k-fancy-icon-wrap mq-box">
 				<?php echo anchor('documentation/services', '<i class="k-fancy-icon icon-cloud-download awesome32"></i>'); ?>
 				<div class="gap10"></div>
-				<h4>Services</h4>
-				<p>A set of useful services to help you interact with the ANDS Registry.<br/>&nbsp;</p>
+				<h4>Web Services</h4>
+				<p>Tap into the Australian Research Data Commons' <u>rich network of metadata</u>.</p>
+				<p>Explore the ANDS Collections Registry for 
+					<a href="<?=base_url('documentation/services/registry_apis');?>">collection metadata</a> or integrate
+					<a href="<?=base_url('documentation/services/vocabulary_api');?>">controlled vocabularies</a> 
+					into your application using the ANDS Vocabulary Service (and 
+					<a href="<?=base_url('services/getGrants');?>">more</a>!).</p>
 			</div>
 			
 			
@@ -125,14 +136,15 @@
 				<?php echo anchor('documentation/registry', '<i class="k-fancy-icon icon-github awesome32"></i>'); ?>
 				<div class="gap10"></div>
 				<h4>Registry Software</h4>
-				<p>Download the latest version of the ANDS Registry Software.<br/>&nbsp;</p>
+				<p>Create <u>your own metadata repository</u> and discovery portal using the code that powers our very own <a href="http://researchdata.ands.org.au">Research Data Australia</a>!</p>
+				<p>Download the latest version of the <a href="<?=base_url('documentation/registry');?>">ANDS Registry Software</a> (from our Github) and follow the <a href="<?=base_url('documentation/registry');?>">simple installation guide</a>.<br/>&nbsp;</p>
 			</div>
 
 			<div class="col-lg-3 col-md-3 col-sm-6 text-center k-fancy-icon-wrap mq-box">
 				<?php echo anchor($this->config->item('developer_community_portal'), '<i class="k-fancy-icon icon-group awesome32"></i>'); ?>
 				<div class="gap10"></div>
-				<h4>Communities</h4>
-				<p>The ANDS Developer community is a great way to get advice, find information, and meet other developers.</p>
+				<h4>Developer Community</h4>
+				<p>The <a href="<?=$this->config->item('developer_community_portal');?>">ANDS Developer Community</a> is a great way to get advice on implementing and contributing to the open source software! Need support? This is the place to ask!</p>
 			</div>
 		
 		</div><!-- ends row -->

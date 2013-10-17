@@ -1,62 +1,89 @@
 /* ands_style.scss */
+/*#a3be99;*/
 /**
  * Top Menu fix
  */
-/* line 7, ../sass/ands_style.scss */
+/* line 9, ../sass/ands_style.scss */
 #menu a {
   color: white !important;
 }
-/* line 10, ../sass/ands_style.scss */
+/* line 12, ../sass/ands_style.scss */
 #menu .sub-menu li a {
   color: white;
 }
-/* line 12, ../sass/ands_style.scss */
+/* line 14, ../sass/ands_style.scss */
 #menu .sub-menu li a:hover {
-  color: #a3be99 !important;
+  color: #7b9b6f !important;
+}
+
+/* line 20, ../sass/ands_style.scss */
+blue {
+  color: blue;
+}
+
+/* line 23, ../sass/ands_style.scss */
+green {
+  color: green;
+}
+
+/* line 26, ../sass/ands_style.scss */
+.pre-small {
+  font-size: 0.8em;
 }
 
 /**
  * Site Logo Fix
  */
-/* line 22, ../sass/ands_style.scss */
+/* line 32, ../sass/ands_style.scss */
 #site-logo a {
-  color: white !important;
+  color: #C1D0BC !important;
   font-size: 1.5em !important;
   font-weight: 300;
 }
 
-/* line 29, ../sass/ands_style.scss */
+/* line 39, ../sass/ands_style.scss */
 .btn-success {
-  background-color: #a3be99 !important;
+  background-color: #7b9b6f !important;
 }
 
-/* line 34, ../sass/ands_style.scss */
+/* line 44, ../sass/ands_style.scss */
 figure.panel-figure {
   background-color: white;
   padding: 30px;
   margin: 0 10px;
 }
 
-/* line 40, ../sass/ands_style.scss */
+/* line 50, ../sass/ands_style.scss */
 .k-fancy-title-wrap {
   margin-top: 20px;
 }
-/* line 42, ../sass/ands_style.scss */
+/* line 52, ../sass/ands_style.scss */
 .k-fancy-title-wrap .k-fancy-title {
   margin: 20px 0;
 }
 
-/* line 47, ../sass/ands_style.scss */
+/* line 57, ../sass/ands_style.scss */
 .table {
   table-layout: fixed;
   word-wrap: break-word;
 }
-/* line 50, ../sass/ands_style.scss */
+/* line 60, ../sass/ands_style.scss */
 .table code {
   white-space: normal !important;
 }
 
-/* line 55, ../sass/ands_style.scss */
+/* line 65, ../sass/ands_style.scss */
 .mq-box > a {
   color: #444;
+}
+
+/* Footer color changes */
+/* line 72, ../sass/ands_style.scss */
+#k-footer .widget-title, #k-footer .widget p, #k-footer .widget a {
+  color: #c1d0bc !important;
+}
+/* line 75, ../sass/ands_style.scss */
+#k-footer .widget_categories ul li {
+  font-size: 12px;
+  line-height: 13px;
 }
