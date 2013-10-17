@@ -16,6 +16,12 @@ class Documentation extends MX_Controller {
 				$this->load->view('services/getrifcs_api', $data);
 			break;			
 
+			case 'getExtRif':
+			default:
+				$data['title'] = 'getExtRif API Documentation - ANDS Developer Toolbox';
+				$this->load->view('services/getextrif_api', $data);
+			break;
+
 			case 'getGrants':
 				$data['title'] = 'Grants API Documentation - ANDS Developer Toolbox';
 				$this->load->view('services/grants_api', $data);
