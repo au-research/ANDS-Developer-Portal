@@ -359,7 +359,7 @@
 
 						<li class="section-space30 widget widget_categories clearfix">
 							<h2 class="widget-title">Select from the menu...<span class="k-widget-title-tit"></span></h2>
-							<ul>
+							<ul class="anchor_links">
 								<li class="cat-item"><a href="#about">About the Research Grants API</a></li>
 								<li class="cat-item"><a href="#usage">Service Usage</a></li>
 								<li class="cat-item"><a href="#params">Parameters</a></li>

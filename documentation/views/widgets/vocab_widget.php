@@ -48,6 +48,7 @@
 
 					<h2 class="k-fancy-title">Demo</h2>
 					<h2 class="widget-title">ANZSRC Searching</h2>
+					<p>Search a vocabulary for matching terms, provided in an autocomplete-style list:</p>
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#vocab_w-1-result" data-toggle="tab">Result</a></li>
 						<li><a href="#vocab_w-1-html" data-toggle="tab">HTML</a></li>
@@ -76,6 +77,11 @@ $("#anzsrc-vocab").vocab_widget({
 					</div>
 
 					<h2 class="widget-title">RIFCS Narrowing</h2>
+					<p>Narrow or collection mode can be attached to a select element, or a text input box for an autocomplete-style list:</p>
+					<ul>
+						<li><code>narrow</code> mode usually expresses a direct parent-child relationship in the vocabulary (such as skos:narrower).</li>
+						<li><code>collection</code> is used to express less strong groupings of concepts in a vocabulary (such as skos:Collection or even rdf:list).</li>
+					</ul>
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#vocab_w-2-result" data-toggle="tab">Result</a></li>
 						<li><a href="#vocab_w-2-html" data-toggle="tab">HTML</a></li>
@@ -93,12 +99,12 @@ $("#anzsrc-vocab").vocab_widget({
 						<div id="vocab_w-2-js" class="tab-pane fade">
 							<pre class="prettyprint">
 $("#rifcs-idtype").vocab_widget({
-    mode:"narrow",
-    mode_params:"http://purl.org/au-research/vocabulary/RIFCS/1.4/RIFCSIdentifierType",
-    repository:"rifcs",
-    cache: false,
-    fields: ['definition'],
-    target_field: 'label'
+	mode:"narrow",
+	mode_params:"http://purl.org/au-research/vocabulary/RIFCS/1.4/RIFCSIdentifierType",
+	repository:"rifcs",
+	cache: false,
+	fields: ['definition'],
+	target_field: 'label'
 });
 							</pre>
 						</div>
@@ -124,17 +130,18 @@ $("#rifcs-idtype").vocab_widget({
 							<pre class="prettyprint">
 $("#rifcs-idtype-input").vocab_widget({
 	mode:"narrow",
-  	mode_params:"http://purl.org/au-research/vocabulary/RIFCS/1.4/RIFCSIdentifierType",
-  	repository:"rifcs",
-  	cache: false,
-  	fields: ['label', 'definition', 'about'],
-  	target_field: 'label'
+	mode_params:"http://purl.org/au-research/vocabulary/RIFCS/1.4/RIFCSIdentifierType",
+	repository:"rifcs",
+	cache: false,
+	fields: ['label', 'definition', 'about'],
+	target_field: 'label'
 });
 							</pre>
 						</div>
 					</div>
 
 					<h2 class="widget-title">Tree Mode</h2>
+					<p>Tree mode constructs a clickable vocabulary tree for a given repository. Bind to the <code>treeselect.vocab.ands</code> event to handle user selection.</p>
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#vocab_w-4-result" data-toggle="tab">Result</a></li>
 						<li><a href="#vocab_w-4-html" data-toggle="tab">HTML</a></li>
@@ -164,6 +171,7 @@ $("#vocab-tree").vocab_widget({
 					</div>
 
 					<h2 class="widget-title">Core Mode</h2>
+					<p>Invoking the plugin with no 'mode' argument exposes core functionality, without having to use form input (text, select) elements or the like. Instead, you hook into javascript Events, building the UI as best fits your needs. A very basic example is shown below: it constructs a list of RIFCS identifier types.</p>
 					<p>This form section is using the widget with no helpers; it outputs a list of known <code>rifcs</code> identifier types</p>
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#vocab_w-5-result" data-toggle="tab">Result</a></li>
@@ -174,7 +182,7 @@ $("#vocab-tree").vocab_widget({
 						<div id="vocab_w-5-result" class="tab-pane fade active in">
 							<div id="vocab-core">
 								<p>RIFCS Identifier types:</p>
-						    </div>
+							</div>
 						</div>
 						<div id="vocab_w-5-html" class="tab-pane fade">
 							<pre class="prettyprint">
@@ -210,14 +218,26 @@ widget.vocab_widget('narrow','http://purl.org/au-research/vocabulary/RIFCS/1.4/R
 							</pre>
 						</div>
 					</div>
-
-					
-					
-
-
-					
+					<h6>Functions</h6>
+					<p>Core usage exposes 3 functions</p>
+					<ul>
+						<li><code>search</code></li>
+						<li><code>narrow</code></li>
+						<li><code>top</code></li>
+					</ul>
+					<p>These take a single additional parameter, which can look like any of the following</p>
+					<dl>
+						<dt>plain string</dt>
+							<dd>Search term (for search call) or narrow URI (for narrow call)</dd>
+						<dt>object <code>{uri:'...', callee:'...'}</code></dt>
+							<dd>'uri' works as the plain string description above, and should be set <code>false</code>.</dd>
+						<dd>'callee' defines the object that will fire the subsequent javascript event. Defaults to the containing element (what you invoked the widget on)</dd>
+					</dl>
 				</article><!-- ends article short -->
 			</div><!-- ends main content -->
+
+
+			
 			
 			<aside id="k-sidebar" class="col-lg-3 col-md-4 col-sm-12 col-lg-offset-1"><!-- starts sidebar -->
 				<div id="k-sidebar-splitter" class="clearfix section-space60"><span></span></div>
@@ -249,6 +269,171 @@ widget.vocab_widget('narrow','http://purl.org/au-research/vocabulary/RIFCS/1.4/R
 			</aside><!-- ends sidebar -->
 		
 		</div><!-- ends row -->
+
+		<div class="row">
+			<div id="k-config" class="clearfix col-lg-12 col-md-12 col-sm-12">
+				<article>
+					<h2 class="k-fancy-title">Configurations</h2>
+					<p>The plugin accepts a suite of options, detailed below. Please note that some options are required, and don't have default values (such as <code>repository</code>: you must provide values for such options. Incorrectly configured plugins will result in a javascript 'alert' box being displayed, describing the nature of the configuration problem.</p>
+					<p>Options are passed into the plugin using a Javascript hash/object, such as</p>
+					<pre>$("#vocabInput").vocab_widget({cache: false});</pre>
+					<p> Be sure to quote strings, and separate multiple options with a comma (<code>,</code>). </p> 
+					<p> Alternatively, options can be set after initialisation using the following form: </p>
+					<pre>$(...).vocab_widget('[option name]', [option value]);</pre>
+					<p> This works for all options <strong>except</strong> <code>mode</code>, which must be specified at initialisation (or omitted for core usage). </p>
+					<p> Some options are specific to the chosen mode; the tables below are grouped in a way that makes this easy to comprehend. Core usage of the widget exposes all "common" options. </p>
+					<div class="alert"> <strong>Note:</strong> 'tree' mode has no specific configuration other than the widget's common options. </div>
+
+					<h2 class="widget-title">Common Options</h2>
+					<table class="table table-striped table-bordered table-hover">
+						<thead>
+							<td>Property</td><td>Defaults</td><td>Description</td>
+						</thead>
+						<tbody>
+							<tr>
+								<td><code>mode</code></td>
+								<td><code>''</code></td>
+								<td><span class="badge">required</span> Vocab widget mode: <code>search</code> provides an autocomplete widget on an HTML input element, while <code>narrow</code> or  <code>collection</code> populate an HTML select element with appropriate data. <code>advanced</code> mode exposes the core widget with no UI helpers.</td>
+							</tr>
+							<tr>
+								<td><code>repository</code></td>
+								<td><code>''</code></td>
+								<td><span class="badge">required</span> The SISSvoc repository to query (e.g. <code>anzsrc-for</code>, <code>rifcs</code>)</td>
+							</tr>
+							<tr>
+								<td><code>max_results</code></td>
+								<td><code>100</code></td>
+								<td>At most, how many results should be returned?</td>
+							</tr>
+							<tr>
+								<td><code>cache</code></td>
+								<td><code>true</code></td>
+								<td>Cache SISSvoc responses?</td>
+							</tr>
+							<tr>
+								<td><code>error_msg</code></td>
+								<td><code>"ANDS Vocabulary Widget service error"</code></td>
+								<td>Message title to display (via a js 'alert' call) when an error is encountered. Set to <code>false</code> to suppress such messages</td>
+							</tr>
+							<tr>
+								<td><code>endpoint</code></td>
+								<td><code>"http://services.ands.org.au/api/resolver/vocab_widget/"</code></td>
+								<td>Location (absolute URL) of the (JSONP) SISSvoc provider.</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h2 class="widget-title">"Search" helper options</h2>
+					<table class="table table-striped table-bordered table-hover">
+						<thead>
+							<td>Property</td><td>Defaults</td><td>Description</td>
+						</thead>
+						<tbody>
+							<tr>
+								<td><code>min_chars</code></td>
+								<td><code>3</code></td>
+								<td>How many characters are required before a search is executed?</td>
+							</tr>
+							<tr>
+								<td><code>delay</code></td>
+								<td><code>500</code></td>
+								<td>How long to wait (after initial user input) before executing the search? Provide in milliseconds</td>
+							</tr>
+							<tr>
+								<td><code>nohits_msg</code></td>
+								<td><code>"No matches found"</code></td>
+								<td>Message to display when no matching concepts are found. Set to <code>false</code> to suppress such messages</td>
+							</tr>
+							<tr>
+								<td><code>list_class</code></td>
+								<td><code>"vocab_list"</code></td>
+								<td>CSS 'class' references for the dropdown list. Separate multiple classes by spaces</td>
+							</tr>
+							<tr>
+								<td><code>fields</code></td>
+								<td><code>["label", "notation", "about"]</code></td>
+								<td>Which fields do you want to display? Available fields are defined by the chosen repository.</td>
+							</tr>
+							<tr>
+								<td><code>target</code></td>
+								<td><code>"notation"</code></td>
+								<td>What data field should be stored upon selection?</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h2 class="widget-title">"Narrow" or "Collection" helper options</h2>
+					<table class="table table-striped table-bordered table-hover">
+						<thead>
+							<td>Property</td><td>Defaults</td><td>Description</td>
+						</thead>
+						<tbody>
+							<tr>
+								<td><code>mode_params</code></td>
+								<td><code>''</code></td>
+								<td><span class="label">required</span>For narrow mode, <code>mode_params</code> defines the vocabulary item upon which to narrow.</td>
+							</tr>
+							<tr>
+								<td><code>fields</code></td>
+								<td><code>["label", "notation", "about"]</code></td>
+								<td>In narrow mode, this option <strong>must be overridden</strong> to be a single-element array of string . This selection defines the label for the select list options.</td>
+							</tr>
+							<tr>
+								<td><code>target</code></td>
+								<td><code>"notation"</code></td>
+								<td>What data field should be stored upon selection? In narrow mode, this field is used as the <code>value</code> attribute for the select list options</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h2 class="widget-title">Events</h2>
+					<p> When run in advance mode, events are fired to allow you to hook into the workflow and implement your customisations as you see fit. </p>
+					<div class="alert alert-info"> Plugin event are placed in the <code>vocab.ands</code> namespace </div>
+					<table class="table table-striped table-bordered table-hover">
+						<thead>
+							<td>Event Name</td><td>Parameters</td><td>Description</td>
+						</thead>
+						<tbody>
+							<tr> <td>search.vocab.ands</td> <td> <ol> <li>JS Event object</li> <li>SISSVOC data object</li> </ol> </td> <td> Hook into the plugin's <code>search</code> core function; <code>data</code> is the search response. </td> </tr>
+							<tr> <td>narrow.vocab.ands</td> <td> <ol> <li>JS Event object</li> <li>SISSVOC data object</li> </ol> </td> <td> Hook into the plugin's <code>narrow</code> core function; <code>data</code> is the search response. </td></tr>
+							<tr> <td>top.vocab.ands</td> <td> <ol> <li>JS Event object</li> <li>SISSVOC data object</li> </ol> </td> <td> Hook into the plugin's <code>top</code> core function; <code>data</code> is the search response. </td> </tr>
+							<tr> <td>treeselect.vocab.ands</td> <td> <ol> <li>JS Event object</li> </ol> </td> <td> Fired when a tree item is clicked. The selected item is the <code>event</code> target. The target will have a 'vocab' data object, containing all the details found in a SISSVOC data object. </td> </tr>
+							<tr> <td>error.vocab.ands</td> <td> <ol> <li>JS Event object</li> <li>XMLHttpRequest*</li> </ol> </td> <td> This event is fired whenever there is a problem communicating with the plugin's <code>endpoint</code>.<br> <span class="label label-warning">Note:</span> <span>If the error occurred during an AJAX call, the object will be a bona fide XMLHttpRequest / xhr. Otherwise, a dummy plain object with 'status' and 'responseText' properties will be available.</span> </td> </tr>
+						</tbody>
+					</table>
+
+					<h2 class="widget-title">Data</h2>
+					<p> The SISSVOC data object returned by the above events (and also attached to the 'treeselect' event's 'vocab' data object) is a plain javscript object with the following properties: </p>
+					<dl>
+						<dt>status</dt>
+						<dd>'OK' if all good, something else (most likely 'ERROR' if not)</dd>
+						<dt>message</dt>
+						<dd>description of the underlying system call by default, or information on status when something went wrong</dd>
+						<dt>limit</dt>
+						<dd>the maximum number of records requested</dd>
+						<dt>items</dt>
+						<dd>an array of SISSVOC vocabulary items:
+						  <dl class="dl-horizontal">
+							<dt>definition</dt>
+							<dd>item description</dd>
+							<dt>label</dt>
+							<dd>item label</dd>
+							<dt>about</dt>
+							<dd>item definition / URL</dd>
+							<dt>broader</dt>
+							<dd>parent term (if it exists)</dd>
+							<dt>narrower</dt>
+							<dd>child terms (if they exist, otherwise boolean false)</dd>
+							<dt>count</dt>
+							<dd>fequency of use among ANDS registry objects (experimental; works best on ANZSRC-FOR, not so well on RIFCS)</dd>
+						  </dl>
+						</dd>
+						<dt>count</dt>
+						<dd>the number of items returned</dd>
+					</dl>
+				</article>
+			</div>
+		</div>
 		
 	</div><!-- ends container -->
 
