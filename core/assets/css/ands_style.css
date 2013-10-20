@@ -77,12 +77,17 @@ figure.panel-figure {
   color: #444;
 }
 
+/* line 70, ../sass/ands_style.scss */
+.k-work-grid .mq-box {
+  margin-top: 30px;
+}
+
 /* Footer color changes */
-/* line 72, ../sass/ands_style.scss */
+/* line 78, ../sass/ands_style.scss */
 #k-footer .widget-title, #k-footer .widget p, #k-footer .widget a {
   color: #c1d0bc !important;
 }
-/* line 75, ../sass/ands_style.scss */
+/* line 81, ../sass/ands_style.scss */
 #k-footer .widget_categories ul li {
   font-size: 12px;
   line-height: 13px;
