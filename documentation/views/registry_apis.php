@@ -23,7 +23,7 @@
 		<div class="k-work-grid masonry k-equal-height"><!-- starts row -->
 
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
-				<div class="price-plan plan-common text-center">
+				<div class="price-plan plan-ands text-center">
 					<h3 class="plan-title text-light">getRIFCS API<span class="plan-title-underline"></span></h3>
 					<div class="plan-features">
 						<p>This API provides a simple method to retrieve RIFCS XML for one or more objects in the Registry.</p>
@@ -39,7 +39,7 @@
 			</div>
 
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
-				<div class="price-plan plan-common text-center">
+				<div class="price-plan plan-ands text-center">
 					<h3 class="plan-title text-light">getMetadata API<span class="plan-title-underline"></span></h3>
 					<div class="plan-features">
 						<p>Search and retrieve structured metadata about objects in the registry as either XML or JSON. </p>
@@ -53,7 +53,7 @@
 			</div>
 
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
-				<div class="price-plan plan-common text-center">
+				<div class="price-plan plan-ands text-center">
 					<h3 class="plan-title text-light">getExtRif API<span class="plan-title-underline"></span></h3>
 					<div class="plan-features">
 						<p>This API allows you to retrieve the enriched and annotated copy of records which generate pages in Research Data Australia.</p>
@@ -67,7 +67,7 @@
 			</div>
 
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
-				<div class="price-plan plan-common text-center">
+				<div class="price-plan plan-ands text-center">
 					<h3 class="plan-title text-light">OAI-PMH provider<span class="plan-title-underline"></span></h3>
 					<div class="plan-features">
 						<p>A web service implementing the Open Archives Initiative Protocol for Metadata Harvesting</p>
@@ -81,7 +81,7 @@
 			</div>
 
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
-				<div class="price-plan plan-common text-center">
+				<div class="price-plan plan-ands text-center">
 					<h3 class="plan-title text-light">Research Grants API<span class="plan-title-underline"></span></h3>
 					<div class="plan-features">
 						<p>A special purpose API for retrieving structured information about Australian Research Grants.</p>

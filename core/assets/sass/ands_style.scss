@@ -9,6 +9,12 @@ $ands_text_light : #C1D0BC;
 	a{
 		color: white !important;
 	}
+	#menu-nav li a{
+		color:white;
+		&:hover{
+			color:$ands_text_light !important;
+		}
+	}
 	.sub-menu li a{
 		color: white;
 		&:hover{
@@ -82,4 +88,18 @@ figure.panel-figure{
 		font-size: 12px;
 		line-height: 13px;
 	}
-} 
+}
+
+.plan-ands{
+	border:3px solid $ands_green;
+	.plan-title, .plan-footer{
+		background:$ands_green;
+	}
+	.btn-pricing-plan{
+		background:$ands_green;
+		color:#fff;
+		&:hover{
+			color:$ands_text_light;
+		}
+	}
+}
