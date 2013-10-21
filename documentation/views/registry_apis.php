@@ -40,7 +40,7 @@
 
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
 				<div class="price-plan plan-common text-center">
-					<h3 class="plan-title text-light">getRIFCS API<span class="plan-title-underline"></span></h3>
+					<h3 class="plan-title text-light">getMetadata API<span class="plan-title-underline"></span></h3>
 					<div class="plan-features">
 						<p>Search and retrieve structured metadata about objects in the registry as either XML or JSON. </p>
 						<p><small>Use this API if your system is compatible with XML or JSON and you do not require the full RIFCS representation of an object.</small></p>

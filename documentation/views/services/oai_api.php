@@ -9,7 +9,7 @@
 				<ol class="breadcrumb pull-right">
 					<li><?php echo anchor('/', 'Home'); ?></li>
 					<li><?php echo anchor('/documentation/services/', 'Services'); ?></li>
-					<li class="active"><?php echo anchor('/documentation/services/oai', 'OAI'); ?></li>
+					<li class="active">OAI</li>
 				</ol>
 			</div>
 		</div><!-- ends row -->
@@ -2298,16 +2298,7 @@
 				<div id="k-sidebar-splitter" class="clearfix section-space60"><span></span></div>
 				<ul id="k-sidebar-list" class="list-unstyled">
 
-					<li class="widget widget_search clearfix">
-						<form action="" id="searchform" method="get" role="search">
-							<div class="input-group">
-								<input type="text" name="s" id="s" class="form-control" autocomplete="off" placeholder="Search...">
-								<span class="input-group-btn"><button class="btn btn-default" type="button">SEARCH</button></span>
-							</div>
-						</form>
-					</li>
-
-					<li class="widget widget_categories clearfix">
+					<li class="widget widget_categories clearfix sticky">
 						<h2 class="widget-title">Select from the menu...<span class="k-widget-title-tit"></span></h2>
 						<ul class="anchor_links">
 							<li class="cat-item"><a href="#title" title="OAI API Documentation">OAI API Documentation</a></li>

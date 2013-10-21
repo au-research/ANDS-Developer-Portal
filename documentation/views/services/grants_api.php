@@ -9,7 +9,7 @@
 				<ol class="breadcrumb pull-right">
 					<li><?php echo anchor('/', 'Home'); ?></li>
 					<li><?php echo anchor('/documentation/services/', 'Web Services'); ?></li>
-					<li class="active"><?php echo anchor('/documentation/services/grants', 'Research Grants API'); ?></li>
+					<li class="active">Research Grants API'</li>
 				</ol>
 			</div>
 		</div><!-- ends row -->
@@ -55,7 +55,7 @@
 
 						<p><br/></p>
 
-						<h3 class="k-fancy-title"><a id="access"></a>Service Usage</h3>
+						<h3 class="k-fancy-title"><a id="usage"></a>Service Usage</h3>
 						<div class="alert alert-success">
 						  <b>Before you start!</b> To use this service, institutions or individuals must <a href="<?=registry_url('services/register/');?>" target="_blank">register a free API key</a>.
 						</div>
@@ -136,7 +136,7 @@
 						</small>
 
 						<p><br/></p>
-						<h4>Common Questions</h4><a id="questions"></a>
+						<h4 id="questions">Common Questions</h4>
 						<small>
 						<ul>
 							<li><u>How do I get or extract the grant number?</u>

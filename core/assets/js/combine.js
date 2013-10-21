@@ -1444,13 +1444,13 @@ jQuery.fn.eqHeights=function(e){var t={child:false};var e=jQuery.extend(t,e);var
 	if (target && target.offset()) {
 		$('html,body').animate({
 			scrollTop: target.offset().top-100
-		}, 1200);
+		}, 300);
 	} else {
 		return false;
 	}
 
 	$('.anchor_links a').on('click', function(e){
-		e.preventDefault();
+		// e.preventDefault();
 		var href = $.attr(this, 'href');
 		if($(href) && $(href).offset()){
 			$('html, body').animate({

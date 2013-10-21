@@ -15,7 +15,13 @@ class Documentation extends MX_Controller {
 			default:
 				$data['title'] = 'getRIFCS API Documentation - ANDS Developer Toolbox';
 				$this->load->view('services/getrifcs_api', $data);
-			break;			
+			break;		
+
+			case 'getMetadata':
+			default:
+				$data['title'] = 'Watch this space...Coming Soon! - ANDS Developer Toolbox';
+				$this->load->view('coming_soon', $data);
+			break;	
 
 			case 'getExtRif':
 			default:
