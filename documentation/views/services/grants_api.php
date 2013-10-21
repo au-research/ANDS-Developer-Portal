@@ -94,11 +94,11 @@
 
 								array('principalInvestigator',
 									'<p>filter results to those grants which have this principal/lead investigator</p>',
-									'getGrant?principalInvestigator=Prof%20Jacob%20George'),
+									'getGrant?principalInvestigator=Jacob%20George'),
 
 								array('person',
 									'<p>filter results to those grants which have this person listed as a lead OR co-investigator</p>',
-									'getGrant?principalInvestigator=Prof%20Jacob%20George'),
+									'getGrant?person=Prof%20Jacob%20George'),
 
 								array('rows',
 									'limit the number of grants returned to this number (default: 999)',
