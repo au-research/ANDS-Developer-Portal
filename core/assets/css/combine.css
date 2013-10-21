@@ -819,34 +819,22 @@ input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus,
   color: #7b9b6f !important;
 }
 
-<<<<<<< HEAD
 /* line 26, ../sass/ands_style.scss */
-=======
-/* line 20, ../sass/ands_style.scss */
 .bold {
   font-weight: bold !important;
 }
 
-/* line 23, ../sass/ands_style.scss */
->>>>>>> getRIFCS documentation update
+/* line 29, ../sass/ands_style.scss */
 blue {
   color: blue;
 }
 
-<<<<<<< HEAD
-/* line 29, ../sass/ands_style.scss */
-=======
-/* line 26, ../sass/ands_style.scss */
->>>>>>> getRIFCS documentation update
+/* line 32, ../sass/ands_style.scss */
 green {
   color: green;
 }
 
-<<<<<<< HEAD
-/* line 32, ../sass/ands_style.scss */
-=======
-/* line 30, ../sass/ands_style.scss */
->>>>>>> getRIFCS documentation update
+/* line 36, ../sass/ands_style.scss */
 .pre-small {
   font-size: 0.8em;
 }
@@ -854,123 +842,79 @@ green {
 /**
  * Site Logo Fix
  */
-<<<<<<< HEAD
-/* line 38, ../sass/ands_style.scss */
-=======
-/* line 36, ../sass/ands_style.scss */
->>>>>>> getRIFCS documentation update
+/* line 42, ../sass/ands_style.scss */
 #site-logo a {
   color: #C1D0BC !important;
   font-size: 1.5em !important;
   font-weight: 300;
 }
 
-<<<<<<< HEAD
-/* line 45, ../sass/ands_style.scss */
-=======
-/* line 43, ../sass/ands_style.scss */
->>>>>>> getRIFCS documentation update
+/* line 49, ../sass/ands_style.scss */
 .btn-success {
   background-color: #7b9b6f !important;
 }
 
-<<<<<<< HEAD
-/* line 50, ../sass/ands_style.scss */
-=======
-/* line 48, ../sass/ands_style.scss */
->>>>>>> getRIFCS documentation update
+/* line 54, ../sass/ands_style.scss */
 figure.panel-figure {
   background-color: white;
   padding: 30px;
   margin: 0 10px;
 }
 
-<<<<<<< HEAD
-/* line 56, ../sass/ands_style.scss */
+/* line 60, ../sass/ands_style.scss */
 .k-fancy-title-wrap {
   margin-top: 20px;
 }
-/* line 58, ../sass/ands_style.scss */
-=======
-/* line 54, ../sass/ands_style.scss */
-.k-fancy-title-wrap {
-  margin-top: 20px;
-}
-/* line 56, ../sass/ands_style.scss */
->>>>>>> getRIFCS documentation update
+/* line 62, ../sass/ands_style.scss */
 .k-fancy-title-wrap .k-fancy-title {
   margin: 20px 0;
 }
 
-<<<<<<< HEAD
-/* line 63, ../sass/ands_style.scss */
-=======
-/* line 61, ../sass/ands_style.scss */
->>>>>>> getRIFCS documentation update
+/* line 67, ../sass/ands_style.scss */
 .table {
   table-layout: fixed;
   word-wrap: break-word;
 }
-<<<<<<< HEAD
-/* line 66, ../sass/ands_style.scss */
-=======
-/* line 64, ../sass/ands_style.scss */
->>>>>>> getRIFCS documentation update
+/* line 70, ../sass/ands_style.scss */
 .table code {
   white-space: normal !important;
 }
 
-<<<<<<< HEAD
-/* line 71, ../sass/ands_style.scss */
-=======
-/* line 69, ../sass/ands_style.scss */
->>>>>>> getRIFCS documentation update
+/* line 75, ../sass/ands_style.scss */
 .mq-box > a {
   color: #444;
 }
 
-<<<<<<< HEAD
-/* line 76, ../sass/ands_style.scss */
-=======
-/* line 74, ../sass/ands_style.scss */
->>>>>>> getRIFCS documentation update
+/* line 80, ../sass/ands_style.scss */
 .k-work-grid .mq-box {
   margin-top: 30px;
 }
 
 /* Footer color changes */
-<<<<<<< HEAD
-/* line 84, ../sass/ands_style.scss */
+/* line 88, ../sass/ands_style.scss */
 #k-footer .widget-title, #k-footer .widget p, #k-footer .widget a {
   color: #c1d0bc !important;
 }
-/* line 87, ../sass/ands_style.scss */
-=======
-/* line 82, ../sass/ands_style.scss */
-#k-footer .widget-title, #k-footer .widget p, #k-footer .widget a {
-  color: #c1d0bc !important;
-}
-/* line 85, ../sass/ands_style.scss */
->>>>>>> getRIFCS documentation update
+/* line 91, ../sass/ands_style.scss */
 #k-footer .widget_categories ul li {
   font-size: 12px;
   line-height: 13px;
 }
 
-/* line 93, ../sass/ands_style.scss */
+/* line 97, ../sass/ands_style.scss */
 .plan-ands {
   border: 3px solid #7b9b6f;
 }
-/* line 95, ../sass/ands_style.scss */
+/* line 99, ../sass/ands_style.scss */
 .plan-ands .plan-title, .plan-ands .plan-footer {
   background: #7b9b6f;
 }
-/* line 98, ../sass/ands_style.scss */
+/* line 102, ../sass/ands_style.scss */
 .plan-ands .btn-pricing-plan {
   background: #7b9b6f;
   color: #fff;
 }
-/* line 101, ../sass/ands_style.scss */
+/* line 105, ../sass/ands_style.scss */
 .plan-ands .btn-pricing-plan:hover {
   color: #c1d0bc;
 }
