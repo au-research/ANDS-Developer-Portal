@@ -15,10 +15,35 @@ $ands_text_light : #C1D0BC;
 			color:$ands_text_light !important;
 		}
 	}
-	.sub-menu li a{
-		color: white;
-		&:hover{
-			color: $ands_green !important;
+	.sub-menu{
+		padding:0 !important;
+		li{
+			a{
+				color: white;
+				&:hover{
+					color: $ands_green !important;
+				}
+			}
+			&:hover{
+				background:#2b2b2b;
+			}
+		}
+		.sub-menu{
+			left:100%;
+			top:5px;
+			background:#2b2b2b;
+		}
+		.k-dropdown-menu-sub-indicator > a:after{
+			content: "\f0da";
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-decoration: inherit;
+			color: white;
+			font-size: 14px;
+			position: absolute;
+			top: 5px;
+			right: 10px;
 		}
 	}
 }

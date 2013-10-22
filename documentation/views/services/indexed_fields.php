@@ -48,7 +48,7 @@
 
 	$relation_fields = array(
 		array('related_object_key','string','The key of records which this record relates to (note: does NOT include inferred/reverse links)'),
-		array('related_object_id','string','The key of records which this record relates to (note: does NOT include inferred/reverse links)'),
+		array('related_object_id','string','The id of records which this record relates to (note: does NOT include inferred/reverse links)'),
 		array('related_object_class','string','The class of records which this record relates to (provided they exist in the registry) (i.e. <code>collection</code>, <code>party</code>, <code>activity</code>, <code>service</code>).'),
 		array('related_object_type','string','The type of records which this record relates to (provided they exist in the registry).'),
 		array('related_object_display_title','string','The title for records which this record relates to (provided they exist in the registry)'),
