@@ -80,7 +80,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
+			<!--div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
 				<div class="price-plan plan-ands text-center">
 					<h3 class="plan-title text-light">Research Grants API<span class="plan-title-underline"></span></h3>
 					<div class="plan-features">
@@ -92,7 +92,7 @@
 					</div>
 					<div class="plan-footer"><span class="plan-footer-overline"></span></div>
 				</div>
-			</div>
+			</div-->
 
 		</div>
 
