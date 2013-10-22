@@ -9,7 +9,7 @@
 				<ol class="breadcrumb pull-right">
 					<li><?php echo anchor('/', 'Home'); ?></li>
 					<li><?php echo anchor('/documentation/widgets/', 'Widgets'); ?></li>
-					<li class="active">Vocab Widget</li>
+					<li class="active">Location Capture Widget</li>
 				</ol>
 			</div>
 		</div><!-- ends row -->
@@ -28,22 +28,20 @@
 	
 					<h2 class="k-fancy-title">How does it work?</h2>
 					<p>Simply drop the following lines of HTML into your web form. You only need to specify the name of the form field and the widget will do the rest!</p>
-					 <em>Step 1.</em> Drop this code somewhere in the &lt;head&gt;&lt;/head&gt; of your web page
-					 <pre class="prettyprint">
+					 <em>Step 1.</em> Drop this code somewhere in the <code>&lt;head&gt;&lt;/head&gt;</code> of your web page<br/>
+					 <pre class="prettyprint pre-small">
 &lt;script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&libraries=drawing&v=3"&gt;&lt;/script&gt;
-&lt;script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="<?php echo apps_url('assets/location_capture_widget/js/location_capture_widget.js');?>"&gt;&lt;/script&gt;
-&lt;link rel="stylesheet" type="text/css" href="<?php echo apps_url('assets/location_capture_widget/css/location_capture_widget.css');?>" /&gt;
-					</pre>
+&lt;script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js'&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="<?=remove_scheme(apps_url('assets/location_capture_widget/js/location_capture_widget.js'));?>"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="<?=remove_scheme(apps_url('assets/location_capture_widget/css/location_capture_widget.css'));?>" /&gt;</pre>
 
 					<em>Step 2.</em> Invoke the plugin using this code towards the bottom of the page. This example invokes the plugin on an HTML element with id <code>mapContainer</code>, and stores the final coordinate data in the HTML element with id <code>coordinates</code>:
-					<pre class="prettyprint">
+					<br/><pre class="prettyprint pre-small">
 &lt;script type="text/javascript"&gt;
   $(document).ready(function() {
 	$("#mapContainer").ands_location_widget({target:'coordinates'});
   });
-&lt;/script&gt;
-					</pre>
+&lt;/script&gt;</pre>
 
 					 <p><em>Step 3.</em> Load the web page and see the new widget appear! 
 					 <br/>Once submitted, the coordinates of the location selected will be in the form value you chose for <code>target</code></p>
@@ -154,7 +152,6 @@ $("#mapContainer").ands_location_widget({
 					<li class="widget widget_categories clearfix">
 						<h2 class="widget-title">Demo and Download<span class="k-widget-title-tit"></span></h2>
 						<ul class="list-unstyled">
-							<li class="cat-item"><?php echo anchor(apps_url('assets/location_capture_widget/dist/demo.html'), 'Demo', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('location_capture_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('location_capture_widget/download/'), '<i class="icon-white icon-download"></i> Download uncompressed', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('location_capture_widget/download/full'), '<i class="icon-white icon-download"></i> Download (full)', array('class'=>'btn btn-large btn-success')) ?></li>
