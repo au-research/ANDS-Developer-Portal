@@ -24,28 +24,31 @@
 					
 
 					<h2 class="k-fancy-title">What is this widget?</h2>
-					<p>The ANDS Vocabulary Widget allows you to instantly add Data Classification capabilities to your data capture tools through the ANDS Vocabulary Service.</p>
+					<p>The ANDS Vocabulary Widget allows you to <b>instantly add Data Classification capabilities</b> to your data capture tools through the ANDS Vocabulary Service.</p>
 					<p>The widget has been written in the style of a jQuery plugin, allowing complete control over styling and functionality with just a few lines of javascript. The widget also ships with some UI helper modes for:</p>
 					
-					<ul class="k-work-features-list"><!-- features -->
-						<li><span class="k-work-feature-value">Searching for vocabulary terms</span></li>
-						<li><span class="k-work-feature-value">Creates a navigable "autocomplete" widget, with users able to search for the appropriate controlled vocabulary classification when inputting data.</span></li>
-						<li><span class="k-work-feature-value">Narrowing on a (hierarchical) vocabulary item</span></li>
-						<li><span class="k-work-feature-value">Populates a select list (or autocomplete textbox) with items comprising a base vocabulary classification URI.</span></li>
-						<li><span class="k-work-feature-value">Browsing a (hierarchical) vocabulary set as a tree</span></li>
-						<li><span class="k-work-feature-value">Creates a tiered term tree (such as that used in the <a href="http://researchdata.ands.org.au/browse">RDA "Browse" screen</a>)</span></li>
+					<ul><!-- features -->
+						<li><span>Searching for vocabulary terms</span></li>
+						<li><span>Creates a <b>navigable "autocomplete" widget</b>, with users able to search for the appropriate controlled vocabulary classification when inputting data.</span></li>
+						<li><span>Narrowing on a (hierarchical) vocabulary item</span></li>
+						<li><span><b>Populates a select list (or autocomplete textbox)</b> with items comprising a base vocabulary classification URI.</span></li>
+						<li><span>Browsing a (hierarchical) vocabulary set as a tree</span></li>
+						<li><span>Creates a <b>tiered term tree</b> (such as that used in the <a href="http://researchdata.ands.org.au/browse">RDA "Browse" screen</a>)</span></li>
 					</ul>
 						
 					<p>It is also possible to use the widget in a more programmatic manner; refer to the 'core usage' section below for more details.</p>
-		 
-					<h2 class="k-fancy-title">How does it work?</h2>
+					
+					<p><br/></p>
+
+					<h2 class="k-fancy-title">How does I use this plugin?</h2>
 					<p>The widget requires jQuery; load this, and the plugin itself (and associated CSS styles) in your document's &lt;head&gt;&lt;/head&gt; segment:</p>
-					<pre class="prettyprint pre-scrollable" style="min-height:5em">
-&lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js'&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="<?php echo apps_url('assets/vocab_widget/js/vocab_widget.js'); ?>"&gt;&lt;/script&gt;
-&lt;link rel="stylesheet" type="text/css" href="<?php echo apps_url('assets/vocab_widget/css/vocab_widget.css'); ?>" /&gt;
+					<pre class="prettyprint pre-scrollable pre-small" style="min-height:5em">
+&lt;script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js'&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="<?=remove_scheme(apps_url('assets/vocab_widget/js/vocab_widget.js'));?>"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="<?=remove_scheme(apps_url('assets/vocab_widget/css/vocab_widget.css'));?>" /&gt;
 					</pre>
 
+					<p><br/></p>
 					<h2 class="k-fancy-title">Demo</h2>
 					<h2 class="widget-title">ANZSRC Searching</h2>
 					<p>Search a vocabulary for matching terms, provided in an autocomplete-style list:</p>
@@ -76,8 +79,11 @@ $("#anzsrc-vocab").vocab_widget({
 						</div>
 					</div>
 
+
+					<p><br/></p>
+					<p><hr/></p>				
 					<h2 class="widget-title">RIFCS Narrowing</h2>
-					<p>Narrow or collection mode can be attached to a select element, or a text input box for an autocomplete-style list:</p>
+					<p>Narrow or collection mode can be attached to a <code>select</code> element to <b>provide a drop-down</b>, or a text <code>input</code> box for an autocomplete-style list:</p>
 					<ul>
 						<li><code>narrow</code> mode usually expresses a direct parent-child relationship in the vocabulary (such as skos:narrower).</li>
 						<li><code>collection</code> is used to express less strong groupings of concepts in a vocabulary (such as skos:Collection or even rdf:list).</li>
@@ -110,7 +116,10 @@ $("#rifcs-idtype").vocab_widget({
 						</div>
 					</div>
 
-					<h2 class="widget-title">RIFCS Narrowing w/autocomplete</h2>
+					<p><br/></p>
+					<p><hr/></p>	
+					
+					<!--h2 class="widget-title">RIFCS Narrowing w/autocomplete</h2>
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#vocab_w-3-result" data-toggle="tab">Result</a></li>
 						<li><a href="#vocab_w-3-html" data-toggle="tab">HTML</a></li>
@@ -138,7 +147,7 @@ $("#rifcs-idtype-input").vocab_widget({
 });
 							</pre>
 						</div>
-					</div>
+					</div-->
 
 					<h2 class="widget-title">Tree Mode</h2>
 					<p>Tree mode constructs a clickable vocabulary tree for a given repository. Bind to the <code>treeselect.vocab.ands</code> event to handle user selection.</p>
@@ -170,69 +179,9 @@ $("#vocab-tree").vocab_widget({
 						</div>
 					</div>
 
-					<h2 class="widget-title">Core Mode</h2>
-					<p>Invoking the plugin with no 'mode' argument exposes core functionality, without having to use form input (text, select) elements or the like. Instead, you hook into javascript Events, building the UI as best fits your needs. A very basic example is shown below: it constructs a list of RIFCS identifier types.</p>
-					<p>This form section is using the widget with no helpers; it outputs a list of known <code>rifcs</code> identifier types</p>
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#vocab_w-5-result" data-toggle="tab">Result</a></li>
-						<li><a href="#vocab_w-5-html" data-toggle="tab">HTML</a></li>
-						<li><a href="#vocab_w-5-js" data-toggle="tab">JS</a></li>
-					</ul>
-					<div class="tab-content">
-						<div id="vocab_w-5-result" class="tab-pane fade active in">
-							<div id="vocab-core">
-								<p>RIFCS Identifier types:</p>
-							</div>
-						</div>
-						<div id="vocab_w-5-html" class="tab-pane fade">
-							<pre class="prettyprint">
-&lt;div id=&quot;vocab-core&quot;&gt; &lt;p&gt;RIFCS Identifier types:&lt;/p&gt; &lt;/div&gt;
-							</pre>
-						</div>
-						<div id="vocab_w-5-js" class="tab-pane fade">
-							<pre class="prettyprint">
-var elem = $("#vocab-core");
-var widget = elem.vocab_widget({repository:'rifcs', cache: false});
+				
 
-//set up some handlers
-elem.on('narrow.vocab.ands', function(event, data) {
-	var list = elem.append('<ul />');
-	$.each(data.items, function(idx, e) {
-	var link = $('<a href="' + e['about'] + '">' + e['label'] + '</a>');
-	var item = $('<li />');
-	item.append(link).append(' (' + e.definition + ')');
-	item.data('data', e);
-	list.append(item);
-  });
-});
-
-//error handler
-elem.on('error.vocab.ands', function(event, xhr) {
-  elem.addClass('error')
-	.empty()
-	.text('There was an error retrieving vocab data: ' + xhr);
-});
-
-//now, perform the vocab lookup
-widget.vocab_widget('narrow','http://purl.org/au-research/vocabulary/RIFCS/1.4/RIFCSIdentifierType');
-							</pre>
-						</div>
-					</div>
-					<h6>Functions</h6>
-					<p>Core usage exposes 3 functions</p>
-					<ul>
-						<li><code>search</code></li>
-						<li><code>narrow</code></li>
-						<li><code>top</code></li>
-					</ul>
-					<p>These take a single additional parameter, which can look like any of the following</p>
-					<dl>
-						<dt>plain string</dt>
-							<dd>Search term (for search call) or narrow URI (for narrow call)</dd>
-						<dt>object <code>{uri:'...', callee:'...'}</code></dt>
-							<dd>'uri' works as the plain string description above, and should be set <code>false</code>.</dd>
-						<dd>'callee' defines the object that will fire the subsequent javascript event. Defaults to the containing element (what you invoked the widget on)</dd>
-					</dl>
+					<p><br/></p>
 				</article><!-- ends article short -->
 			</div><!-- ends main content -->
 
@@ -252,12 +201,10 @@ widget.vocab_widget('narrow','http://purl.org/au-research/vocabulary/RIFCS/1.4/R
 
 					<div class="sticky">
 					<li class="widget widget_categories clearfix">
-						<h2 class="widget-title">Demo and Download<span class="k-widget-title-tit"></span></h2>
+						<h2 class="widget-title">Software Download<span class="k-widget-title-tit"></span></h2>
 						<ul class="list-unstyled">
-							<li class="cat-item"><?php echo anchor(apps_url('assets/vocab_widget/dist/demo.html'), 'Demo', array('class'=>'btn btn-large btn-success')) ?></li>
-							<li class="cat-item"><?php echo anchor(apps_url('vocab_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
-							<li class="cat-item"><?php echo anchor(apps_url('vocab_widget/download/'), '<i class="icon-white icon-download"></i> Download uncompressed', array('class'=>'btn btn-large btn-success')) ?></li>
-							<li class="cat-item"><?php echo anchor(apps_url('vocab_widget/download/full'), '<i class="icon-white icon-download"></i> Download (full)', array('class'=>'btn btn-large btn-success')) ?></li>
+							<li class="cat-item"><?php echo anchor(apps_url('vocab_widget/download/'), '<i class="icon-white icon-download"></i> Download widget sourcecode', array('class'=>'btn btn-large btn-success')) ?></li>
+							<li class="cat-item"><?php echo anchor(apps_url('vocab_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified widget', array('class'=>'btn btn-large btn-success')) ?></li>
 						</ul>
 					</li>
 
@@ -273,15 +220,15 @@ widget.vocab_widget('narrow','http://purl.org/au-research/vocabulary/RIFCS/1.4/R
 		</div><!-- ends row -->
 
 		<div class="row">
-			<div id="k-config" class="clearfix col-lg-12 col-md-12 col-sm-12">
-				<article>
-					<h2 class="k-fancy-title">Configurations</h2>
+			<div id="k-config" class="clearfix col-lg-9 col-md-9 col-sm-9">
+				<article><small>
+					<h2 class="k-fancy-title">Configuration</h2>
 					<p>The plugin accepts a suite of options, detailed below. Please note that some options are required, and don't have default values (such as <code>repository</code>: you must provide values for such options. Incorrectly configured plugins will result in a javascript 'alert' box being displayed, describing the nature of the configuration problem.</p>
 					<p>Options are passed into the plugin using a Javascript hash/object, such as</p>
-					<pre>$("#vocabInput").vocab_widget({cache: false});</pre>
+					<pre class="prettyprint">$("#vocabInput").vocab_widget({cache: false});</pre>
 					<p> Be sure to quote strings, and separate multiple options with a comma (<code>,</code>). </p> 
 					<p> Alternatively, options can be set after initialisation using the following form: </p>
-					<pre>$(...).vocab_widget('[option name]', [option value]);</pre>
+					<pre class="prettyprint">$(...).vocab_widget('[option name]', [option value]);</pre>
 					<p> This works for all options <strong>except</strong> <code>mode</code>, which must be specified at initialisation (or omitted for core usage). </p>
 					<p> Some options are specific to the chosen mode; the tables below are grouped in a way that makes this easy to comprehend. Core usage of the widget exposes all "common" options. </p>
 					<div class="alert"> <strong>Note:</strong> 'tree' mode has no specific configuration other than the widget's common options. </div>
@@ -388,6 +335,78 @@ widget.vocab_widget('narrow','http://purl.org/au-research/vocabulary/RIFCS/1.4/R
 						</tbody>
 					</table>
 
+					<p><br/></p>
+					<p><br/></p>
+
+
+					<h2 class="k-fancy-title">Advanced Configuration</h2>
+
+					<h2 class="widget-title">Core Mode</h2>
+					<p>Invoking the plugin with no 'mode' argument exposes core functionality, without having to use form input (text, select) elements or the like. Instead, you hook into javascript Events, building the UI as best fits your needs. A very basic example is shown below: it constructs a list of RIFCS identifier types.</p>
+					<p>This form section is using the widget with no helpers; it outputs a list of known <code>rifcs</code> identifier types</p>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#vocab_w-5-result" data-toggle="tab">Result</a></li>
+						<li><a href="#vocab_w-5-html" data-toggle="tab">HTML</a></li>
+						<li><a href="#vocab_w-5-js" data-toggle="tab">JS</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="vocab_w-5-result" class="tab-pane fade active in">
+							<div id="vocab-core">
+								<p>RIFCS Identifier types:</p>
+							</div>
+						</div>
+						<div id="vocab_w-5-html" class="tab-pane fade">
+							<pre class="prettyprint pre-small">
+&lt;div id=&quot;vocab-core&quot;&gt; &lt;p&gt;RIFCS Identifier types:&lt;/p&gt; &lt;/div&gt;
+							</pre>
+						</div>
+						<div id="vocab_w-5-js" class="tab-pane fade">
+							<pre class="prettyprint pre-small">
+var elem = $("#vocab-core");
+var widget = elem.vocab_widget({repository:'rifcs', cache: false});
+
+//set up some handlers
+elem.on('narrow.vocab.ands', function(event, data) {
+	var list = elem.append('<ul />');
+	$.each(data.items, function(idx, e) {
+	var link = $('<a href="' + e['about'] + '">' + e['label'] + '</a>');
+	var item = $('<li />');
+	item.append(link).append(' (' + e.definition + ')');
+	item.data('data', e);
+	list.append(item);
+  });
+});
+
+//error handler
+elem.on('error.vocab.ands', function(event, xhr) {
+  elem.addClass('error')
+	.empty()
+	.text('There was an error retrieving vocab data: ' + xhr);
+});
+
+//now, perform the vocab lookup
+widget.vocab_widget('narrow','http://purl.org/au-research/vocabulary/RIFCS/1.4/RIFCSIdentifierType');
+							</pre>
+						</div>
+					</div>
+
+					<p><hr/></p>
+
+					<p>Core usage exposes 3 functions</p>
+					<ul>
+						<li><code>search</code></li>
+						<li><code>narrow</code></li>
+						<li><code>top</code></li>
+					</ul>
+					<p>These take a single additional parameter, which can look like any of the following</p>
+					<dl>
+						<dt>plain string</dt>
+							<dd>Search term (for search call) or narrow URI (for narrow call)</dd>
+						<dt>object <code>{uri:'...', callee:'...'}</code></dt>
+							<dd>'uri' works as the plain string description above, and should be set <code>false</code>.</dd>
+						<dd>'callee' defines the object that will fire the subsequent javascript event. Defaults to the containing element (what you invoked the widget on)</dd>
+					</dl>
+
 					<h2 class="widget-title">Events</h2>
 					<p> When run in advance mode, events are fired to allow you to hook into the workflow and implement your customisations as you see fit. </p>
 					<div class="alert alert-info"> Plugin event are placed in the <code>vocab.ands</code> namespace </div>
@@ -403,6 +422,7 @@ widget.vocab_widget('narrow','http://purl.org/au-research/vocabulary/RIFCS/1.4/R
 							<tr> <td>error.vocab.ands</td> <td> <ol> <li>JS Event object</li> <li>XMLHttpRequest*</li> </ol> </td> <td> This event is fired whenever there is a problem communicating with the plugin's <code>endpoint</code>.<br> <span class="label label-warning">Note:</span> <span>If the error occurred during an AJAX call, the object will be a bona fide XMLHttpRequest / xhr. Otherwise, a dummy plain object with 'status' and 'responseText' properties will be available.</span> </td> </tr>
 						</tbody>
 					</table>
+				
 
 					<h2 class="widget-title">Data</h2>
 					<p> The SISSVOC data object returned by the above events (and also attached to the 'treeselect' event's 'vocab' data object) is a plain javscript object with the following properties: </p>
@@ -432,7 +452,7 @@ widget.vocab_widget('narrow','http://purl.org/au-research/vocabulary/RIFCS/1.4/R
 						</dd>
 						<dt>count</dt>
 						<dd>the number of items returned</dd>
-					</dl>
+					</dl></small>
 				</article>
 			</div>
 		</div>

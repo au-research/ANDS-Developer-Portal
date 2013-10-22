@@ -192,9 +192,8 @@ $('#advanced_search_example').registry_widget({
 					<li class="widget widget_categories clearfix">
 						<h2 class="widget-title">Software Download</h2>
 						<ul class="list-unstyled">
-							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
-							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/'), '<i class="icon-white icon-download"></i> Download uncompressed', array('class'=>'btn btn-large btn-success')) ?></li>
-							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/full'), '<i class="icon-white icon-download"></i> Download (full)', array('class'=>'btn btn-large btn-success')) ?></li>
+							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/'), '<i class="icon-white icon-download"></i> Download widget sourcecode', array('class'=>'btn btn-large btn-success')) ?></li>
+							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified widget', array('class'=>'btn btn-large btn-success')) ?></li>
 						</ul>
 					</li>
 

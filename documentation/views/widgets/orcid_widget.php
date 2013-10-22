@@ -116,16 +116,15 @@ $('#custom_settings_orcid').orcid_widget({
 
 					<div class="sticky">
 					<li class="widget widget_categories clearfix">
-						<h2 class="widget-title">Demo and Download<span class="k-widget-title-tit"></span></h2>
+						<h2 class="widget-title">Software Download<span class="k-widget-title-tit"></span></h2>
 						<ul class="list-unstyled">
-							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
-							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/'), '<i class="icon-white icon-download"></i> Download uncompressed', array('class'=>'btn btn-large btn-success')) ?></li>
-							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/full'), '<i class="icon-white icon-download"></i> Download (full)', array('class'=>'btn btn-large btn-success')) ?></li>
-						</ul>
+							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/'), '<i class="icon-white icon-download"></i> Download widget sourcecode', array('class'=>'btn btn-large btn-success')) ?></li>
+							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified widget', array('class'=>'btn btn-large btn-success')) ?></li>
+					</ul>
 					</li>
 
 					<li class="widget clearfix">
-						<h2>License</h2>
+						<h2 class="widget-title">License</h2>
 						<p> Apache License, Version 2.0: <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a> </p>
 					</li>
 					</div>

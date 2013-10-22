@@ -70,7 +70,7 @@
 			<link rel="stylesheet" type="text/css" href="<?php echo apps_url('assets/vocab_widget/css/vocab_widget.css'); ?>">
 			<script src="<?php echo apps_url('assets/vocab_widget/js/vocab_widget.js'); ?>"></script>
 	<?php elseif($lib=='location_capture_widget'):?>
-			<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+			<script src="//maps.google.com/maps/api/js?sensor=false&libraries=drawing&v=3"></script>
 			<link href="<?php echo apps_url('assets/location_capture_widget/css/location_capture_widget.css');?>" rel="stylesheet" type="text/css">
 			<script src="<?php echo apps_url('assets/location_capture_widget/js/location_capture_widget.js');?>" type="text/javascript"></script>
     <?php elseif($lib=='colorbox'):?>
