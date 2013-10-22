@@ -45,6 +45,11 @@ class Documentation extends MX_Controller {
 				$this->load->view('coming_soon', $data);
 			break;
 
+			case 'indexed_fields':
+				$data['title'] = 'ANDS Indexed Fields - ANDS Developer Toolbox';
+				$this->load->view('services/indexed_fields', $data);
+			break;
+			
 			case 'registry_apis':
 			default:
 				$data['title'] = 'ANDS Collections Registry APIs - ANDS Developer Toolbox';
