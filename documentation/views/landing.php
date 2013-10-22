@@ -28,6 +28,13 @@
 						 data-speed="600"
 						 data-start="1200"
 						 data-easing="easeOutBack" data-endspeed="200" data-endeasing="easeOutSine">Embeddable Research Data Australia searches</div>
+
+					<div class="caption k_sm_callout sfb stl"
+						 data-x="630"
+						 data-y="250"
+						 data-speed="600"
+						 data-start="1200"
+						 data-easing="easeOutBack" data-endspeed="200" data-endeasing="easeOutCos"><?php echo anchor('documentation/widgets/registry_widget', 'Learn More') ?></div>
 			</li>
 
 			<li data-transition="slotzoom-random" data-slotamount="1" data-masterspeed="300" data-delay="9000">
@@ -61,6 +68,13 @@
 						 data-speed="600"
 						 data-start="1200"
 						 data-easing="easeOutBack" data-endspeed="200" data-endeasing="easeOutSine"> to your data capture tools </div> 
+
+					<div class="caption k_sm_callout sfb stl"
+						 data-x="150"
+						 data-y="290"
+						 data-speed="600"
+						 data-start="1200"
+						 data-easing="easeOutBack" data-endspeed="200" data-endeasing="easeOutSine"><?php echo anchor('documentation/widgets/vocab_widget', 'Learn More') ?></div> 
 			</li>
 
 			<li data-transition="slotzoom-random" data-slotamount="1" data-masterspeed="300" data-delay="9000">
@@ -94,6 +108,13 @@
 						 data-speed="600"
 						 data-start="1200"
 						 data-easing="easeOutBack" data-endspeed="200" data-endeasing="easeOutSine">Custom Drawings &amp; Place Name Resolution</div> 
+
+					<div class="caption k_sm_callout sfb stl"
+						 data-x="700"
+						 data-y="290"
+						 data-speed="600"
+						 data-start="1200"
+						 data-easing="easeOutBack" data-endspeed="200" data-endeasing="easeOutSine"><?php echo anchor('documentation/widgets/location_widget', 'Learn More') ?></div> 
 			</li>
 
 		</ul>
