@@ -24,59 +24,55 @@
 					
 					<h2 class="k-fancy-title">What is this widget?</h2>
 					<p>
-						The ANDS ORCID Widget allows you to lookup an ORCID ID and search for one using <a href="http://support.orcid.org/knowledgebase/articles/116874-orcid-api-guide" target="_blank">ORCID JSONP API</a>
+						The ANDS ORCID Widget allows you to enhance your web form to include the ability to lookup and search for an ORCID ID.
 					</p>
 					<p>
-						This widget is a jQuery plugin with extensible options over styling and functionality. Hence the widget is dependent on the jQuery plugin to function correctly.
+						This widget is powered by the <a href="http://support.orcid.org/knowledgebase/articles/116874-orcid-api-guide" target="_blank">ORCID JSONP API</a> and requires jQuery to function.
 					</p>
+					<p><br/></p>
 
 					<h2 class="k-fancy-title">How to use this widget</h2>
 					<p>
-						Put the following code snippet into your document's &lt;head&gt; segment
-						<pre class="prettyprint pre-scrollable">
-&lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js'&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="<?php echo apps_url('assets/orcid_widget/css/orcid_widget.js');?>"&gt;&lt;/script&gt;
-&lt;link rel="stylesheet" type="text/css" href="<?php echo apps_url('assets/orcid_widget/css/orcid_widget.css');?>" /&gt;
-						</pre>
+						Put the following code snippet into your HTML document between the <code>&lt;head&gt;</code> tags.
+						<pre class="prettyprint pre-scrollable pre-small">
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="<?=remove_scheme(apps_url('assets/orcid_widget/css/orcid_widget.js'));?>"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="<?=remove_scheme(apps_url('assets/orcid_widget/css/orcid_widget.css'));?>" /&gt;</pre>
+					And you're done! Just 3 lines of code! Any input fields on your page which have the class <code>orcid_widget</code> will be transformed into a fully-functional ORCID lookup tool.
 					</p>
-					<p>
-						You can init the plugin simply by
-						<pre class="prettyprint">
-&lt;input type="text" class="orcid_widget"&gt;
-						</pre>
-						the plugin will automatically binds to all element that has the class of <code>.orcid_widget</code>
-					</p>
-
-
-					<p>You can also manually trigger the plugin with</p>
-					<pre class="prettyprint">
-$('input').orcid_widget();
-					</pre>
-
+					<p><br/></p>
 					<h2 class="k-fancy-title">Demo</h2>
 					<h2 class="widget-title">Default Settings</h2>
+					<p>This example shows how to embed a Researcher Lookup tool into your webpage. <br/>
+						<ul><li>if you don't know your ORCID, click <blue>Search</blue> to search for your ORCID profile</li>
+						<li>if you already know your ORCID, put it into the text field and click <blue>Lookup</blue> instead</li></ul>
+					</p>
+					<p>&nbsp;</p>
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#orcid_w-1-result" data-toggle="tab">Result</a></li>
 						<li><a href="#orcid_w-1-html" data-toggle="tab">HTML</a></li>
-						<li><a href="#orcid_w-1-js" data-toggle="tab">JS</a></li>
+
 					</ul>
 					<div class="tab-content">
 						<div id="orcid_w-1-result" class="tab-pane fade active in">
-							<input type="text" name="name" id="default_settings_orcid" value="" size="40" class=""/>
+							<input type="text" name="name" value="" size="40" class="orcid_widget"/>
 						</div>
 						<div id="orcid_w-1-html" class="tab-pane fade">
 							<pre class="prettyprint">
-&lt;input type="text" name="name" id="default_settings_orcid" value="" size="40" class=""/&gt;
-							</pre>
-						</div>
-						<div id="orcid_w-1-js" class="tab-pane fade">
-							<pre class="prettyprint">
-$('#default_settings_orcid').orcid_widget();
+&lt;input type="text" class="orcid_widget"/&gt;
 							</pre>
 						</div>
 					</div>
 
+					<p><hr/></p>
+					<p><br/></p>
+
 					<h2 class="widget-title">Custom Settings</h2>
+					<p>In this example, we initialise the widget using some custom settings:<br/>
+						<ul><li>the labels on the page have been changed (see the <code>JS</code> tab)</li>
+						<li>automatically display the search box when the widget loads</li>
+						<li>a default value for the ORCID has been set in the <code>HTML</code> tab (and this is displayed when the page loads)</li></ul>
+					</p>
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#orcid_w-2-result" data-toggle="tab">Result</a></li>
 						<li><a href="#orcid_w-2-html" data-toggle="tab">HTML</a></li>
@@ -98,8 +94,7 @@ $('#custom_settings_orcid').orcid_widget({
 	pre_open_search:true,
 	lookup_text: 'Custom Lookup',
 	search_text: 'Custom Search',
-	before_html: 'Enter Here: ',
-	auto_close_search: true
+	before_html: 'Enter Here: '
 });
 							</pre>
 						</div>
@@ -123,7 +118,6 @@ $('#custom_settings_orcid').orcid_widget({
 					<li class="widget widget_categories clearfix">
 						<h2 class="widget-title">Demo and Download<span class="k-widget-title-tit"></span></h2>
 						<ul class="list-unstyled">
-							<li class="cat-item"><?php echo anchor(apps_url('assets/orcid_widget/dist/demo.html'), '<i class="icon-white icon-download"></i> Demo', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/'), '<i class="icon-white icon-download"></i> Download uncompressed', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/full'), '<i class="icon-white icon-download"></i> Download (full)', array('class'=>'btn btn-large btn-success')) ?></li>
@@ -141,9 +135,22 @@ $('#custom_settings_orcid').orcid_widget({
 		</div><!-- ends row -->
 
 		<div class="row">
-		<div id="k-config" class="clearfix col-lg-12 col-md-12 col-sm-12">
+		<div id="k-config" class="clearfix col-lg-9 col-md-9 col-sm-9">
 			<article>
-				<h2 class="k-fancy-title">Configurations</h2>
+				<p><br/></p>
+				<h2 class="k-fancy-title">Configuration</h2>
+					<p>
+						You can initialise the plugin by simply adding a class of <code>orcid_widget</code> to an input element
+						 (<?php echo anchor(apps_url('assets/orcid_widget/dist/demo.html'), 'demo') ?>):
+						<pre class="prettyprint pre-small">&lt;input type="text" class="orcid_widget"&gt;</pre>
+					</p>
+
+
+					<p>You can also manually trigger the plugin with Javascript:</p>
+					<pre class="prettyprint pre-small">$('input').orcid_widget();</pre>
+					<p>In this mode, you can pass the <code>orcid_wiget()</code> function any of the following configuration parameters:</p>
+
+
 <?php 
 	$config = array(
 		array('search_endpoint', 'http://pub.orcid.org/search/orcid-bio?q=', 'JSONP search API for ORCID'),
@@ -173,14 +180,14 @@ $('#custom_settings_orcid').orcid_widget({
 ?>
 				<table class="table table-striped table-bordered table-hover">
 					<thead>
-						<td>Property</td><td>Defaults</td><td>Description</td>
+						<td>Property</td><td>Description</td><td>Default</td>
 					</thead>
 					<tbody>
 						<?php foreach($config as $c): ?>
 						<tr>
 							<td><code><?php echo $c[0] ?></code></td>
-							<td><code><?php echo $c[1] ?></code></td>
 							<td><?php echo $c[2] ?></td>
+							<td><code><?php echo $c[1] ?></code></td>
 						</tr>
 						<?php endforeach; ?>
 					</tbody>

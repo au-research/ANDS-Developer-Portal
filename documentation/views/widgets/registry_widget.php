@@ -26,24 +26,34 @@
 					<p>The Registry Search Widget provides a quick and easy way of embedding a live Research Data Australia search or record display within your new or existing web pages.  </p>
 					<p>The flexibility of the widget allows you to configure a predefined search, or provide your end users with a text field to specify their own search.  </p>
 					<p>Some use cases for the Registry Object Search Widget include:</p>
-					<ul class="k-work-features-list"><!-- features -->
-						<li><span class="k-work-feature-value">Showcase the most recent collections contributed to Research Data Australia by institution or researcher name</span></li>
-						<li><span class="k-work-feature-value">Implement a lookup function in your data capture forms/processes to search for keys or global identifiers</span></li>
-						<li><span class="k-work-feature-value">Supplement your site's search results with search results from Research Data Australia</span></li>
-						<li><span class="k-work-feature-value">Provide your users with a listing of data collections related to a specific subject</span></li>
+					<ul><!-- features -->
+						<li><b>Showcase recent collections</b> contributed to Research Data Australia by institution or researcher name</li>
+						<li>Implement a <b>lookup function in data capture forms</b>/processes to search for keys or global identifiers</li>
+						<li>Supplement your site's search results with <b>search results</b> from Research Data Australia</li>
+						<li>Provide your users with a listing of data collections related to a specific subject</li>
 					</ul>
+					<p><br/></p>
 
 					<h2 class="k-fancy-title">How to use this widget?</h2>
 					<p>The widget requires jQuery; load this, and the plugin itself (and associated CSS styles) in your document's <code>&lt;head&gt;&lt;/head&gt;</code> segment:</p>
 					<pre class="prettyprint pre-scrollable" style="min-height:5em">
-&lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js'&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="<?php echo apps_url('assets/registry_widget/js/registry_widget.js');?>"&gt;&lt;/script&gt;
-&lt;link rel="stylesheet" type="text/css" href="<?php echo apps_url('assets/registry_widget/css/registry_widget.css');?>" /&gt;
+&lt;script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js'&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="<?=remove_scheme(apps_url('assets/registry_widget/js/registry_widget.js'));?>"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="<?=remove_scheme(apps_url('assets/registry_widget/css/registry_widget.css'));?>" /&gt;
 					</pre>
 
+					See <a href="#configuration">Configuration section</a> below for details on how to configure the widget on your web page.
+
+					<p><br/></p>
 					<h2 class="k-fancy-title">Demo</h2>
 					
 					<h2 class="widget-title">Search Result Display Example</h2>
+					<p>
+						<b>Embed the results of a simple search</b> into your website, such as a panel on your institution's own search page to supplement it with collections which are available in Research Data Australia.
+					</p>
+					<p>
+						<ul><li><em>In this example, the top 5 records matching the search term "<blue>fish</blue>" are listed:</em></li></ul>
+					</p>
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#registry_w-3-result" data-toggle="tab">Result</a></li>
 						<li><a href="#registry_w-3-html" data-toggle="tab">HTML</a></li>
@@ -59,8 +69,12 @@
 						</div>
 					</div>
 
+					<p><hr/></p>
+					<p><br/></p>
+
 					<h2 class="widget-title">Custom Search Result Display Example</h2>
-					<p>This result example displays the last 5 collections added by Australian Ocean Data Network</p>
+					<p>Embed the results of a more complex search into your website, such as a <b>panel on your institution's profile page</b> which lists the Collections recently contributed to Research Data Australia.</p>
+					<p><ul><li>This result example displays the <blue>5 most recent collections</blue> contributed by <blue>Australian Ocean Data Network</blue></li></ul></p>
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#registry_w-4-result" data-toggle="tab">Result</a></li>
 						<li><a href="#registry_w-4-html" data-toggle="tab">HTML</a></li>
@@ -76,7 +90,14 @@
 						</div>
 					</div>
 
+					<p><hr/></p>
+					<p><br/></p>
+
 					<h2 class="widget-title">Single Display Example</h2>
+
+					<p>Showcase the contents of a collection from Research Data Australia on your own website. The display of this can be easily styled and customised using the <code>single_template</code> parameter (see below).</p>
+					<p><ul><li>This result example will <blue>display the title, contributor and description</blue> of a particular record (based on it's key).</li></ul></p>
+
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#registry_w-2-result" data-toggle="tab">Result</a></li>
 						<li><a href="#registry_w-2-html" data-toggle="tab">HTML</a></li>
@@ -92,7 +113,13 @@
 						</div>
 					</div>
 				
+
+					<p><hr/></p>
+					<p><br/></p>
 					<h2 class="widget-title">Simple Search Example</h2>
+					<p>Embed <b>the ability to search for research data</b> on your own web page in <code>less than 5 lines of code!</code></p>
+					<p><ul><li>This search example will <blue>search for records</blue> in Research Data Australia matching your search term.</li></ul></p>
+
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#registry_w-1-result" data-toggle="tab">Result</a></li>
 						<li><a href="#registry_w-1-html" data-toggle="tab">HTML</a></li>
@@ -108,7 +135,14 @@
 						</div>
 					</div>
 
+					<p><hr/></p>
+					<p><br/></p>
+
 					<h2 class="widget-title">Advanced Search Example</h2>
+					<p>Embed <b>the ability to search and display information about research data</b> on your own web page with a customised display.</p>
+					<p><ul><li>This search example will <blue>search for records</blue> and then display them according to a template (see the <code>JS</code> tab).</li></ul></p>
+
+
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#registry_w-5-result" data-toggle="tab">Result</a></li>
 						<li><a href="#registry_w-5-html" data-toggle="tab">HTML</a></li>
@@ -156,9 +190,8 @@ $('#advanced_search_example').registry_widget({
 					
 					<div class="sticky">
 					<li class="widget widget_categories clearfix">
-						<h2 class="widget-title">Demo and Download</h2>
+						<h2 class="widget-title">Software Download</h2>
 						<ul class="list-unstyled">
-							<li class="cat-item"><?php echo anchor(apps_url('assets/registry_widget/dist/demo.html'), 'Demo', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/'), '<i class="icon-white icon-download"></i> Download uncompressed', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/full'), '<i class="icon-white icon-download"></i> Download (full)', array('class'=>'btn btn-large btn-success')) ?></li>
@@ -180,12 +213,20 @@ $('#advanced_search_example').registry_widget({
 		<div class="row">
 		<div id="k-config" class="clearfix col-lg-12 col-md-12 col-sm-12">
 			<article>
-				
-					<h2 class="k-fancy-title">Configurations</h2>
+					<p><br/></p>
+					<h2 class="k-fancy-title">Configuration</h2>
+					<p>The widget can be initialised by two methods:
+						<ul>
+							<li><b>Simple Mode</b>: add the <code>class="registry_widget"</code> to a <code>&lt;div&gt;</code> or <code>&lt;input&gt;</code> element as illustrated in the examples above or this <?=anchor(apps_url('assets/registry_widget/dist/demo.html'), 'implementation demo');?>.
+								You can also add a <code>data-query</code> and <code>data-mode</code> attribute to customise the behaviour in Simple Mode.</li>
+							<li><b>Custom Mode</b>: initialise the <code>registry_widget</code> from javascript (jQuery) by calling <code>$('#id_of_your_container_element').registry_widget();</code>. You can pass any of the below properties to the <code>registry_widget()</code> function to customise its behaviour. </li>
+						</ul>
+					</p>
+
 	<?php 
 		$config = array(
-			array('proxy', 'http://researchdata.ands.org.au/apps/registry_widget/proxy/', 'JSONP proxy for the Registry Widget'),
-			array('mode', 'search', 'mode can be <code>search</code>,<code>display_single</code>, <code>display_result]</code>'),
+			array('proxy', 'http://researchdata.ands.org.au/apps/registry_widget/proxy/', 'JSONP proxy for the Registry Widget which resolves search queries against the ANDS Collections Registry APIs'),
+			array('mode', 'search', 'mode can be <code>search</code>,<code>display_single</code>, <code>display_result</code>'),
 			array('search','true', 'Enable Search Functionality'),
 			array('auto_search', 'false', 'Auto Search based on the target\'s value'),
 			array('search_btn_text', 'Search', 'Search text displays on the button'),
@@ -202,20 +243,22 @@ $('#advanced_search_example').registry_widget({
 	
 		);
 	?>
+				<small>
 					<table class="table table-striped table-bordered table-hover">
 						<thead>
-							<td>Property</td><td>Defaults</td><td>Description</td>
+							<td width="20%">Property</td><td>Description</td><td>Default</td>
 						</thead>
 						<tbody>
 							<?php foreach($config as $c): ?>
 							<tr>
 								<td><code><?php echo $c[0] ?></code></td>
-								<td><code><?php echo $c[1] ?></code></td>
 								<td><?php echo $c[2] ?></td>
+								<td><code><?php echo $c[1] ?></code></td>
 							</tr>
 							<?php endforeach; ?>
 						</tbody>
 					</table>	
+				</small>
 			</article>
 		</div>
 		</div>

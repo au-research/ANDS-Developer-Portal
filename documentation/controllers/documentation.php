@@ -68,21 +68,21 @@ class Documentation extends MX_Controller {
 			break;
 
 			case 'registry_widget':
-				$data['title'] = 'Registry Widget';
+				$data['title'] = 'ANDS Collection Registry Search Widget';
 				$data['scripts'] = array('registry_widget_doc');
 				$data['js_lib'] = array('registry_widget');
 				$this->load->view('widgets/registry_widget', $data);
 			break;
 
 			case 'vocab_widget':
-				$data['title'] = 'Vocabulary Widget';
+				$data['title'] = 'ANDS Controlled Vocabulary Widget';
 				$data['scripts'] = array('vocab_widget_doc');
 				$data['js_lib'] = array('vocab_widget');
 				$this->load->view('widgets/vocab_widget', $data);
 			break;
 
 			case 'location_widget':
-				$data['title'] = 'Location Capture Widget';
+				$data['title'] = 'ANDS Location Capture Widget';
 				$data['scripts'] = array('location_widget_doc');
 				$data['js_lib'] = array('location_capture_widget');
 				$this->load->view('widgets/location_widget', $data);
