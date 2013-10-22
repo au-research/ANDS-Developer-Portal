@@ -126,6 +126,7 @@ $('#custom_settings_orcid').orcid_widget({
 							<li class="cat-item"><?php echo anchor(apps_url('assets/orcid_widget/dist/demo.html'), '<i class="icon-white icon-download"></i> Demo', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/'), '<i class="icon-white icon-download"></i> Download uncompressed', array('class'=>'btn btn-large btn-success')) ?></li>
+							<li class="cat-item"><?php echo anchor(apps_url('orcid_widget/download/full'), '<i class="icon-white icon-download"></i> Download (full)', array('class'=>'btn btn-large btn-success')) ?></li>
 						</ul>
 					</li>
 

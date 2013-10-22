@@ -161,6 +161,7 @@ $('#advanced_search_example').registry_widget({
 							<li class="cat-item"><?php echo anchor(apps_url('assets/registry_widget/dist/demo.html'), 'Demo', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/'), '<i class="icon-white icon-download"></i> Download uncompressed', array('class'=>'btn btn-large btn-success')) ?></li>
+							<li class="cat-item"><?php echo anchor(apps_url('registry_widget/download/full'), '<i class="icon-white icon-download"></i> Download (full)', array('class'=>'btn btn-large btn-success')) ?></li>
 						</ul>
 					</li>
 

@@ -30,8 +30,8 @@
 					<p>Simply drop the following lines of HTML into your web form. You only need to specify the name of the form field and the widget will do the rest!</p>
 					 <em>Step 1.</em> Drop this code somewhere in the &lt;head&gt;&lt;/head&gt; of your web page
 					 <pre class="prettyprint">
-&lt;script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=drawing&v=3"&gt;&lt;/script&gt;
-&lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&libraries=drawing&v=3"&gt;&lt;/script&gt;
+&lt;script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="<?php echo apps_url('assets/location_capture_widget/js/location_capture_widget.js');?>"&gt;&lt;/script&gt;
 &lt;link rel="stylesheet" type="text/css" href="<?php echo apps_url('assets/location_capture_widget/css/location_capture_widget.css');?>" /&gt;
 					</pre>
@@ -154,8 +154,10 @@ $("#mapContainer").ands_location_widget({
 					<li class="widget widget_categories clearfix">
 						<h2 class="widget-title">Demo and Download<span class="k-widget-title-tit"></span></h2>
 						<ul class="list-unstyled">
+							<li class="cat-item"><?php echo anchor(apps_url('assets/location_capture_widget/dist/demo.html'), 'Demo', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('location_capture_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified', array('class'=>'btn btn-large btn-success')) ?></li>
 							<li class="cat-item"><?php echo anchor(apps_url('location_capture_widget/download/'), '<i class="icon-white icon-download"></i> Download uncompressed', array('class'=>'btn btn-large btn-success')) ?></li>
+							<li class="cat-item"><?php echo anchor(apps_url('location_capture_widget/download/full'), '<i class="icon-white icon-download"></i> Download (full)', array('class'=>'btn btn-large btn-success')) ?></li>
 						</ul>
 					</li>
 

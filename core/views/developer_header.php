@@ -63,7 +63,7 @@
 												<li><?php echo anchor('documentation/services/getRIFCS', 'getRIFCS API') ?></li>
 												<li><?php echo anchor('documentation/services/getMetadata', 'getMetadata API') ?></li>
 												<li><?php echo anchor('documentation/services/getExtRif', 'getExtRif API') ?></li>
-												<li><?php echo anchor('documentation/services/oai', 'OAI-PHM Provider') ?></li>
+												<li><?php echo anchor('documentation/services/oai', 'OAI-PMH Provider') ?></li>
 											</ul></li>
 										<li><?php echo anchor('documentation/services/getGrants', 'Research Grants API') ?></li>
 										<li><?php echo anchor('documentation/services/vocabulary_api', 'Controlled Vocabularies API') ?></li>
