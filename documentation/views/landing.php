@@ -39,7 +39,7 @@
 						 data-y="50"
 						 data-speed="600"
 						 data-start="1500"
-						 data-easing="easeOutExpo" data-endspeed="400" data-endeasing="easeInSine" ><img src="<?php echo asset_url('img/screens/vocab_widget.png', 'core'); ?>" alt=""></div>
+						 data-easing="easeOutExpo" data-endspeed="400" data-endeasing="easeInSine" ><img src="<?php echo asset_url('img/screens/vocab_widget_2.png', 'core'); ?>" alt=""></div>
 
 					<div class="caption k_mid_callout sft stb"
 						 data-x="150"
@@ -72,7 +72,7 @@
 						 data-y="50"
 						 data-speed="600"
 						 data-start="1500"
-						 data-easing="easeOutExpo" data-endspeed="400" data-endeasing="easeInSine" ><img src="<?php echo asset_url('img/screens/location_widget.png', 'core'); ?>" alt=""></div>
+						 data-easing="easeOutExpo" data-endspeed="400" data-endeasing="easeInSine" ><img src="<?php echo asset_url('img/screens/location_widget_2.png', 'core'); ?>" alt=""></div>
 
 					<div class="caption k_mid_callout sft stb"
 						 data-x="700"
