@@ -9,6 +9,7 @@ class Documentation extends MX_Controller {
 
 	public function services($service=''){
 		$data['scripts'] = array('services_doc');
+		$data['js_lib'] = array('colorbox');
 		switch($service)
 		{
 			case 'getRIFCS':
@@ -31,7 +32,6 @@ class Documentation extends MX_Controller {
 
 			case 'getGrants':
 				$data['title'] = 'Grants API Documentation - ANDS Developer Toolbox';
-				$data['js_lib'] = array('colorbox');
 				$this->load->view('services/grants_api', $data);
 			break;
 

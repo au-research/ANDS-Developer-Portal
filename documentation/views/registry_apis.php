@@ -3,7 +3,7 @@
 	<div class="container section-space30"><!-- starts container -->
 		<div class="row"><!-- starts row -->
 			<div class="col-lg-6 col-md-6 col-sm-12">
-				<h2 class="k-page-title">ANDS Collections Registry APIs</h2>
+				<h2 class="k-page-title">ANDS Collections Registry API</h2>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				<ol class="breadcrumb pull-right">

@@ -820,16 +820,21 @@ input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus,
 }
 
 /* line 26, ../sass/ands_style.scss */
+.bold {
+  font-weight: bold !important;
+}
+
+/* line 29, ../sass/ands_style.scss */
 blue {
   color: blue;
 }
 
-/* line 29, ../sass/ands_style.scss */
+/* line 32, ../sass/ands_style.scss */
 green {
   color: green;
 }
 
-/* line 32, ../sass/ands_style.scss */
+/* line 36, ../sass/ands_style.scss */
 .pre-small {
   font-size: 0.8em;
 }
@@ -837,79 +842,79 @@ green {
 /**
  * Site Logo Fix
  */
-/* line 38, ../sass/ands_style.scss */
+/* line 42, ../sass/ands_style.scss */
 #site-logo a {
   color: #C1D0BC !important;
   font-size: 1.5em !important;
   font-weight: 300;
 }
 
-/* line 45, ../sass/ands_style.scss */
+/* line 49, ../sass/ands_style.scss */
 .btn-success {
   background-color: #7b9b6f !important;
 }
 
-/* line 50, ../sass/ands_style.scss */
+/* line 54, ../sass/ands_style.scss */
 figure.panel-figure {
   background-color: white;
   padding: 30px;
   margin: 0 10px;
 }
 
-/* line 56, ../sass/ands_style.scss */
+/* line 60, ../sass/ands_style.scss */
 .k-fancy-title-wrap {
   margin-top: 20px;
 }
-/* line 58, ../sass/ands_style.scss */
+/* line 62, ../sass/ands_style.scss */
 .k-fancy-title-wrap .k-fancy-title {
   margin: 20px 0;
 }
 
-/* line 63, ../sass/ands_style.scss */
+/* line 67, ../sass/ands_style.scss */
 .table {
   table-layout: fixed;
   word-wrap: break-word;
 }
-/* line 66, ../sass/ands_style.scss */
+/* line 70, ../sass/ands_style.scss */
 .table code {
   white-space: normal !important;
 }
 
-/* line 71, ../sass/ands_style.scss */
+/* line 75, ../sass/ands_style.scss */
 .mq-box > a {
   color: #444;
 }
 
-/* line 76, ../sass/ands_style.scss */
+/* line 80, ../sass/ands_style.scss */
 .k-work-grid .mq-box {
   margin-top: 30px;
 }
 
 /* Footer color changes */
-/* line 84, ../sass/ands_style.scss */
+/* line 88, ../sass/ands_style.scss */
 #k-footer .widget-title, #k-footer .widget p, #k-footer .widget a {
   color: #c1d0bc !important;
 }
-/* line 87, ../sass/ands_style.scss */
+/* line 91, ../sass/ands_style.scss */
 #k-footer .widget_categories ul li {
   font-size: 12px;
   line-height: 13px;
 }
 
-/* line 93, ../sass/ands_style.scss */
+/* line 97, ../sass/ands_style.scss */
 .plan-ands {
   border: 3px solid #7b9b6f;
 }
-/* line 95, ../sass/ands_style.scss */
+/* line 99, ../sass/ands_style.scss */
 .plan-ands .plan-title, .plan-ands .plan-footer {
   background: #7b9b6f;
 }
-/* line 98, ../sass/ands_style.scss */
+/* line 102, ../sass/ands_style.scss */
 .plan-ands .btn-pricing-plan {
   background: #7b9b6f;
   color: #fff;
 }
-/* line 101, ../sass/ands_style.scss */
+/* line 105, ../sass/ands_style.scss */
 .plan-ands .btn-pricing-plan:hover {
   color: #c1d0bc;
 }
