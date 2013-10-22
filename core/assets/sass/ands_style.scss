@@ -18,6 +18,7 @@ $ands_text_light : #C1D0BC;
 	.sub-menu{
 		padding:0 !important;
 		li{
+			padding:3px 0px;
 			a{
 				color: white;
 				&:hover{
@@ -42,7 +43,7 @@ $ands_text_light : #C1D0BC;
 			color: white;
 			font-size: 14px;
 			position: absolute;
-			top: 5px;
+			top: 10px;
 			right: 10px;
 		}
 	}
