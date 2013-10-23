@@ -60,7 +60,7 @@
 						  <b>Before you start!</b> To use this service, institutions or individuals must <a href="<?=registry_url('services/register/');?>" target="_blank">register a free API key</a>.
 						</div>
 						<h4><a id="service"></a>Resource URL</h4>
-						<blockquote><code><?=registry_url('services/');?><blue>{YOUR API KEY}</blue>/<green>getGrant</green>?<blue>{params}</blue></code></blockquote>
+						<blockquote><code><?=registry_url('services/');?><blue>{YOUR API KEY}</blue>/<green>getGrants</green>?<blue>{params}</blue></code></blockquote>
 						<p>
 							<ul>
 								<li>
@@ -85,28 +85,28 @@
 							$config = array(
 								array('title',
 									'<p>the title of the grant (or part thereof)</p>',
-									'getGrant?title=cancer'),
+									'getGrants?title=cancer'),
 
 								array('institution',
 									'<p>filter results to those grants which are managed by this institution</p>',
-									'getGrant?institution=University%20of%20Sydney'),
+									'getGrants?institution=University%20of%20Sydney'),
 
 
 								array('principalInvestigator',
 									'<p>filter results to those grants which have this principal/lead investigator</p>',
-									'getGrant?principalInvestigator=Jacob%20George'),
+									'getGrants?principalInvestigator=Jacob%20George'),
 
 								array('person',
 									'<p>filter results to those grants which have this person listed as a lead OR co-investigator</p>',
-									'getGrant?person=Prof%20Jacob%20George'),
+									'getGrants?person=Prof%20Jacob%20George'),
 
 								array('rows',
 									'limit the number of grants returned to this number (default: 999)',
-									'getGrant?title=fish&rows=5'),
+									'getGrants?title=fish&rows=5'),
 
 								array('start',
 									'offset the grants returned by this number (used to "cursor" through large result sets)',
-									'getGrant?title=fish&rows=15&start=75'),
+									'getGrants?title=fish&rows=15&start=75'),
 							);
 						?>
 
@@ -162,13 +162,13 @@
 							<small><ul>
 								<li>HTTP GET Request: <br/>
 									<code>&gt;
-										<a target="_blank" href="<?=registry_url("services/api/getGrant?" .
+										<a target="_blank" href="<?=registry_url("services/api/getGrants?" .
 										"institution=".
 											rawurlencode("Queensland University of Technology").
 										"&principalInvestigator=" .
 											rawurlencode("Dr Ming Tat (Patrick) Ling"));?>">
 
-										getGrant?institution=<blue><?=rawurlencode("Queensland University of Technology") . "</blue>" .
+										getGrants?institution=<blue><?=rawurlencode("Queensland University of Technology") . "</blue>" .
 										 "&principalInvestigator=<blue>" . rawurlencode("Dr Ming Tat (Patrick) Ling");?></blue>
 
 									</code><br/></a>
@@ -223,13 +223,13 @@
 							<small><ul>
 								<li>HTTP GET Request: <br/>
 									<code>&gt;
-										<a target="_blank" href="<?=registry_url("services/api/getGrant?" .
+										<a target="_blank" href="<?=registry_url("services/api/getGrants?" .
 										"person=".
 											rawurlencode("David Cook").
 										"&title=" .
 											rawurlencode("sodium channels"));?>">
 
-										getGrant?person=<blue><?=rawurlencode("David Cook") . "</blue>" .
+										getGrants?person=<blue><?=rawurlencode("David Cook") . "</blue>" .
 										 "&title=<blue>" . rawurlencode("sodium channels");?></blue>
 
 									</code><br/></a>
