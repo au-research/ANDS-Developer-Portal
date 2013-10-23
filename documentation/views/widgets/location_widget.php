@@ -69,71 +69,6 @@ $("#mapContainer").ands_location_widget({
 							</pre>
 						</div>
 					</div>
-
-					<!-- starts FAQ wrap -->
-					<h2 class="k-fancy-title">FAQs</h2>
-					<div class="k-faq-wrap col-lg-12">
-						<div id="accordion" class="panel-group">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h3 class="panel-title">
-										<a href="#faq1" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed">
-											I'm getting an "insecure content" warning? Can the widget run under HTTPS?
-										</a>
-									</h3>
-								</div>
-								<div class="panel-collapse collapse" id="faq1">
-									<div class="panel-body">
-										<p>
-										<i class="k-faq-icon icon-share-alt awesome16"></i>
-										Yes! Ensure that all the <code>&lt;script&gt;</code> and <code>&lt;link&gt;</code> tags (from Step 1 &amp; 2) are pointing to the securely-hosted version of the resource.
-			    	 	In other words, the URL starts with <b>https://</b> (such as <code>https://maps.google.com/api...</code>).
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="panel panel-default"><!-- panel one -->
-								<div class="panel-heading">
-									<h3 class="panel-title">
-										<a href="#faq2" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed">
-											What service is doing the placename resolution?
-										</a>
-									</h3>
-								</div>
-								<div class="panel-collapse collapse" id="faq2">
-									<div class="panel-body">
-										<p>
-										<i class="k-faq-icon icon-share-alt awesome16"></i>
-										ANDS hosts a resolver proxy service that provides JSONP results based on the response from the Gazetteer service.
-			    	 	An example of this script is included in the source code package. You can customise this proxy service yourself
-			    	 	and change the location by passing <code>endpoint</code> (and optionally, <code>protocol</code>) options to the widget's <code>init</code> function.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="panel panel-default"><!-- panel one -->
-								<div class="panel-heading">
-									<h3 class="panel-title">
-										<a href="#faq3" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed">
-											How can I customise the widget / not use the ANDS-hosted resources? 
-										</a>
-									</h3>
-								</div>
-								<div class="panel-collapse collapse" id="faq3">
-									<div class="panel-body">
-										<p>
-										<i class="k-faq-icon icon-share-alt awesome16"></i>
-										Full source code for this widget is available and licensed under Apache License, Version 2.0.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div><!-- ends panel group -->
-					
-					</div>
-
 					
 				</article><!-- ends article short -->
 			</div><!-- ends main content -->
@@ -167,6 +102,123 @@ $("#mapContainer").ands_location_widget({
 			</aside><!-- ends sidebar -->
 		
 		</div><!-- ends row -->
+
+
+		<div class="row">
+		<div id="k-config" class="clearfix col-lg-12 col-md-12 col-sm-12">
+			<article>
+
+				<!-- starts Functions wrap-->
+				<h2 class="k-fancy-title">Functions</h2>
+				<p>The ANDS Location Capture widget plugin supports the following functions:</p>
+				<dl class="dl-horizontal">
+					<dt>init</dt>
+					<dd>Initialise the plugin against a jQuery object; use a jQuery selector to define the object.</dd>
+					<dd><strong>example:</strong><br/><code>$("#mapContainer").ands_location_widget('init');</code></dd>
+					<dt>googlemap</dt>
+					<dd>Once initialised, call the plugin on the jQuery object again to access the underlying google map object.</dd>
+					<dd><strong>example:</strong><br/><code>var map = $("#mapContainer").ands_location_widget('googlemap');</code></dd>
+				</dl>
+
+
+				<h2 class="k-fancy-title">Configurations</h2>
+				<p>The ANDS Location Capture widget plugin's <code>init</code> function has the following options:</p>
+<?php 
+	$config = array(
+		array('mode', '', 'Under normal operation, the widget opens in map view. Use this setting to open either in the <code>search</code> or <code>coords</code> dialogue. Eg <pre>$(&quot;#mapContainer&quot;).ands_location_widget(&#039;init&#039;, {mode:&#039;search&#039;});</pre>'),
+		array('zoom','3','The initial zoom level of the map. Eg <pre>$(&quot;#mapContainer&quot;).ands_location_widget(&#039;init&#039;, {zoom:7});</pre>'),
+		array('start', '133,-27','The initial map view, given as a string of "longitude, latitude". Eg <pre>$(&quot;#mapContainer&quot;).ands_location_widget(&#039;init&#039;, {start:&quot;130, -16&quot;});</pre>'),
+		array('target','geoLocation', 'The HTML id attribute of the element to store the final coordinate data in. If no such element exists, it wil be created for you, and inserted immediately after the plugin element. Eg <pre>$(&quot;#mapContainer&quot;).ands_location_widget(&#039;init&#039;, {target:&#039;coordinate_data&#039;});</pre>'),
+		array('lonLat','','Initial coordinate data to display on the map. Coordinates are specified as a comma-delimited string longitude, latitude. Coordinate data can be a single point, or an array of points representing a region. Regions should be closed (that is, the first and last points should be the same). Eg <pre>$(&quot;#mapContainer&quot;).ands_location_widget(&#039;init&#039;, {lonLat:&#039;133, -27&#039;});</pre>'),
+		array('jumpToPoint','true','When entering "point" mode, <code>jumpToPoint</code> defines whether the map view should jump to the existing point, or stay at the current map view. Eg <pre>$(&quot;#mapContainer&quot;).ands_location_widget(&#039;init&#039;, {jumpToPoint:false});</pre>'),
+		array('endpoint','services.ands.org.au/api/resolver/','The ANDS resolver service to use. Change this when you want to use your own resolver service. Eg <pre>$(&quot;#mapContainer&quot;).ands_location_widget(&#039;init&#039;, {endpoint:&#039;http://localhost.localdomain/myresolver/&#039;});</pre>'),
+		array('gasset_protocol','(the current window\'s protocol)','The HTTP protocol to use for google asset (image) requests : choose <code>http://</code> or <code>https://</code>. Eg <pre>$(&quot;#mapContainer&quot;).ands_location_widget(&#039;init&#039;, {gasset_protocol:&#039;https://&#039;});</pre>'),
+	);
+?>
+				<table class="table table-striped table-bordered table-hover">
+					<colgroup>
+						<col class="col-lg-2"> <col class="col-lg-2"> <col class="col-lg-8">
+					</colgroup>
+					<thead>
+						<td>Property</td><td>Defaults</td><td>Description</td>
+					</thead>
+					<tbody>
+						<?php foreach($config as $c): ?>
+						<tr>
+							<td><code><?php echo $c[0] ?></code></td>
+							<td><code><?php echo $c[1] ?></code></td>
+							<td><?php echo $c[2] ?></td>
+						</tr>
+						<?php endforeach; ?>
+					</tbody>
+				</table>
+
+				<!-- starts FAQ wrap -->
+				<h2 class="k-fancy-title">FAQs</h2>
+				<div class="k-faq-wrap col-lg-12">
+					<div id="accordion" class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									<a href="#faq1" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed">
+										I'm getting an "insecure content" warning? Can the widget run under HTTPS?
+									</a>
+								</h3>
+							</div>
+							<div class="panel-collapse collapse" id="faq1">
+								<div class="panel-body">
+									<p>
+									<i class="k-faq-icon icon-share-alt awesome16"></i>
+									Yes! Ensure that all the <code>&lt;script&gt;</code> and <code>&lt;link&gt;</code> tags (from Step 1 &amp; 2) are pointing to the securely-hosted version of the resource.
+		    	 	In other words, the URL starts with <b>https://</b> (such as <code>https://maps.google.com/api...</code>).
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default"><!-- panel one -->
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									<a href="#faq2" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed">
+										What service is doing the placename resolution?
+									</a>
+								</h3>
+							</div>
+							<div class="panel-collapse collapse" id="faq2">
+								<div class="panel-body">
+									<p>
+									<i class="k-faq-icon icon-share-alt awesome16"></i>
+									ANDS hosts a resolver proxy service that provides JSONP results based on the response from the Gazetteer service.
+		    	 	An example of this script is included in the source code package. You can customise this proxy service yourself
+		    	 	and change the location by passing <code>endpoint</code> (and optionally, <code>protocol</code>) options to the widget's <code>init</code> function.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default"><!-- panel one -->
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									<a href="#faq3" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed">
+										How can I customise the widget / not use the ANDS-hosted resources? 
+									</a>
+								</h3>
+							</div>
+							<div class="panel-collapse collapse" id="faq3">
+								<div class="panel-body">
+									<p>
+									<i class="k-faq-icon icon-share-alt awesome16"></i>
+									Full source code for this widget is available and licensed under Apache License, Version 2.0.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div><!-- ends panel group -->
+	
+				</div>
+			</article>
+		</div>
+		</div>
 		
 	</div><!-- ends container -->
 
