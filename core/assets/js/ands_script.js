@@ -30,17 +30,16 @@ jQuery(document).ready(function ($) {
 		return false;
 	}
 
-	$('.anchor_links a').on('click', function(e){
-		// e.preventDefault();
-		var href = $.attr(this, 'href');
-		if($(href) && $(href).offset()){
-			$('html, body').animate({
-				scrollTop: $(href).offset().top-100
-			}, 500, function () {
-				window.location.hash = href;
-			});
-		}
-		return false;
-	});
-
 });
+
+$(document).on('click', '.anchor_links a', function(e){
+	var href = $.attr(this, 'href');
+	if($(href) && $(href).offset()){
+		$('html, body').animate({
+			scrollTop: $(href).offset().top-100
+		}, 500, function () {
+			window.location.hash = href;
+		});
+	}
+	return false;
+})
