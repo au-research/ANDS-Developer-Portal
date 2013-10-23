@@ -346,7 +346,7 @@
 				<div id="k-sidebar-splitter" class="clearfix section-space60"><span></span></div>
 				<div class="sticky" style="position: fixed; top: 200px; width: 262px;">
 
-					<ul id="k-sidebar-list" class="list-unstyled">
+					<ul id="k-sidebar-list" class="list-unstyled sticky">
 
 						<!--li class="widget widget_search clearfix">
 							<form action="" id="searchform" method="get" role="search">
