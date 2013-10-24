@@ -98,7 +98,7 @@ class Documentation extends MX_Controller {
 	}
 
 	public function registry($service=''){
-			$data['title'] = 'Watch this space...Coming Soon! - ANDS Developer Toolbox';
-			$this->load->view('coming_soon', $data);
+			$data['title'] = 'Registry';
+			$this->load->view('registry_index', $data);
 	}
 }
