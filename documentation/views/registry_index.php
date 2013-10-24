@@ -14,32 +14,78 @@
 		</div><!-- ends row -->
 	</div><!-- ends container -->
 </section>
-<section id="k-content" class=""><!-- section common starts -->
-		
-	<div class="container"><!-- starts container -->
-   	 <div class="row"><!-- starts row -->
-		 <div id="k-main" class="col-lg-6 col-md-6 col-sm-12"><!-- starts main content -->
-			<article><!-- starts article short -->
-	 		 <div><a id="title"></a><!-- starts summary -->
-	   		 	<h3 class="k-fancy-title"><!-- title -->
-	      			<a href="#" title="Registry Software"></a><a id="software"></a>
-	    		</h3>
-		   	 	<div class="clearfix col-lg-3 col-md-3 col-sm-6 k-fancy-icon-wrap mq-box">
-					<i class="k-fancy-icon icon-github awesome32"></i>			
 
-				</div>
-				<h5 class="widget-title">ANDS-Registry-Core</h5>
-	    		<p>
-				The Registry Core PHP codebase includes a metadata registry, front-end data portal and access management system. 
-				The Registry Core is <a href="https://github.com/au-research/ANDS-Registry-Core/tree/master" target="_blank">open source</a> and easy to install (see below).
+<section id="k-work-ajax"><!-- starts single work project preview -->
+	<div class="container section-space60"><!-- starts container -->
+		<div class="row"><!-- starts row -->
+			<div id="k-work-slider-wrap" class="col-lg-8 col-md-8 col-sm-12"><!-- starts slider wrap -->
+				<div id="carousel-work" class="carousel slide"><!-- starts carousel -->
+				
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-work" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-work" data-slide-to="1"></li>
+						<li data-target="#carousel-work" data-slide-to="2"></li>
+						<li data-target="#carousel-work" data-slide-to="3"></li>
+						<li data-target="#carousel-work" data-slide-to="4"></li>
+					</ol>
+				
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item">
+							<img src="http://services.ands.org.au/documentation/img/portal_preview.png" alt="Image slide 5">
+						</div>
+						<div class="item active">
+							<img src="http://services.ands.org.au/documentation/img/data_source_admin.png" alt="Image slide 4">
+						</div>
+						<div class="item">
+							<img src="http://services.ands.org.au/documentation/img/maintenance_dashboard.png" alt="Image slide 3">
+						</div>
+						<div class="item">
+							<img src="http://services.ands.org.au/documentation/img/roles_mgmt.png" alt="Image slide 2">
+						</div>
+						<div class="item">
+							<img src="http://services.ands.org.au/documentation/img/metadata_workflows.png" alt="Image slide 1">
+						</div>
+						<div class="item">
+							<img src="http://services.ands.org.au/documentation/img/cms_editor.png" alt="Image slide 1">
+						</div>
+					</div>
+				
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-work" data-slide="prev"></a>
+					<a class="right carousel-control" href="#carousel-work" data-slide="next"></a>
+					
+				</div><!-- ends carousel -->
+
+			</div><!-- ends slider wrap -->
+			
+			<div id="k-work-text" class="col-lg-4 col-md-4 col-sm-12 text-right"><!-- starts work preview -->
+				<h3 class="k-fancy-title">ANDS Registry Core <i class="icon-github awesome32"></i></h3><!-- title -->
+				<p class="text-left"><!-- description -->
+					The Registry Core PHP codebase includes a metadata registry, front-end data portal and access management system. 
+					The Registry Core is <a href="https://github.com/au-research/ANDS-Registry-Core/tree/master" target="_blank">open source</a> and easy to install (see below).
 				</p>
+				<h3 class="k-fancy-title">Easy 4 steps Installation</h3><!-- title -->
+				<ol class="anchor_links text-left">
+					<li class="cat-item"><a href="#step1">Download the latest version</a></li>
+					<li class="cat-item"><a href="#step2">Setup the database</a></li>
+					<li class="cat-item"><a href="#step3">Download and configure the search indexer</a></li>
+					<li class="cat-item"><a href="#step4">Update the registry config</a></li>
+				</ol>
+			</div><!-- ends work preview -->
+		</div><!-- ends row -->
+	</div><!-- ends container -->
+</section><!-- ends single work project preview -->
 
-				<p><br/></p>
-
-				<h4 class="k-fancy-title">Software Installation</h4>
+<section id="k-content">
+	<div class="container">
+		<div class="row">
+			<div id="main" class="col-lg-12 col-md-12 col-sm-12">
+				<h2 class="k-fancy-title">Software Installation</h2>
 				<div class="alert alert-danger">Server Requirements: Apache HTTP server, MySQL, PHP 5, Java 1.7 <small>(<a href="http://community.ands.org.au/viewtopic.php?f=211&t=3171" target="_blank">Setup Guide</a>)</small></div>
 
-				<button type="button" class="btn btn-primary">Step 1 - Download the latest version</button>
+				<button type="button" class="btn btn-primary" id="step1">Step 1 - Download the latest version</button>
 				<p></p>
 				<ul>
 					<li>Download the <a href="https://github.com/au-research/ANDS-Registry-Core/archive/master.zip" target="_blank">latest ANDS-Registry-Core</a> and extract to your web server:
@@ -54,7 +100,7 @@ mv ANDS-Registry-Core-master <blue>myrepo</blue></pre>
 
 				<br/>
 
-				<button type="button" class="btn btn-success">Step 2 - Setup the database</button>
+				<button type="button" class="btn btn-success" id="step2">Step 2 - Setup the database</button>
 				<p></p>
 				<ul>
 					<li>Having installed a MySQL server, setup new databases and initialise the tables:
@@ -77,7 +123,7 @@ mysql -u root -p dbs_roles &lt; <blue>myrepo</blue><green>/etc/db/mysql/dbs_role
 				</ul>
 				<br/>
 
-				<button type="button" class="btn btn-warning">Step 3 - Download and configure the search indexer</button>
+				<button type="button" class="btn btn-warning" id="step3">Step 3 - Download and configure the search indexer</button>
 				<p></p>
 				<ul>
 					<li>Download SOLR 4.5.0 (<a href="http://mirror.mel.bkb.net.au/pub/apache/lucene/solr/4.5.0/solr-4.5.0.zip" target="_blank">solr-4.5.0.zip</a>) and run it using Jetty:
@@ -93,7 +139,7 @@ java -Dsolr.solr.home=<blue>path/to/solr/</blue> -Djetty.port=8080 -jar start.ja
 				</ul>
 				<br/>
 
-			<button type="button" class="btn btn-info">Step 4 - Update the registry config</button>
+			<button type="button" class="btn btn-info" id="step4">Step 4 - Update the registry config</button>
 			<p></p>
 			<ul>
 				<li>Update your global configuration file:
@@ -118,65 +164,20 @@ RewriteBase /<code><blue>myrepo/</blue></code></pre>
 
 			<p><br/></p>
 			<blockquote>You're done! Visit your new registry installation at:<br/><code><green>http://yourwebsite.com/myrepo/registry/</green></code></blockquote>
-
-
-
-			  </div>
-	    	</article>
 			</div>
-		     <aside id="k-sidebar" class="col-lg-6 col-md-6 col-sm-12"><!-- starts sidebar -->
 
- 				<h4>Screenshots: MINGHEE MAKE THIS LOOK PRETTY PLEASE! :-)</h4>
-				<div id="k-work-slider-wrap"><!-- starts slider wrap -->
-                
-                    <div id="carousel-work" class="carousel slide"><!-- starts carousel -->
-                    
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-work" data-slide-to="0" class=""></li>
-                            <li data-target="#carousel-work" data-slide-to="1" class="active"></li>
-                            <li data-target="#carousel-work" data-slide-to="2"></li>
-                            <li data-target="#carousel-work" data-slide-to="3"></li>
-                            <li data-target="#carousel-work" data-slide-to="4"></li>
-                            <li data-target="#carousel-work" data-slide-to="5"></li>
-                        </ol>
-                    
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item">
-                                <img src="http://services.ands.org.au/documentation/img/portal_preview.png" alt="Image slide 5">
-                            </div>
-                            <div class="item active">
-                                <img src="http://services.ands.org.au/documentation/img/data_source_admin.png" alt="Image slide 4">
-                            </div>
-                            <div class="item">
-                                <img src="http://services.ands.org.au/documentation/img/maintenance_dashboard.png" alt="Image slide 3">
-                            </div>
-                            <div class="item">
-                                <img src="http://services.ands.org.au/documentation/img/roles_mgmt.png" alt="Image slide 2">
-                            </div>
-                            <div class="item">
-                                <img src="http://services.ands.org.au/documentation/img/metadata_workflows.png" alt="Image slide 1">
-                            </div>
-                            <div class="item">
-                                <img src="http://services.ands.org.au/documentation/img/cms_editor.png" alt="Image slide 1">
-                            </div>
-                        </div>
-         
-                    </div><!-- ends carousel -->
-
-                </div>
-		      </aside><!-- ends sidebar -->		
-
-		      DOWN HERE: LINK TO COMMUNITY FORUM
-		      <BR/>
-		      (for each of the following, a link to a forum thread and a one-liner explaining what they are/do):
-		      <br/>
-		     	ANDS-CONTRIB<br/>
-		     	STUFF ABOUT HARVESTER, 
-		      <BR/>
-		      SETTING UP TOPICS,<BR/> SETTING UP SPOTLIGHT CMS,<BR/> UPDATING DASHBOARD
-		</div><!-- ends row -->
-	</div><!-- ends container -->
+			<h2 class="k-fancy-title">Useful Links</h2>
+			DOWN HERE: LINK TO COMMUNITY FORUM
+			  <BR/>
+			  (for each of the following, a link to a forum thread and a one-liner explaining what they are/do):
+			  <br/>
+				ANDS-CONTRIB<br/>
+				STUFF ABOUT HARVESTER, 
+			  <BR/>
+			  SETTING UP TOPICS,<BR/> SETTING UP SPOTLIGHT CMS,<BR/> UPDATING DASHBOARD
+		</div>
+	</div>
+	 
 </section>
+
 <?php $this->load->view('developer_footer'); ?>
