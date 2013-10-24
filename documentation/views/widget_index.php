@@ -14,65 +14,61 @@
 		</div><!-- ends row -->
 	</div><!-- ends container -->
 </section>
-<section id="k-content" class="section-space60"><!-- section common starts -->
-		
+
+<section class="section-space60 w-section">
 	<div class="container"><!-- starts container -->
-
-		<div class="row k-equal-height"><!-- starts row -->
-		
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-				<dl class="k-dl-list">
-					<dt class="k-dt">
-						<i class="icon-code awesome32"></i>
-					</dt>
-					<dd class="k-dd60">
-						<h3 class="first-item"><a href="<?=base_url('documentation/widgets/registry_widget/');?>">Collections Registry Search Widget</a></h3>
-						<p>
-						The Collections Registry Search Widget provides a quick and easy way of embedding a live Research Data Australia search within your new or existing web pages.
-
-The flexibility of the widget allows you to configure a predefined search, or provide your end users with a text field to specify their own search.
-						</p>
-					</dd>
-					
-					<dt class="k-dt">
-						<i class="icon-code awesome32"></i>
-					</dt>
-					<dd class="k-dd60">
-						<h3 class="first-item"><a href="<?=base_url('documentation/widgets/orcid_widget/');?>">ORCID Researcher Lookup Widget</a></h3>
-						<p>
-						The ANDS ORCID Widget allows you to lookup an ORCID ID and search for one using ORCID JSONP API
-
-This widget is a jQuery plugin with extensible options over styling and functionality. Hence the widget is dependent on the jQuery plugin to function correctly.
-						</p>
-					</dd>
-				</dl>
+		<div class="row">
+			<div class="col-lg-7 col-md-7 col-sm-12">
+			   <img src="<?php echo asset_url('img/screens/registry_widget.png', 'core'); ?>" alt="" class="img-thumbnail img-responsive img-full">
 			</div>
-			
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-				<dl class="k-dl-list">
-						<dt class="k-dt">
-							<i class="icon-code awesome32"></i>
-						</dt>
-						<dd class="k-dd60">
-							<h3 class="first-item"><a href="<?=base_url('documentation/widgets/vocab_widget/');?>">Vocabulary Widget</a></h3>
-							<p>
-							The ANDS Vocabulary Widget allows you to instantly add Data Classification capabilities to your data capture tools through the ANDS Vocabulary Service.
-							</p>
-						</dd>
-						
-						<dt class="k-dt">
-							<i class="icon-code awesome32"></i>
-						</dt>
-						<dd class="k-dd60">
-							<h3 class="first-item"><a href="<?=base_url('documentation/widgets/location_widget/');?>">Location Capture Widget</a></h3>
-							<p>
-							The ANDS Location Capture Widget allows you to instantly enrich your data capture system, adding geospatial capabilities such as custom drawings and place name resolution (using the Australian Gazetteer Service and Google Maps API).
-							</p>
-						</dd>
-					</dl>
+			<div id="k-work-text" class="col-lg-5 col-md-5 col-sm-12"><!-- starts work preview -->
+				<h3 class="k-fancy-title"><a href="<?=base_url('documentation/widgets/registry_widget/');?>">Collections Registry Search Widget</a></h3><!-- title -->
+				<p>The Collections Registry Search Widget provides a quick and easy way of embedding a live Research Data Australia search within your new or existing web pages. The flexibility of the widget allows you to configure a predefined search, or provide your end users with a text field to specify their own search.</p>
 			</div>
-			
 		</div><!-- ends row -->
-	</div><!-- ends container -->
+	</div>
 </section>
+
+<section class="section-space60 w-section">
+	<div class="container"><!-- starts container -->
+		<div class="row">
+			<div id="k-work-text" class="col-lg-5 col-md-5 col-sm-12"><!-- starts work preview -->
+				<h3 class="k-fancy-title"><a href="<?=base_url('documentation/widgets/orcid_widget/');?>">ORCID Researcher Lookup Widget</a></h3><!-- title -->
+				<p>The ANDS ORCID Widget allows you to lookup an ORCID ID and search for one using ORCID JSONP API. This widget is a jQuery plugin with extensible options over styling and functionality. Hence the widget is dependent on the jQuery plugin to function correctly.</p>
+			</div>
+			<div class="col-lg-7 col-md-7 col-sm-12">
+			   <img src="<?php echo asset_url('img/screens/orcid_widget.png', 'core'); ?>" alt="" class="img-thumbnail img-responsive img-full">
+			</div>
+		</div><!-- ends row -->
+	</div>
+</section>
+
+<section class="section-space60 w-section">
+	<div class="container"><!-- starts container -->
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			   <img src="<?php echo asset_url('img/screens/vocab_widget_2.png', 'core'); ?>" alt="" class="img-thumbnail img-responsive">
+			</div>
+			<div id="k-work-text" class="col-lg-8 col-md-8 col-sm-12"><!-- starts work preview -->
+				<h3 class="k-fancy-title"><a href="<?=base_url('documentation/widgets/vocab_widget/');?>">Vocabulary Widget</a></h3><!-- title -->
+				<p>The ANDS Vocabulary Widget allows you to instantly add Data Classification capabilities to your data capture tools through the ANDS Vocabulary Service.</p>
+			</div>
+		</div><!-- ends row -->
+	</div>
+</section>
+
+<section class="section-space60 w-section">
+	<div class="container"><!-- starts container -->
+		<div class="row">
+			<div id="k-work-text" class="col-lg-5 col-md-5 col-sm-12"><!-- starts work preview -->
+				<h3 class="k-fancy-title"><a href="<?=base_url('documentation/widgets/location_widget/');?>">Location Capture Widget</a></h3><!-- title -->
+				<p>The ANDS Location Capture Widget allows you to instantly enrich your data capture system, adding geospatial capabilities such as custom drawings and place name resolution (using the Australian Gazetteer Service and Google Maps API).</p>
+			</div>
+			<div class="col-lg-7 col-md-7 col-sm-12">
+			   <img src="<?php echo asset_url('img/screens/location_widget.png', 'core'); ?>" alt="" class="img-thumbnail img-responsive img-full">
+			</div>
+		</div><!-- ends row -->
+	</div>
+</section>
+
 <?php $this->load->view('developer_footer'); ?>

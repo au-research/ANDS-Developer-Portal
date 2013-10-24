@@ -949,3 +949,13 @@ figure.panel-figure {
 .plan-ands .btn-pricing-plan:hover {
   color: #c1d0bc;
 }
+
+/* line 137, ../sass/ands_style.scss */
+.img-full {
+  width: 100%;
+}
+
+/* line 141, ../sass/ands_style.scss */
+.w-section {
+  border-bottom: 1px solid #ebe8e3;
+}
