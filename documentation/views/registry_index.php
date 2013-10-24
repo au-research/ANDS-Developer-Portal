@@ -124,8 +124,58 @@ RewriteBase /<code><blue>myrepo/</blue></code></pre>
 			  </div>
 	    	</article>
 			</div>
-     <aside id="k-sidebar" class="col-lg-3 col-md-4 col-sm-12 col-lg-offset-1"><!-- starts sidebar -->
-      </aside><!-- ends sidebar -->			
+		     <aside id="k-sidebar" class="col-lg-6 col-md-6 col-sm-12"><!-- starts sidebar -->
+
+ 				<h4>Screenshots: MINGHEE MAKE THIS LOOK PRETTY PLEASE! :-)</h4>
+				<div id="k-work-slider-wrap"><!-- starts slider wrap -->
+                
+                    <div id="carousel-work" class="carousel slide"><!-- starts carousel -->
+                    
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-work" data-slide-to="0" class=""></li>
+                            <li data-target="#carousel-work" data-slide-to="1" class="active"></li>
+                            <li data-target="#carousel-work" data-slide-to="2"></li>
+                            <li data-target="#carousel-work" data-slide-to="3"></li>
+                            <li data-target="#carousel-work" data-slide-to="4"></li>
+                            <li data-target="#carousel-work" data-slide-to="5"></li>
+                        </ol>
+                    
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item">
+                                <img src="http://services.ands.org.au/documentation/img/portal_preview.png" alt="Image slide 5">
+                            </div>
+                            <div class="item active">
+                                <img src="http://services.ands.org.au/documentation/img/data_source_admin.png" alt="Image slide 4">
+                            </div>
+                            <div class="item">
+                                <img src="http://services.ands.org.au/documentation/img/maintenance_dashboard.png" alt="Image slide 3">
+                            </div>
+                            <div class="item">
+                                <img src="http://services.ands.org.au/documentation/img/roles_mgmt.png" alt="Image slide 2">
+                            </div>
+                            <div class="item">
+                                <img src="http://services.ands.org.au/documentation/img/metadata_workflows.png" alt="Image slide 1">
+                            </div>
+                            <div class="item">
+                                <img src="http://services.ands.org.au/documentation/img/cms_editor.png" alt="Image slide 1">
+                            </div>
+                        </div>
+         
+                    </div><!-- ends carousel -->
+
+                </div>
+		      </aside><!-- ends sidebar -->		
+
+		      DOWN HERE: LINK TO COMMUNITY FORUM
+		      <BR/>
+		      (for each of the following, a link to a forum thread and a one-liner explaining what they are/do):
+		      <br/>
+		     	ANDS-CONTRIB<br/>
+		     	STUFF ABOUT HARVESTER, 
+		      <BR/>
+		      SETTING UP TOPICS,<BR/> SETTING UP SPOTLIGHT CMS,<BR/> UPDATING DASHBOARD
 		</div><!-- ends row -->
 	</div><!-- ends container -->
 </section>
