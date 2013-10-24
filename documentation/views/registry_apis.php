@@ -16,94 +16,57 @@
 	</div><!-- ends container -->
 </section>
 
-<section id="k-work-gallery"><!-- starts work gallery -->
-
-	<div class="container section-space30"><!-- starts container -->
-
-		<div class="k-work-grid masonry k-equal-height"><!-- starts row -->
-
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
-				<div class="price-plan plan-ands text-center">
-					<h3 class="plan-title text-light">getRIFCS API<span class="plan-title-underline"></span></h3>
-					<div class="plan-features">
+<section>
+	<div class="container section-space30">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mq-box">
+				<dl class="k-dl-list">
+					<dt class="k-dt k-fancy-icon-wrap">
+						<a href="#"><i class="icon-cloud awesome32 k-fancy-icon"></i></a>
+					</dt>
+					<dd class="k-dd100">
+						<h3 class="k-fancy-title">getRIFCS API</h3>
 						<p>This API provides a simple method to retrieve RIFCS XML for one or more objects in the Registry.</p>
-							<p>
-								<small>Use this API if your system uses RIFCS internally or if you prefer being able to work with and validate XML content.</small>
-							</p>
-					</div>
-					<div>
-						<?php echo anchor('documentation/services/getRIFCS', '<i class="icon-ok"></i> LEARN ABOUT THIS API', array('class'=>'btn btn-pricing-plan')); ?>
-					</div>
-					<div class="plan-footer"><span class="plan-footer-overline"></span></div>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
-				<div class="price-plan plan-ands text-center">
-					<h3 class="plan-title text-light">getMetadata API<span class="plan-title-underline"></span></h3>
-					<div class="plan-features">
+						<p> <small>Use this API if your system uses RIFCS internally or if you prefer being able to work with and validate XML content.</small> </p>
+						<?php echo anchor('documentation/services/getRIFCS', '<i class="icon-ok"></i> LEARN ABOUT THIS API', array('class'=>'btn btn-default')); ?>
+					</dd>
+					
+					<dt class="k-dt k-fancy-icon-wrap">
+						<a href="#"><i class="icon-cloud awesome32 k-fancy-icon"></i></a>
+					</dt>
+					<dd class="k-dd100">
+						<h3 class="k-fancy-title">getMetadata API</h3>
 						<p>Search and retrieve structured metadata about objects in the registry as either XML or JSON. </p>
 						<p><small>Use this API if your system is compatible with XML or JSON and you do not require the full RIFCS representation of an object.</small></p>
-					</div>
-					<div>
-						<?php echo anchor('documentation/services/getMetadata', '<i class="icon-ok"></i> LEARN ABOUT THIS API', array('class'=>'btn btn-pricing-plan')); ?>
-					</div>
-					<div class="plan-footer"><span class="plan-footer-overline"></span></div>
-				</div>
+						<?php echo anchor('documentation/services/getMetadata', '<i class="icon-ok"></i> LEARN ABOUT THIS API', array('class'=>'btn btn-default')); ?>
+					</dd>
+				</dl>
 			</div>
-
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
-				<div class="price-plan plan-ands text-center">
-					<h3 class="plan-title text-light">getExtRif API<span class="plan-title-underline"></span></h3>
-					<div class="plan-features">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mq-box">
+				<dl class="k-dl-list">
+					<dt class="k-dt k-fancy-icon-wrap">
+						<a href="#"><i class="icon-cloud awesome32 k-fancy-icon"></i></a>
+					</dt>
+					<dd class="k-dd100">
+						<h3 class="k-fancy-title">getExtRif API</h3>
 						<p>This API allows you to retrieve the enriched and annotated copy of records which generate pages in Research Data Australia.</p>
-						<p><small>Use this API if you require more detail than what is available in the RIFCS record.</small></p>
-					</div>
-					<div>
-						<?php echo anchor('documentation/services/getExtRif', '<i class="icon-ok"></i> LEARN ABOUT THIS API', array('class'=>'btn btn-pricing-plan')); ?>
-					</div>
-					<div class="plan-footer"><span class="plan-footer-overline"></span></div>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
-				<div class="price-plan plan-ands text-center">
-					<h3 class="plan-title text-light">OAI-PMH provider<span class="plan-title-underline"></span></h3>
-					<div class="plan-features">
+						<p><small>Use this API if you require more detail than what is available in the RIFCS record.</small> <br/>&nbsp;</p>
+						<?php echo anchor('documentation/services/getExtRif', '<i class="icon-ok"></i> LEARN ABOUT THIS API', array('class'=>'btn btn-default')); ?>
+					</dd>
+					
+					<dt class="k-dt k-fancy-icon-wrap">
+						<a href="#"><i class="icon-cloud awesome32 k-fancy-icon"></i></a>
+					</dt>
+					<dd class="k-dd100">
+						<h3 class="k-fancy-title">OAI-PMH Provider</h3>
 						<p>A web service implementing the Open Archives Initiative Protocol for Metadata Harvesting</p>
 						<p><small>Use this API if your system is a harvester which is compatible with the OAI-PMH protocol.</small></p>
-					</div>
-					<div>
-						<?php echo anchor('documentation/services/oai', '<i class="icon-ok"></i> LEARN ABOUT THIS API', array('class'=>'btn btn-pricing-plan')); ?>
-					</div>
-					<div class="plan-footer"><span class="plan-footer-overline"></span></div>
-				</div>
+						<?php echo anchor('documentation/services/oai', '<i class="icon-ok"></i> LEARN ABOUT THIS API', array('class'=>'btn btn-default')); ?>
+					</dd>
+				</dl>
 			</div>
-
-			<!--div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mq-box">
-				<div class="price-plan plan-ands text-center">
-					<h3 class="plan-title text-light">Research Grants API<span class="plan-title-underline"></span></h3>
-					<div class="plan-features">
-						<p>A special purpose API for retrieving structured information about Australian Research Grants.</p>
-						<p><small>Use this API if your system is only interested in metadata relating to ARC or NH&amp;MRC Research Grants.</small></p>
-					</div>
-					<div>
-						<?php echo anchor('documentation/services/getGrants', '<i class="icon-ok"></i> LEARN ABOUT THIS API', array('class'=>'btn btn-pricing-plan')); ?>
-					</div>
-					<div class="plan-footer"><span class="plan-footer-overline"></span></div>
-				</div>
-			</div-->
-
 		</div>
-
-		<div class="row text-center">
-			<h3>Not sure which service is right for you?</h3>
-			<p>Ask us on the <?php echo anchor($this->config->item('developer_community_portal'), 'Developer Community Portal'); ?> or email us!</p>
-			<div class="gap30"></div>
-		</div>
-
-	</div><!-- ends container -->
-
-</section><!-- ends work gallery -->
-
+	</div>
+	
+</section>
 <?php $this->load->view('developer_footer'); ?>

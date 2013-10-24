@@ -117,50 +117,54 @@ figure.panel-figure {
 }
 
 /* line 101, ../sass/ands_style.scss */
-.mq-box > a {
+.mq-box > a, .k-fancy-icon-wrap a {
   color: #444;
 }
 
-/* line 106, ../sass/ands_style.scss */
+/* line 107, ../sass/ands_style.scss */
 .k-work-grid .mq-box {
   margin-top: 30px;
 }
 
 /* Footer color changes */
-/* line 114, ../sass/ands_style.scss */
+/* line 115, ../sass/ands_style.scss */
 #k-footer .widget-title, #k-footer .widget p, #k-footer .widget a {
   color: #c1d0bc !important;
 }
-/* line 117, ../sass/ands_style.scss */
+/* line 118, ../sass/ands_style.scss */
 #k-footer .widget_categories ul li {
   font-size: 12px;
   line-height: 13px;
 }
 
-/* line 123, ../sass/ands_style.scss */
+/* line 124, ../sass/ands_style.scss */
 .plan-ands {
   border: 3px solid #7b9b6f;
 }
-/* line 125, ../sass/ands_style.scss */
+/* line 126, ../sass/ands_style.scss */
 .plan-ands .plan-title, .plan-ands .plan-footer {
   background: #7b9b6f;
 }
-/* line 128, ../sass/ands_style.scss */
+/* line 129, ../sass/ands_style.scss */
 .plan-ands .btn-pricing-plan {
   background: #7b9b6f;
   color: #fff;
 }
-/* line 131, ../sass/ands_style.scss */
+/* line 132, ../sass/ands_style.scss */
 .plan-ands .btn-pricing-plan:hover {
   color: #c1d0bc;
 }
 
-/* line 137, ../sass/ands_style.scss */
-.img-full {
+/* line 138, ../sass/ands_style.scss */
+.w-section {
+  border-bottom: 1px solid #ebe8e3;
+}
+/* line 140, ../sass/ands_style.scss */
+.w-section .img-full {
   width: 100%;
 }
 
-/* line 141, ../sass/ands_style.scss */
-.w-section {
-  border-bottom: 1px solid #ebe8e3;
+/* line 145, ../sass/ands_style.scss */
+.k-dd100 {
+  margin-left: 100px;
 }

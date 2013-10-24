@@ -73,10 +73,10 @@
 					<li class="cat-item"><a href="#step3">Download and configure the search indexer</a></li>
 					<li class="cat-item"><a href="#step4">Update the registry config</a></li>
 				</ol>
-			</div><!-- ends work preview -->
-		</div><!-- ends row -->
-	</div><!-- ends container -->
-</section><!-- ends single work project preview -->
+			</div>
+		</div>
+	</div>
+</section>
 
 <section id="k-content">
 	<div class="container">

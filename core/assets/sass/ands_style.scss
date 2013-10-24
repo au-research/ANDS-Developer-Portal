@@ -98,9 +98,10 @@ figure.panel-figure{
     }
 }
 
-.mq-box > a{
+.mq-box > a, .k-fancy-icon-wrap a{
 	color:#444;
 }
+
 
 .k-work-grid{
 	.mq-box{
@@ -135,8 +136,12 @@ figure.panel-figure{
 }
 
 .w-section{
-	border-bottom: 1px solid #ebe8e3
+	border-bottom: 1px solid #ebe8e3;
 	.img-full{
 		width:100%;
 	}
+}
+
+.k-dd100{
+	margin-left:100px;
 }
