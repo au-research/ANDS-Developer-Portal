@@ -15,7 +15,7 @@
 	</div><!-- ends container -->
 </section>
 
-<section class="section-space60 w-section">
+<section class="section-space30 w-section">
 	<div class="container"><!-- starts container -->
 		<div class="row">
 			<div class="col-lg-7 col-md-7 col-sm-12">
@@ -30,7 +30,7 @@
 	</div>
 </section>
 
-<section class="section-space60 w-section">
+<section class="section-space30 w-section">
 	<div class="container"><!-- starts container -->
 		<div class="row">
 			<div id="k-work-text" class="col-lg-5 col-md-5 col-sm-12"><!-- starts work preview -->
@@ -45,7 +45,7 @@
 	</div>
 </section>
 
-<section class="section-space60 w-section">
+<section class="section-space30 w-section">
 	<div class="container"><!-- starts container -->
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
@@ -60,7 +60,7 @@
 	</div>
 </section>
 
-<section class="section-space60 w-section">
+<section class="section-space30 w-section">
 	<div class="container"><!-- starts container -->
 		<div class="row">
 			<div id="k-work-text" class="col-lg-5 col-md-5 col-sm-12"><!-- starts work preview -->
