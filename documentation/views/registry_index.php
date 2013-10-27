@@ -167,14 +167,21 @@ RewriteBase /<code><blue>myrepo/</blue></code></pre>
 			</div>
 
 			<h2 class="k-fancy-title">Useful Links</h2>
-			DOWN HERE: LINK TO COMMUNITY FORUM
-			  <BR/>
-			  (for each of the following, a link to a forum thread and a one-liner explaining what they are/do):
-			  <br/>
-				ANDS-CONTRIB<br/>
-				STUFF ABOUT HARVESTER, 
-			  <BR/>
-			  SETTING UP TOPICS,<BR/> SETTING UP SPOTLIGHT CMS,<BR/> UPDATING DASHBOARD
+			<div id="k-sidebar-splitter" class="clearfix section-space60"><span></span></div>				
+							<ul class="anchor_links">
+								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&t=3191&sid=e170cbdd52fa7fe98767236c9d17dbc4" target="_blank">ANDS-CONTRIB</a></li>
+								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&t=3201&sid=e170cbdd52fa7fe98767236c9d17dbc4" target="_blank">Harvester</a></li>
+								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&t=3211&sid=e170cbdd52fa7fe98767236c9d17dbc4" target="_blank">Setting up Topics</a></li>
+								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&t=3181&sid=5e6dce383ad3be135b5ebc3e89aabcc1" target="_blank">Setting up Spotlight CMS</a></li>
+								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&t=3221&sid=5e6dce383ad3be135b5ebc3e89aabcc1" target="_blank">Updating Dashboard</a></li>
+								<li class="cat-item"><a href="http://researchdata.ands.org.au/home/disclaimer" target="_blank">Usage Disclaimer</a></li>
+							</ul>
+						<div class="clearfix">
+							<div class="alert alert-warning">
+						  <b>Need help?</b> <br/>
+						  Visit the <?=anchor($this->config->item('developer_community_portal'),'Community Support Forum');?>
+						</div>
+					</div>
 		</div>
 	</div>
 	 
