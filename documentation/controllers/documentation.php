@@ -51,9 +51,12 @@ class Documentation extends MX_Controller {
 			break;
 			
 			case 'registry_apis':
-			default:
 				$data['title'] = 'ANDS Collections Registry APIs - ANDS Developer Toolbox';
 				$this->load->view('registry_apis', $data);
+			break;
+			default:
+				$data['title'] = 'ANDS Web Services - ANDS Developer Toolbox';
+				$this->load->view('all_apis', $data);
 			break;
 		}
 	}
