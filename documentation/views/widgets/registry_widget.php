@@ -42,7 +42,7 @@
 &lt;link rel="stylesheet" type="text/css" href="<?=remove_scheme(apps_url('assets/registry_widget/css/registry_widget.css'));?>" /&gt;
 					</pre>
 
-					See <a href="#configuration">Configuration section</a> below for details on how to configure the widget on your web page.
+					See <a href="#configuration" class="scroll_to">Configuration section</a> below for details on how to configure the widget on your web page.
 
 					<p><br/></p>
 					<h2 class="k-fancy-title">Demo</h2>
@@ -213,10 +213,10 @@ $('#advanced_search_example').registry_widget({
 		<div id="k-config" class="clearfix col-lg-12 col-md-12 col-sm-12">
 			<article>
 					<p><br/></p>
-					<h2 class="k-fancy-title">Configuration</h2>
+					<h2 class="k-fancy-title" id="configuration">Configuration</h2>
 					<p>The widget can be initialised by two methods:
 						<ul>
-							<li><b>Simple Mode</b>: add the <code>class="registry_widget"</code> to a <code>&lt;div&gt;</code> or <code>&lt;input&gt;</code> element as illustrated in the examples above or this <?=anchor(apps_url('assets/registry_widget/dist/demo.html'), 'implementation demo');?>.
+							<li><b>Simple Mode</b>: add the <code>class="registry_widget"</code> to a <code>&lt;div&gt;</code> or <code>&lt;input&gt;</code> element as illustrated in the examples above.
 								You can also add a <code>data-query</code> and <code>data-mode</code> attribute to customise the behaviour in Simple Mode.</li>
 							<li><b>Custom Mode</b>: initialise the <code>registry_widget</code> from javascript (jQuery) by calling <code>$('#id_of_your_container_element').registry_widget();</code>. You can pass any of the below properties to the <code>registry_widget()</code> function to customise its behaviour. </li>
 						</ul>
@@ -231,7 +231,7 @@ $('#advanced_search_example').registry_widget({
 			array('search_btn_text', 'Search', 'Search text displays on the button'),
 			array('search_btn_class', 'rowidget_search btn btn-small btn-default', 'CSS Classes apply on the search button'),
 			array('search_callback', 'false', 'Overwrite function for search result <code>function(data, obj, settings)</code>'),
-			array('lookup','true', 'Enable Resolve/Lookup functionality'),
+			array('lookup','true', 'Enable Resolve/Lookup functionality. This functionality enables the user to identify a registry object based on their <code>id</code>, <code>key</code> or <code>slug</code>'),
 			array('auto_lookup','false', 'Enable Auto lookup based on the target\'s value'),
 			array('lookup_btn_text','Resolve', 'Lookup text displays on the button'),
 			array('lookup_btn_class', 'rowidget_lookup btn btn-small btn-default', 'CSS Classes apply on the lookup button'),

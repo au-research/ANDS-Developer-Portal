@@ -45,7 +45,7 @@
 							<ul>
 								<li><strong>Populating a lookup form</strong> input to search for grant numbers</li>
 								<li>Enabling <strong>richer RIF-CS</strong> relationship mappings</li>
-								<li>Determining grants have been <strong>allocated to a particular researcher</strong></li>
+								<li>Determining grants that have been <strong>allocated to a particular researcher</strong></li>
 							</ul>
 						</p>
 

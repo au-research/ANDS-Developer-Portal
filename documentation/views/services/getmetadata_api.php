@@ -51,7 +51,7 @@
 
 	    <h3 class="k-fancy-title"><a id="usage"></a>Service Usage</h3>
 	    <div class="alert alert-success">
-	      <b>Before you start!</b> To use this service, institutions or individuals must <a href="<?=registry_url('services/register/');?>" target="_blank">register a free API key</a>.
+	      <b>Before you start!</b> To use this service, institutions or individuals must <a href="<?=registry_url('services/register/');?>" target="_blank">register for a free API key</a>.
 	    </div>
 	    <h4><a id="service"></a>Resource URL</h4>
 	    <blockquote><small><code><?=registry_url('services/');?><blue>{YOUR API KEY}</blue>/<green>getMetadata</green>?<blue>{params}</blue></code></small></blockquote>

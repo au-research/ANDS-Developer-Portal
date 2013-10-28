@@ -32,7 +32,7 @@ jQuery(document).ready(function ($) {
 
 });
 
-$(document).on('click', '.anchor_links a', function(e){
+$(document).on('click', '.anchor_links a, .scroll_to', function(e){
 	var href = $.attr(this, 'href');
 	if($(href) && $(href).offset()){
 		$('html, body').animate({

@@ -1451,7 +1451,7 @@ jQuery.fn.eqHeights=function(e){var t={child:false};var e=jQuery.extend(t,e);var
 
 });
 
-$(document).on('click', '.anchor_links a', function(e){
+$(document).on('click', '.anchor_links a, .scroll_to', function(e){
 	var href = $.attr(this, 'href');
 	if($(href) && $(href).offset()){
 		$('html, body').animate({

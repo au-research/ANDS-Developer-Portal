@@ -57,7 +57,9 @@
       <p><br/></p>
 
       <h3 class="k-fancy-title"><a id="usage"></a>Service Usage</h3>
-
+      <div class="alert alert-success">
+        <b>Before you start!</b> To use this service, institutions or individuals must <a href="http://devl.ands.org.au/minh/registry/services/register/" target="_blank">register for a free API key</a>.
+      </div>
       <h4><a id="service"></a>Resource URL</h4>
       <blockquote><code><?=registry_url('services/');?><blue>{YOUR API KEY}</blue>/<green>getExtRif</green>?<blue>{params}</blue></code></blockquote>
       <div class="alert alert-warning">

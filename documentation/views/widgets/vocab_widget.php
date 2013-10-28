@@ -40,7 +40,7 @@
 					
 					<p><br/></p>
 
-					<h2 class="k-fancy-title">How does I use this plugin?</h2>
+					<h2 class="k-fancy-title">How do I use this plugin?</h2>
 					<p>The widget requires jQuery; load this, and the plugin itself (and associated CSS styles) in your document's &lt;head&gt;&lt;/head&gt; segment:</p>
 					<pre class="prettyprint pre-scrollable pre-small" style="min-height:5em">
 &lt;script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js'&gt;&lt;/script&gt;
@@ -409,7 +409,7 @@ widget.vocab_widget('narrow','http://purl.org/au-research/vocabulary/RIFCS/1.4/R
 
 					<h2 class="widget-title">Events</h2>
 					<p> When run in advance mode, events are fired to allow you to hook into the workflow and implement your customisations as you see fit. </p>
-					<div class="alert alert-info"> Plugin event are placed in the <code>vocab.ands</code> namespace </div>
+					<div class="alert alert-info"> Plugin events are placed in the <code>vocab.ands</code> namespace </div>
 					<table class="table table-striped table-bordered table-hover">
 						<thead>
 							<td>Event Name</td><td>Parameters</td><td>Description</td>
