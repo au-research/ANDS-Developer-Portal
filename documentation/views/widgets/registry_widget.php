@@ -242,22 +242,22 @@ $('#advanced_search_example').registry_widget({
 	
 		);
 	?>
-				<small>
-					<table class="table table-striped table-bordered table-hover">
-						<thead>
-							<td width="20%">Property</td><td>Description</td><td>Default</td>
-						</thead>
-						<tbody>
-							<?php foreach($config as $c): ?>
-							<tr>
-								<td><code><?php echo $c[0] ?></code></td>
-								<td><?php echo $c[2] ?></td>
-								<td><code><?php echo $c[1] ?></code></td>
-							</tr>
-							<?php endforeach; ?>
-						</tbody>
-					</table>	
-				</small>
+
+				<table class="table table-striped table-bordered table-hover">
+					<thead>
+						<td width="20%">Property</td><td>Description</td><td>Default</td>
+					</thead>
+					<tbody>
+						<?php foreach($config as $c): ?>
+						<tr>
+							<td><code><?php echo $c[0] ?></code></td>
+							<td><?php echo $c[2] ?></td>
+							<td><code><?php echo $c[1] ?></code></td>
+						</tr>
+						<?php endforeach; ?>
+					</tbody>
+				</table>	
+
 			</article>
 		</div>
 		</div>

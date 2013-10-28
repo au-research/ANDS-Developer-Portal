@@ -134,7 +134,7 @@ $('#custom_settings_orcid').orcid_widget({
 		</div><!-- ends row -->
 
 		<div class="row">
-		<div id="k-config" class="clearfix col-lg-9 col-md-9 col-sm-9">
+		<div id="k-config" class="clearfix col-lg-12 col-md-12 col-sm-12">
 			<article>
 				<p><br/></p>
 				<h2 class="k-fancy-title">Configuration</h2>
