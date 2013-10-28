@@ -32,10 +32,10 @@
 				
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">
-						<div class="item">
+						<div class="item active">
 							<img src="http://services.ands.org.au/documentation/img/portal_preview.png" alt="Image slide 5">
 						</div>
-						<div class="item active">
+						<div class="item">
 							<img src="http://services.ands.org.au/documentation/img/data_source_admin.png" alt="Image slide 4">
 						</div>
 						<div class="item">
