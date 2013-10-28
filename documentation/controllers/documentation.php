@@ -41,8 +41,8 @@ class Documentation extends MX_Controller {
 			break;
 
 			case 'vocabulary_api':
-				$data['title'] = 'Watch this space...Coming Soon! - ANDS Developer Toolbox';
-				$this->load->view('coming_soon', $data);
+				$data['title'] = 'Vocabulary Service API Documentation - ANDS Developer Toolbox';
+				$this->load->view('services/vocab_api', $data);
 			break;
 
 			case 'indexed_fields':
