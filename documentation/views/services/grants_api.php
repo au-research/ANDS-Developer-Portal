@@ -225,11 +225,11 @@
 									<code>&gt;
 										<a target="_blank" href="<?=registry_url("services/api/getGrants?" .
 										"person=".
-											rawurlencode("David Cook").
+											rawurlencode("Prof David Cook").
 										"&title=" .
 											rawurlencode("sodium channels"));?>">
 
-										getGrants?person=<blue><?=rawurlencode("David Cook") . "</blue>" .
+										getGrants?person=<blue><?=rawurlencode("Prof David Cook") . "</blue>" .
 										 "&title=<blue>" . rawurlencode("sodium channels");?></blue>
 
 									</code><br/></a>
