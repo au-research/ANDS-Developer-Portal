@@ -117,7 +117,7 @@
 						<p><br/></p>
 
 							<h4><a id="service_url"></a>Service URL</h4>
-						<blockquote><code><?=$this->config->item('sissvoc_url');?><green>api</green>/<blue>{vocab key}</blue>/<blue>{service call}</blue></code></blockquote>
+						<blockquote><code><?=$this->config->item('sissvoc_url');?><blue>{vocab key}</blue>/<blue>{service call}</blue></code></blockquote>
 						<p>
 							<ul>
 								<li>
@@ -215,7 +215,7 @@
 												<ul>';
 												foreach($examples AS $ex)
 												{
-													echo '<li><code>.../<a href="'. $CI->config->item('sissvoc_url') . 'api/' . $ex .'" target="_blank">'.$ex.'</a></code></li>';
+													echo '<li><code>.../<a href="'. $CI->config->item('sissvoc_url') . $ex .'" target="_blank">'.$ex.'</a></code></li>';
 												}
 								echo '
 												</small></ul>
@@ -233,7 +233,7 @@
 
 						<h3 class="k-fancy-title"><a id="calls1"></a>Service Calls &amp; Example Usage</h3>
 							The Vocabulary Service also has built-in documentation. See the
-										<a href="<?=$this->config->item('sissvoc_url');?>api/meta/">/meta/</a> service call.<br/>
+										<a href="<?=$this->config->item('sissvoc_url');?>meta/">/meta/</a> service call.<br/>
 						<h4>Core Services</h4>
 						<div class="col-lg-12">
 							<div id="accordion" class="panel-group">
