@@ -36,7 +36,7 @@
 						Put the following code snippet into your HTML document between the <code>&lt;head&gt;</code> tags.
 						<pre class="prettyprint pre-scrollable pre-small">
 &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="<?=remove_scheme(apps_url('assets/orcid_widget/css/orcid_widget.js'));?>"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="<?=remove_scheme(apps_url('assets/orcid_widget/js/orcid_widget.js'));?>"&gt;&lt;/script&gt;
 &lt;link rel="stylesheet" type="text/css" href="<?=remove_scheme(apps_url('assets/orcid_widget/css/orcid_widget.css'));?>" /&gt;</pre>
 					And you're done! Just 3 lines of code! Any input fields on your page which have the class <code>orcid_widget</code> will be transformed into a fully-functional ORCID lookup tool.
 					</p>
