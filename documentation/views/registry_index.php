@@ -33,22 +33,22 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">
 						<div class="item active">
-							<img src="http://services.ands.org.au/documentation/img/portal_preview.png" alt="Image slide 5">
+							<img src="https://services.ands.org.au/documentation/img/portal_preview.png" alt="Image slide 5">
 						</div>
 						<div class="item">
-							<img src="http://services.ands.org.au/documentation/img/data_source_admin.png" alt="Image slide 4">
+							<img src="https://services.ands.org.au/documentation/img/data_source_admin.png" alt="Image slide 4">
 						</div>
 						<div class="item">
-							<img src="http://services.ands.org.au/documentation/img/maintenance_dashboard.png" alt="Image slide 3">
+							<img src="https://services.ands.org.au/documentation/img/maintenance_dashboard.png" alt="Image slide 3">
 						</div>
 						<div class="item">
-							<img src="http://services.ands.org.au/documentation/img/roles_mgmt.png" alt="Image slide 2">
+							<img src="https://services.ands.org.au/documentation/img/roles_mgmt.png" alt="Image slide 2">
 						</div>
 						<div class="item">
-							<img src="http://services.ands.org.au/documentation/img/metadata_workflows.png" alt="Image slide 1">
+							<img src="https://services.ands.org.au/documentation/img/metadata_workflows.png" alt="Image slide 1">
 						</div>
 						<div class="item">
-							<img src="http://services.ands.org.au/documentation/img/cms_editor.png" alt="Image slide 1">
+							<img src="https://services.ands.org.au/documentation/img/cms_editor.png" alt="Image slide 1">
 						</div>
 					</div>
 				
@@ -132,7 +132,7 @@ wget <green>http://mirror.mel.bkb.net.au/pub/apache/lucene/solr/4.5.0/solr-4.5.0
 unzip solr-4.5.0.zip
 cd solr-4.5.0/example/</pre></li>
 <li>Copy the SOLR schema file and start SOLR:<pre class="pre-small">
-cp solrschema_r10.xml <blue>path/to/solr/</blue>collection1/conf/schema.xml
+cp solrschema_r11.xml <blue>path/to/solr/</blue>collection1/conf/schema.xml
 java -Dsolr.solr.home=<blue>path/to/solr/</blue> -Djetty.port=8080 -jar start.jar &amp;</pre>
 					</li>
 					<li><small>Note: you can also launch SOLR as a Tomcat application (recommended for production use)</small></li>
@@ -169,11 +169,11 @@ RewriteBase /<code><blue>myrepo/</blue></code></pre>
 			<h2 class="k-fancy-title">Useful Links</h2>
 			<div id="k-sidebar-splitter" class="clearfix section-space60"><span></span></div>				
 							<ul class="anchor_links">
-								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&t=3191&sid=e170cbdd52fa7fe98767236c9d17dbc4" target="_blank">ANDS-CONTRIB</a></li>
-								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&t=3201&sid=e170cbdd52fa7fe98767236c9d17dbc4" target="_blank">Harvester</a></li>
-								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&t=3211&sid=e170cbdd52fa7fe98767236c9d17dbc4" target="_blank">Setting up Topics</a></li>
-								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&t=3181&sid=5e6dce383ad3be135b5ebc3e89aabcc1" target="_blank">Setting up Spotlight CMS</a></li>
-								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&t=3221&sid=5e6dce383ad3be135b5ebc3e89aabcc1" target="_blank">Updating Dashboard</a></li>
+								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&amp;t=3191" target="_blank">ANDS-CONTRIB</a></li>
+								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&amp;t=3201" target="_blank">Harvester</a></li>
+								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&amp;t=3211" target="_blank">Setting up Topics</a></li>
+								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&amp;t=3181" target="_blank">Setting up Spotlight CMS</a></li>
+								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&amp;t=3221" target="_blank">Updating Dashboard</a></li>
 								<li class="cat-item"><a href="http://researchdata.ands.org.au/home/disclaimer" target="_blank">Usage Disclaimer</a></li>
 							</ul>
 						<div class="clearfix">
