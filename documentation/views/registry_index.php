@@ -73,6 +73,8 @@
 					<li class="cat-item"><a href="#step3">Download and configure the search indexer</a></li>
 					<li class="cat-item"><a href="#step4">Update the registry config</a></li>
 				</ol>
+				<hr/>
+				<small class="muted">Alternatively, if you are a NeCTAR Cloud user, you may consider <a href="http://community.ands.org.au/viewtopic.php?f=211&t=3271" target="_blank">simply deploying a VM image instead</a>.</small>
 			</div>
 		</div>
 	</div>
@@ -106,13 +108,13 @@ mv ANDS-Registry-Core-master <blue>myrepo</blue></pre>
 					<li>Having installed a MySQL server, setup new databases and initialise the tables:
 						<pre class="pre-small">
 mysql -u root -p                         # log into mysql server
-mysql> CREATE DATABASE dbs_roles         # create databases
-mysql> CREATE DATABASE dbs_registry</pre></li>
+mysql> CREATE DATABASE dbs_roles;         # create databases
+mysql> CREATE DATABASE dbs_registry;</pre></li>
 <li>If required, create a web user account and give it access:
 <pre class="pre-small">
 mysql> CREATE USER 'webuser' IDENTIFIED BY '&lt;<blue>yourpassword</blue>&gt;';
-mysql> GRANT SELECT, INSERT, UPDATE, DELETE ON dbs_roles TO 'webuser';
-mysql> GRANT SELECT, INSERT, UPDATE, DELETE ON dbs_registry TO 'webuser';
+mysql> GRANT SELECT, INSERT, UPDATE, DELETE ON dbs_roles.* TO 'webuser';
+mysql> GRANT SELECT, INSERT, UPDATE, DELETE ON dbs_registry.* TO 'webuser';
 mysql> \q</pre></li>
 <li>Import the table structure:<pre class="pre-small">
 mysql -u root -p dbs_registry &lt; <blue>myrepo</blue><green>/etc/db/mysql/dbs_registry_r11_full.sql</green>
