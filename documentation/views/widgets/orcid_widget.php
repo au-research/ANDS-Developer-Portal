@@ -68,6 +68,7 @@
 					<p><br/></p>
 
 					<h2 class="widget-title">Custom Settings</h2>
+					<h5> Example 1 </h5>
 					<p>In this example, we initialise the widget using some custom settings:<br/>
 						<ul><li>the labels on the page have been changed (see the <code>JS</code> tab)</li>
 						<li>automatically display the search box when the widget loads</li>
@@ -99,7 +100,68 @@ $('#custom_settings_orcid').orcid_widget({
 							</pre>
 						</div>
 					</div>
-
+					<p><br/></p>
+					<h5>Example 2</h5>
+					<p>Another example where we initialise the widget using custom settings (see the <code>JS</code> tab):<br/>
+						<ul><li>Set styling of the search form div</li>
+						<li>Set styling of the orcid information div</li>
+						</ul>
+						Note: You will need to add the supplied classes to your style sheet to apply formatting.
+					</p>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#orcid_w-3-result" data-toggle="tab">Result</a></li>
+						<li><a href="#orcid_w-3-html" data-toggle="tab">HTML</a></li>
+						<li><a href="#orcid_w-3-js" data-toggle="tab">JS</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="orcid_w-3-result" class="tab-pane fade active in">
+							<input type="text" name="name" id="format_display_settings_orcid" size="40" class=""/>
+						</div>
+						<div id="orcid_w-3-html" class="tab-pane fade">
+							<pre class="prettyprint">
+&lt;input type="text" name="name" id="format_display_settings_orcid" size="40" class=""/&gt;
+							</pre>
+						</div>
+						<div id="orcid_w-3-js" class="tab-pane fade">
+							<pre class="prettyprint">
+$('#format_display_settings_orcid').orcid_widget({
+	before_html: 'Enter Here: ',
+	search_div_class: 'custom_search_div',
+	info_box_class:'custom_info_box',
+});
+							</pre>
+						</div>
+					</div>
+<p><br/></p>
+					<h5>Example 3</h5>
+					<p>Another example where we initialise the widget using custom settings (see the <code>JS</code> tab)<br/>
+						<ul><li>Enable tooltip of full information on mouseover of the results list</li>
+						</ul>
+						Note: This feature requires the qtip jquery plugin to be installed to display correctly.
+					</p>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#orcid_w-4-result" data-toggle="tab">Result</a></li>
+						<li><a href="#orcid_w-4-html" data-toggle="tab">HTML</a></li>
+						<li><a href="#orcid_w-4-js" data-toggle="tab">JS</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="orcid_w-4-result" class="tab-pane fade active in">
+							<input type="text" name="name" id="tooltip_settings_orcid" size="40" class=""/>
+						</div>
+						<div id="orcid_w-4-html" class="tab-pane fade">
+							<pre class="prettyprint">
+&lt;input type="text" name="name" id="tooltip_settings_orcid" size="40" class=""/&gt;
+							</pre>
+						</div>
+						<div id="orcid_w-4-js" class="tab-pane fade">
+							<pre class="prettyprint">
+$('#tooltip_settings_orcid').orcid_widget({
+	before_html: 'Enter Here: ',
+	tooltip:true,
+});
+							</pre>
+						</div>
+					</div>
 				</article><!-- ends article short -->
 			</div><!-- ends main content -->
 
@@ -174,7 +236,10 @@ $('#custom_settings_orcid').orcid_widget({
 		array('lookup_error_handler', 'false', 'overwrite function for error lookup <code>function(xhr, message)</code>'),
 		array('lookup_success_handler', 'false', 'overwrite function when a successful lookup returns <code>function(data, obj, settings)</code>'),
 		array('post_lookup_success_handler', 'false', 'a function hook after a successful lookup returns <code>function(data, obj, settings)</code>'),
-		array('auto_close_search', 'false', 'boolean, To automatically close the search box after a value is selected')
+		array('auto_close_search', 'false', 'boolean, To automatically close the search box after a value is selected'),
+		array('tooltip','false','boolean To enable tooltip on mouseover of result list to display details. NOTE: jquery qtip module is required to use this feature'),
+		array( 'info_box_class','info-box','Text to set a class to style the individual results'),
+		array('search_div_class', 'orcid_search_div', 'Text to set a class to style the search form div' )
 	);
 ?>
 				<table class="table table-striped table-bordered table-hover">

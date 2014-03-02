@@ -39,6 +39,7 @@ module.exports = function(grunt){
 					// '<%= yeoman.assets %>/js/isotope/style.css',
 					// '<%= yeoman.assets %>/js/audioplayer/audioplayer.css',
 					'<%= yeoman.base %>/lib/prettyprint/pretty.css',
+					'<%= yeoman.base %>/lib/qtip2/jquery.qtip.min.css',
 					'<%= yeoman.assets %>/css/theme.css',
 					'<%= yeoman.assets %>/css/ands_green.css',
 					'<%= yeoman.assets %>/css/ands_style.css',
@@ -46,6 +47,9 @@ module.exports = function(grunt){
 				dest:'<%= yeoman.assets %>/css/combine.css'
 			},
 			scripts:{
+				options:{
+					separator: ';'
+				},
 				src:[
 					'<%= yeoman.assets %>/js/jquery-1.10.1.min.js',
 				    '<%= yeoman.assets %>/bootstrap/js/bootstrap.min.js',
@@ -62,6 +66,7 @@ module.exports = function(grunt){
 				    '<%= yeoman.assets %>/js/theme.js',
 				    '<%= yeoman.assets %>/js/ands_script.js',
 				    '<%= yeoman.base %>/lib/prettyprint/pretty.js',
+				    '<%= yeoman.base %>/lib/qtip2/jquery.qtip.min.js',
 				],
 				dest:'<%= yeoman.assets %>/js/combine.js'
 			}

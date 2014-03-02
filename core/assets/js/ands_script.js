@@ -42,4 +42,4 @@ $(document).on('click', '.anchor_links a, .scroll_to', function(e){
 		});
 	}
 	return false;
-})
+});
