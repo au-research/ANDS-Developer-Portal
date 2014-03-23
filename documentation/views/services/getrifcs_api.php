@@ -92,8 +92,8 @@
       '<p>1. Matching all records (i.e. unrestricted search): <br/><code>q=*:*</code></p>
       <p>2. Matching records based on a particular field: <br/><code>q=class:(collection)</code></p>
       <p>3. Matching multiple field values (OR): <br/><code>q=class:(collection OR party)</code></p>
-      <p>4. Matching on multiple fields (AND): <br/><code>q=class:(collection) AND data_source_title:("CSIRO")</code></p>
-      <p>5. Wildcard searching on string fields: <br/><code>q=display_title:(*survey*)</code></p>
+      <p>4. Matching on multiple fields (AND): <br/><code>q=class:(collection) AND group_search:("Monash")</code></p>
+      <p>5. Wildcard searching on string fields: <br/><code>q=title_search:(*survey*)</code></p>
       <p><span class="label label-success">Wait!</span> How do I know what fields to search? See '. anchor('documentation/services/indexed_fields', 'Indexed Fields', array('target'=>'_blank'))
     ),
 
@@ -176,7 +176,7 @@
 		  <code>&gt;
 		    <a target="_blank" href="<?=registry_url("services/api/getRIFCS?" .
 		    "q=".
-		      rawurlencode("class:(collection)").
+		      rawurlencode("class:(collection) AND group:(\"Australian Ocean Data Network\")").
 		    "&rows=" .
 		      rawurlencode("3"));?>">
 
@@ -441,12 +441,12 @@ Habitats were classified based on the substrata (4 categories) and overlying epi
 		  <code>&gt;
 		    <a target="_blank" href="<?=registry_url("services/api/getRIFCS?" .
 		    "q=".
-		      rawurlencode("class:(collection) AND display_title:(\"*marine*\")").
+		      rawurlencode("class:(collection) AND title_search:(\"*marine*\")").
 		    "&sort=" .
 		      rawurlencode("update_timestamp desc").
 		    "&rows=1" );?>">
 
-		    q=<blue>class:(collection) AND display_title:("*marine*")</blue>&amp;sort=<blue>update_timestamp desc</blue>&amp;rows=1</blue>
+		    q=<blue>class:(collection) AND title_search:("*marine*")</blue>&amp;sort=<blue>update_timestamp desc</blue>&amp;rows=1</blue>
 
 		  </code><br/></a>
 		  <br/>
