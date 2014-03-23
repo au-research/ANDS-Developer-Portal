@@ -60,11 +60,11 @@
 					</ul>
 					<div class="tab-content">
 						<div id="registry_w-3-result" class="tab-pane fade active in">
-							<div id="search_display" data-query="q=fulltext:fish&rows=5" data-mode="display_result" class="registry_widget"></div>
+							<div id="search_display" data-query="q=+fulltext:(fish)%20AND%20+class:collection&rows=5" data-mode="display_result" class="registry_widget"></div>
 						</div>
 						<div id="registry_w-3-html" class="tab-pane fade">
 							<pre class="prettyprint">
-&lt;div data-query="q=fulltext:fish&rows=5" data-mode="display_result" class="registry_widget"&gt;&lt;/div&gt;
+&lt;div data-query="q=+fulltext:(fish) AND +class:collection&rows=5" data-mode="display_result" class="registry_widget"&gt;&lt;/div&gt;
 							</pre>
 						</div>
 					</div>
@@ -81,11 +81,11 @@
 					</ul>
 					<div class="tab-content">
 						<div id="registry_w-4-result" class="tab-pane fade active in">
-							<div id="search_display" data-query="q=+group:(%22Australian Ocean Data Network%22)+class:collection&rows=5&sort=update_timestamp desc" data-mode="display_result" class="registry_widget"></div>
+							<div id="search_display" data-query="q=+group_search:(%22Australian Ocean Data Network%22) AND +class:collection&rows=5&sort=update_timestamp desc" data-mode="display_result" class="registry_widget"></div>
 						</div>
 						<div id="registry_w-4-html" class="tab-pane fade">
 							<pre class="prettyprint">
-&lt;div data-query="q=group:(%22Australian Ocean Data Network%22)&rows=5&sort=update_timestamp desc" data-mode="display_result" class="registry_widget"&gt;&lt;/div&gt;
+&lt;div data-query="q=+group_search:(%22Australian Ocean Data Network%22) AND +class:collection&rows=5&sort=update_timestamp desc" data-mode="display_result" class="registry_widget"&gt;&lt;/div&gt;
 							</pre>
 						</div>
 					</div>
