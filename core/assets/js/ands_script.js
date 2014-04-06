@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
 
+
+    $(".youtube").YouTubeModal({autoplay:0, width:660, height:480});
 	//.sticky element sticks onto place
 	if (!!$('.sticky').offset()){
 		var stickyTop = $('.sticky').offset().top;

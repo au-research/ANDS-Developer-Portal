@@ -456,6 +456,12 @@
 	      </ul>
 
 	      <div class="clearfix">
+
+              <li>
+                  <h2 class="widget-title">Video</h2>
+                  <p><a class="youtube" href="http://www.youtube.com/watch?v=VgsSrzGme4o">About this widget</a></p>
+              </li>
+
 		<div class="alert alert-warning">
 		<b>Need help?</b> <br/>
 		Visit the <?=anchor($this->config->item('developer_community_portal'),'Community Support Forum');?>
