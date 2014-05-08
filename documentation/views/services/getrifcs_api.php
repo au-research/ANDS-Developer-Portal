@@ -576,8 +576,8 @@ Habitats were classified based on the substrata (4 categories) and overlying epi
 		<div class="alert alert-warning">
 		<b>Need help?</b> <br/>
 		Visit the <?=anchor($this->config->item('developer_community_portal'),'Community Support Forum');?>
-	      </div>
-          </li>
+	    </div>
+
 
 
 	    </div>
