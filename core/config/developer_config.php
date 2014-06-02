@@ -1,3 +1,3 @@
 <?php
 
-$config['developer_community_portal'] = "http://community.ands.org.au/viewforum.php?f=201";
+$config['developer_community_portal'] = "http://researchdata.ands.org.au/developers_blog/";
