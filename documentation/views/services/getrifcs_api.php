@@ -566,13 +566,18 @@ Habitats were classified based on the substrata (4 categories) and overlying epi
 		<li class="cat-item"><a href="<?=base_url('documentation/services/indexed_fields');?>" target="_blank">Indexed Fields List</a></li>
 		<li class="cat-item"><a href="http://researchdata.ands.org.au/home/disclaimer" target="_blank">Usage Disclaimer</a></li>
 	      </ul>
+        </li>
 
-	      <div class="clearfix">
+        <li>
+            <h2 class="widget-title">Video</h2>
+            <p><a class="youtube" href="http://www.youtube.com/watch?v=DmgoUPDUE7c">About this widget</a></p>
+         </li>
+
 		<div class="alert alert-warning">
 		<b>Need help?</b> <br/>
 		Visit the <?=anchor($this->config->item('developer_community_portal'),'Community Support Forum');?>
-	      </div>
-	    </li>
+	    </div>
+
 
 
 	    </div>

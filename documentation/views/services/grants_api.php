@@ -371,7 +371,10 @@
 								<li class="cat-item"><a href="http://researchdata.ands.org.au/home/disclaimer" target="_blank">Usage Disclaimer</a></li>
 							</ul>
 						</li>
-
+                        <li>
+                            <h2 class="widget-title">Video</h2>
+                            <p><a class="youtube" href="http://www.youtube.com/watch?v=ygDEh0uo9_s">About this widget</a></p>
+                        </li>
 						<div class="clearfix">
 							<div class="alert alert-warning">
 						  <b>Need help?</b> <br/>

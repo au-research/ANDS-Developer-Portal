@@ -32,7 +32,7 @@ module.exports = function(grunt){
 			},
 			styles:{
 				src:[
-					// '<%= yeoman.assets %>/bootstrap/css/bootstrap.min.css',
+				    '<%= yeoman.assets %>/bootstrap/css/bootstrap.min.css',
 					// '<%= yeoman.assets %>/font-awesome/css/font-awesome.min.css',
 					// '<%= yeoman.assets %>/js/fancybox/jquery.fancybox.css',
 					// '<%= yeoman.assets %>/js/revolution-slider/css/settings.css',
@@ -53,6 +53,7 @@ module.exports = function(grunt){
 				src:[
 					'<%= yeoman.assets %>/js/jquery-1.10.1.min.js',
 				    '<%= yeoman.assets %>/bootstrap/js/bootstrap.min.js',
+                    '<%= yeoman.assets %>/js/bootstrap.youtubepopup.min.js',
 				    '<%= yeoman.assets %>/js/dropdown/dropdown-menu.js',
 				    '<%= yeoman.assets %>/js/fancybox/jquery.fancybox.pack.js',
 				    '<%= yeoman.assets %>/js/fancybox/jquery.fancybox-media.js',

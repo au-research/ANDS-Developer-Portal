@@ -207,7 +207,10 @@ $("#vocab-tree").vocab_widget({
 							<li class="cat-item"><?php echo anchor(apps_url('vocab_widget/download/minified'), '<i class="icon-white icon-download"></i> Download minified widget', array('class'=>'btn btn-large btn-success')) ?></li>
 						</ul>
 					</li>
-
+                        <li class="widget clearfix">
+                            <h2 class="widget-title">Video</h2>
+                            <p><a class="youtube" href="http://www.youtube.com/watch?v=B3aEoptf_5U">About this widget</a></p>
+                        </li>
 					<li class="widget clearfix">
 						<h3 class="widget-title">License</h3>
 						<p>Apache License, Version 2.0: <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>

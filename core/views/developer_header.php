@@ -70,7 +70,7 @@
 									</ul>
 								</li>
 								<li><?php echo anchor('documentation/registry', 'Registry Software') ?></li>
-								<li><a href="<?php echo $this->config->item('developer_community_portal'); ?>">Developer Community</a></li>
+								<li><a href="<?php echo $this->config->item('developer_community_portal'); ?>">Developer Community Blog</a></li>
 							</ul>
 						</nav>
 					</div><!-- ends navigation -->
