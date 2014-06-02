@@ -22,8 +22,8 @@
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mq-box">
 				<dl class="k-dl-list">
 					<dt class="k-dt k-fancy-icon-wrap">
-						<a href="#"><i class="icon-cloud awesome32 k-fancy-icon"></i></a>
-					</dt>
+						<?php echo anchor('documentation/services/getRIFCS', '<i class="icon-cloud awesome32 k-fancy-icon"></i>') ?>
+                    </dt>
 					<dd class="k-dd100">
 						<h3 class="k-fancy-title">getRIFCS API</h3>
 						<p>This API provides a simple method to retrieve RIFCS XML for one or more objects in the Registry.</p>
@@ -32,7 +32,7 @@
 					</dd>
 					
 					<dt class="k-dt k-fancy-icon-wrap">
-						<a href="#"><i class="icon-cloud awesome32 k-fancy-icon"></i></a>
+                    <?php echo anchor('documentation/services/getMetadata', '<i class="icon-cloud awesome32 k-fancy-icon"></i>') ?>
 					</dt>
 					<dd class="k-dd100">
 						<h3 class="k-fancy-title">getMetadata API</h3>
@@ -42,7 +42,7 @@
 					</dd>
 
 					<dt class="k-dt k-fancy-icon-wrap">
-						<a href="#"><i class="icon-cloud awesome32 k-fancy-icon"></i></a>
+                        <?php echo anchor('documentation/services/vocabulary_api', '<i class="icon-cloud awesome32 k-fancy-icon"></i>') ?>
 					</dt>
 					<dd class="k-dd100">
 						<h3 class="k-fancy-title">Vocabulary Service API</h3>
@@ -55,7 +55,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mq-box">
 				<dl class="k-dl-list">
 					<dt class="k-dt k-fancy-icon-wrap">
-						<a href="#"><i class="icon-cloud awesome32 k-fancy-icon"></i></a>
+						<?php echo anchor('documentation/services/getExtRif', '<i class="icon-cloud awesome32 k-fancy-icon"></i>') ?>
 					</dt>
 					<dd class="k-dd100">
 						<h3 class="k-fancy-title">getExtRif API</h3>
@@ -65,7 +65,7 @@
 					</dd>
 					
 					<dt class="k-dt k-fancy-icon-wrap">
-						<a href="#"><i class="icon-cloud awesome32 k-fancy-icon"></i></a>
+                        <?php echo anchor('documentation/services/oai', '<i class="icon-cloud awesome32 k-fancy-icon"></i>') ?>
 					</dt>
 					<dd class="k-dd100">
 						<h3 class="k-fancy-title">OAI-PMH Provider</h3>
@@ -75,7 +75,7 @@
 					</dd>
 
 					<dt class="k-dt k-fancy-icon-wrap">
-						<a href="#"><i class="icon-cloud awesome32 k-fancy-icon"></i></a>
+                        <?php echo anchor('documentation/services/getGrants', '<i class="icon-cloud awesome32 k-fancy-icon"></i>') ?>
 					</dt>
 					<dd class="k-dd100">
 						<h3 class="k-fancy-title">Research Grants API</h3>
