@@ -171,11 +171,11 @@ RewriteBase /<code><blue>myrepo/</blue></code></pre>
 			<h2 class="k-fancy-title">Useful Links</h2>
 			<div id="k-sidebar-splitter" class="clearfix section-space60"><span></span></div>				
 							<ul class="anchor_links">
-								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&amp;t=3191" target="_blank">ANDS-CONTRIB</a></li>
-								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&amp;t=3201" target="_blank">Harvester</a></li>
-								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&amp;t=3211" target="_blank">Setting up Topics</a></li>
-								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&amp;t=3181" target="_blank">Setting up Spotlight CMS</a></li>
-								<li class="cat-item"><a href="http://community.ands.org.au/viewtopic.php?f=211&amp;t=3221" target="_blank">Updating Dashboard</a></li>
+								<li class="cat-item"><a href="http://developers.ands.org.au/?page_id=27" target="_blank">ANDS-CONTRIB</a></li>
+								<li class="cat-item"><a href="http://developers.ands.org.au/?page_id=22">Harvester</a></li>
+								<!-- <li class="cat-item"><a href="http://developers.ands.org.au/?page_id=?" target="_blank">Setting up Topics</a></li> -->
+								<li class="cat-item"><a href="http://developers.ands.org.au/?page_id=29" target="_blank">Setting up Spotlight CMS</a></li>
+								<li class="cat-item"><a href="http://developers.ands.org.au/?page_id=12" target="_blank">Updating Dashboard</a></li>
 								<li class="cat-item"><a href="http://researchdata.ands.org.au/home/disclaimer" target="_blank">Usage Disclaimer</a></li>
 							</ul>
 						<div class="clearfix">
