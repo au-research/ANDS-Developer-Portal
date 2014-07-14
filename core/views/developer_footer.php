@@ -23,7 +23,7 @@
 							<li class="cat-item"><a href="http://ands.org.au" title="">ANDS Website</a></li>
 							<li class="cat-item"><a href="<?php echo portal_url(); ?>" title="">Research Data Australia</a></li>
 							<li class="cat-item"><a href="<?php echo registry_url(); ?>" title="">ANDS Online Services</a></li>
-							<li class="cat-item"><a href="http://community.ands.org.au/" title="">ANDS Community</a></li>
+							<li class="cat-item"><a href="http://developers.ands.org.au//" title="">ANDS Community</a></li>
 						</ul>
 					</li>
 				</ul>
