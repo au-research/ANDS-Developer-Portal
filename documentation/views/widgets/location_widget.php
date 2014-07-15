@@ -87,7 +87,7 @@ $("#mapContainer").ands_location_widget({
 							<b>Announcement</b>
 							<p>The Australian Gazetteer service which is integrated into the Location Capture widget is currently offline. 
 As an interim solution the Australian Gazetteer integration has been removed from the latest version of the widget.</p>
-<p><a href="http://community.ands.org.au/viewtopic.php?f=211&t=3301&sid=979668495e440692b6cf95d33dacf567" target="_blank">More info </a></p>
+<!-- <p><a href="http://community.ands.org.au/viewtopic.php?f=211&t=3301&sid=979668495e440692b6cf95d33dacf567" target="_blank">More info </a></p> -->
 						</div>
 					</li>					
 					<div class="sticky">
