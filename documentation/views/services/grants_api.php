@@ -83,6 +83,9 @@
 						<h4>Service Parameters:</h4><a id="params"></a>
 						<?php
 							$config = array(
+                                array('id',
+                                    '<p>the id of the grant (or part thereof)</p>',
+                                    'getGrants?id=1031221'),
 								array('title',
 									'<p>the title of the grant (or part thereof)</p>',
 									'getGrants?title=cancer'),
