@@ -91,6 +91,13 @@ class Documentation extends MX_Controller {
 				$this->load->view('widgets/location_widget', $data);
 			break;
 
+            case 'grant_widget':
+                $data['title'] = 'Grant id Lookup Widget';
+                $data['scripts'] = array('grant_widget_documentation');
+                $data['js_lib'] = array('grant_widget');
+                $this->load->view('widgets/grant_widget', $data);
+                break;
+
 			default: 
 				$data['title'] = 'Widget';
 				// $data['scripts'] = array('vocab_widget_doc');

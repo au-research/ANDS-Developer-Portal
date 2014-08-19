@@ -63,6 +63,9 @@
 	<?php if($lib=='orcid_widget'):?>
 			<link href="<?php echo apps_url('assets/orcid_widget/css/orcid_widget.css');?>" rel="stylesheet" type="text/css">
 			<script src="<?php echo apps_url('assets/orcid_widget/js/orcid_widget.js');?>" type="text/javascript"></script>
+    <?php elseif($lib=='grant_widget'):?>
+                <link href="<?php echo apps_url('assets/grant_widget/css/grant_widget.css');?>" rel="stylesheet" type="text/css">
+                <script src="<?php echo apps_url('assets/grant_widget/js/grant_widget.js');?>" type="text/javascript"></script>
 	<?php elseif($lib=='registry_widget'):?>
 			<link href="<?php echo apps_url('assets/registry_widget/css/registry_widget.css');?>" rel="stylesheet" type="text/css">
 			<script src="<?php echo apps_url('assets/registry_widget/js/registry_widget.js');?>" type="text/javascript"></script>
