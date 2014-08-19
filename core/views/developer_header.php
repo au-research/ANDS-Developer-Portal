@@ -54,6 +54,7 @@
 										<li><?php echo anchor('/documentation/widgets/vocab_widget', 'Controlled Vocabulary Widget'); ?></li>
 										<li><?php echo anchor('/documentation/widgets/location_widget', 'Location Capture Widget'); ?></li>
 										<li><?php echo anchor('/documentation/widgets/orcid_widget', 'ORCID Researcher Lookup Widget'); ?></li>
+                                        <li><?php echo anchor('/documentation/widgets/grant_widget', 'Grant Id Lookup Widget'); ?></li>
 									</ul>
 								</li>
 								<li><?php echo anchor('documentation/services/', 'Web Services') ?>
