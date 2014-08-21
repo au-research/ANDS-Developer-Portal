@@ -125,7 +125,7 @@ $('#custom_settings_grant').grant_widget({
 						</div>
 						<div id="grant_w-3-js" class="tab-pane fade">
 							<pre class="prettyprint">
-$('#format_display_settings_orcid').grant_widget({
+$('#format_display_settings_grant').grant_widget({
 	before_html: 'Enter Here: ',
 	search_div_class: 'custom_search_div',
 	info_box_class:'custom_info_box',
@@ -158,7 +158,7 @@ $('#format_display_settings_orcid').grant_widget({
 						</div>
 						<div id="grant_w-4-js" class="tab-pane fade">
 							<pre class="prettyprint">
-$('#tooltip_settings_orcid').orcid_widget({
+$('#tooltip_settings_grant').grant_widget({
 	before_html: 'Enter Here: ',
 	tooltip:true,
     funder_lists: true,
@@ -208,7 +208,7 @@ $('#tooltip_settings_orcid').orcid_widget({
 				<h2 class="k-fancy-title">Configuration</h2>
 					<p>
 						You can initialise the plugin by simply adding a class of <code>grant_widget</code> to an input element
-						 (<?php echo anchor(apps_url('assets/orcid_widget/dist/demo.html'), 'demo') ?>):
+						 (<?php echo anchor(apps_url('assets/grant_widget/dist/demo.html'), 'demo') ?>):
 						<pre class="prettyprint pre-small">&lt;input type="text" class="grant_widget"&gt;</pre>
 					</p>
 
