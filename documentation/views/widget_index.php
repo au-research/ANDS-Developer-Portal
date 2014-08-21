@@ -33,7 +33,7 @@
         <div class="container"><!-- starts container -->
             <div class="row">
                 <div id="k-work-text" class="col-lg-5 col-md-5 col-sm-12"><!-- starts work preview -->
-                    <h3 class="k-fancy-title"><a href="<?=base_url('documentation/widgets/orcid_widget/');?>">Grant id Lookup Widget</a></h3><!-- title -->
+                    <h3 class="k-fancy-title"><a href="<?=base_url('documentation/widgets/grant_widget/');?>">Grant id Lookup Widget</a></h3><!-- title -->
                     <p>The ANDS Grant Widget allows you to lookup a Grant  ID and search for one using ANDS Grant JSONP API. This widget is a jQuery plugin with extensible options over styling and functionality. Hence the widget is dependent on the jQuery plugin to function correctly.</p>
                     <?php echo anchor('documentation/widgets/grant_widget', 'Learn More', array('class'=>'btn btn-default')); ?>
                 </div>
